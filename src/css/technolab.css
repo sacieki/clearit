@@ -1,0 +1,412 @@
+.default-container,
+.tl-Hero-content,
+.tl-Hero-Topics,
+.tl-Hero-Topics__image {
+  overflow: visible;
+}
+.tl-Hero-Topics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: clamp(5px, 0.8vw, 10px);
+  overflow: visible;
+  margin-top:100px;
+}
+
+.tl-Hero-Topics__image {
+  width: 50%;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.tl-Hero-Topics__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tl-Hero-Topics__content {
+  width: 50%;
+}
+
+.tl-hero-p1 {
+  margin: 0;
+  text-align: left;
+
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+}
+
+.tl-hero-p2 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.1;
+  letter-spacing: 35%;
+  text-align: center;
+}
+
+.tl-OurMission-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+  text-align: center;
+}
+
+.tl-OurMission-p2 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+  text-align: center;
+  width: min(420px, 100%);
+  padding-top: clamp(10px, 8vw, 40px);
+}
+
+.tl-OurMission-p3 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(18px, 2vw, 26px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-align: center;
+  width: min(690px, 100%);
+  padding-top: clamp(60px, 8vw, 120px);
+}
+
+.tl-OurMission-p4 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+  text-align: center;
+  padding-top: clamp(30px, 4.5vw, 60px);
+  width: min(640px, 100%);
+}
+
+.tl-OurMission-p5 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+  text-align: center;
+  padding-top: clamp(30px, 4.5vw, 30px);
+  width: min(640px, 100%);
+}
+
+.tl-OurMission-p6 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 10%;
+  text-align: center;
+  padding-top: clamp(30px, 4.5vw, 30px);
+  width: min(640px, 100%);
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+.tl-Technology-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(40px, 6.5vw, 100px);
+  line-height: 1.1;
+  letter-spacing: 5%;
+  text-align: center;
+}
+
+.tl-Technology-p2 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(28px, 3.5vw, 51px);
+  line-height: 1.1;
+  letter-spacing: 15%;
+  text-align: center;
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+.tl-Technology-p3 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(20px, 2.5vw, 30px);
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.tl-Technology-p4 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  padding-top: clamp(40px, 6vw, 80px);
+}
+
+.tl-Technology-p5 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  padding-top: clamp(20px, 3vw, 40px);
+}
+
+
+.tl-TechnologyStep1-Topics,
+.tl-TechnologyStep2-Topics {
+  margin-top: clamp(80px, 13vw, 200px);
+}
+
+.tl-TwoStepProtocol-content,
+.tl-TwoStepProtocol-Topics,
+.default-container {
+  position: relative;
+  overflow: visible;
+}
+
+.tl-TwoStepProtocol-Topics {
+  min-height:980px;
+}
+
+.tl-TwoStepProtocol-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(28px, 3.5vw, 48px);
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.tl-TwoStepProtocol-p2 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  margin-top: clamp(60px, 8vw, 120px);
+  width: min(520px, 100%);
+}
+.tl-TwoStepProtocol-p2 span {
+  font-weight: 700;
+}
+
+.tl-TwoStepProtocol-p3 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  padding-top: clamp(80px, 13vw, 200px);
+}
+
+.tl-TwoStepProtocol-p4 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  padding-top: clamp(30px, 4.5vw, 60px);
+}
+
+.tl-TwoStepProtocol-p5 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 100%;
+  letter-spacing: 10%;
+  padding-top: clamp(30px, 4.5vw, 60px);
+}
+
+.tl-RemovalPhilosophy-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(40px, 6.5vw, 100px);
+  line-height: 1.1;
+  letter-spacing: 5%;
+  text-align: center;
+  padding-top: clamp(80px, 13vw, 200px);
+}
+
+.tl-RemovalPhilosophy-p2 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(28px, 3.5vw, 51px);
+  line-height: 1.1;
+  letter-spacing: 15%;
+  text-align: center;
+  margin-top: clamp(-20px, -3vw, -40px);
+}
+
+.tl-RemovalPhilosophy-p3 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.85;
+  letter-spacing: 10%;
+  text-align: center;
+  padding-top: clamp(60px, 8vw, 120px);
+  width: min(680px, 100%);
+}
+
+.tl-RemovalPhilosophy-p4 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(28px, 3.5vw, 48px);
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.tl-RemovalPhilosophy-p5 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 100%;
+  letter-spacing: 15%;
+  margin-top: clamp(-10px, -1.5vw, -20px);
+}
+.tl-RemovalPhilosophy-p6 {
+  margin-top: clamp(140px, 22vw, 340px);
+}
+.tl-RemovalPhilosophy-p6,
+.tl-RemovalPhilosophy-p7 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 100%;
+  letter-spacing: 10%;
+}
+
+.tl-RemovalPhilosophy-p8 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 37px);
+  line-height: 100%;
+  letter-spacing: 25%;
+  margin-top: clamp(80px, 13vw, 200px);
+  padding-left:clamp(10px, 1.5vw, 20px);
+}
+.tl-RemovalPhilosophy-p9 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(16px, 1.8vw, 22px);
+  line-height: 1.1;
+  letter-spacing: 25%;
+  padding-left:clamp(10px, 1.5vw, 20px);
+}
+
+.tl-RemovalPhilosophy-p10 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.95;
+  letter-spacing: 10%;
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+.tl-RemovalPhilosophy-p11 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.65;
+  letter-spacing: 10%;
+  text-align: right;
+  width: min(390px, 100%);
+}
+
+.tl-RemovalPhilosophy-p12 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(24px, 3vw, 37px);
+  line-height: 100%;
+  letter-spacing: 25%;
+  text-align: center;
+  width: min(390px, 100%);
+  padding-top: clamp(40px, 6vw, 80px);
+}
+
+.tl-RemovalPhilosophy-p13 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 15%;
+  text-align: center;
+  width: min(700px, 100%);
+  padding-top: clamp(30px, 4.5vw, 60px);
+}
+
+.tl-RemovalPhilosophy-p14 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 15%;
+  text-align: center;
+  width: min(700px, 100%);
+  padding-top: clamp(15px, 2.5vw, 30px);
+}
+
+.tl-RemovalPhilosophy-p15 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.1;
+  letter-spacing: 15%;
+  text-align: center;
+  width: min(700px, 100%);
+  padding-top: clamp(15px, 2.5vw, 30px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+}
+
+.tl-RemovalPhilosophy-content2 {
+  width:90%;
+  background:white;
+  background-image: url("../assets/CLEARiT woman-with-modern-smartphone-on-white-background-2026-01-11-11-07-41-utc 1.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 60% auto;
+  min-height: 600px;
+  justify-content:start;
+}
