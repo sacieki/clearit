@@ -436,11 +436,10 @@ export default {
 
     loadGoogleMaps() {
       return new Promise((resolve, reject) => {
-        /*
+        
         const apiKey =
           process.env.VUE_APP_GOOGLE_MAPS_API_KEY
-        */
-       const apiKey = "AIzaSyCIc2yK9-LvMqk03jPZLKjr8qUA8HxJ1Kg"
+        
         console.log(
           'Google Maps Key exists:',
           !!apiKey
