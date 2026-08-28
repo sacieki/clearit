@@ -112,13 +112,19 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
     <section class="science-section">
       <div class="home-container science-grid">
         <div class="media-placeholder science-portrait">
-          <img
-            alt="Logo"
-            loading="lazy"
-            decoding="async"
-            class="block !w-[90%] !max-w-[90%] mx-auto"
-            src="/media/60c1bc6905b3fcab37c2b671307aed0d82eb7c46.gif"
-          />
+          <div class=" default-media">
+              <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              >
+                <source src="/media/0bf7bc18-71ca-4e63-85a5-7001d1652cc9.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
         </div>
 
         <div class="science-quote">
