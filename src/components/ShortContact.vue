@@ -1,6 +1,6 @@
 <template>
   <section
-    class="short-contact mx-auto"
+    class="short-contact mx-auto hidden lg:flex"
     :class="{ 'short-contact--expanded': isExpanded }"
   >
 
@@ -218,7 +218,6 @@ export default {
   background: #1F1F1F;
   overflow: hidden;
   z-index: 999;
-  display: flex;
   flex-direction: column;
   transition:
     height 0.6s cubic-bezier(0.22, 1, 0.36, 1);

@@ -165,21 +165,21 @@
 
           <div class="menu-content flex flex-col gap-5 text-left ">
 
-            <a href="/brand-overview">
-              Who We Are
-            </a>
+            <router-link to="/brand-overview"  @click="closeMenu">
+                Who We Are
+            </router-link>
 
-            <a href="/techno-lab">
-              What We Do
-            </a>
+            <router-link to="/techno-lab"  @click="closeMenu">
+                What We Do
+            </router-link>
 
-            <a href="/techno-lab">
-              Why CLEARiT
-            </a>
+            <router-link to="/techno-lab"  @click="closeMenu">
+                Why CLEARiT
+            </router-link>
 
-            <a href="/brand-overview">
-              Our Difference
-            </a>
+            <router-link to="/brand-overview"  @click="closeMenu">
+                Our Difference
+            </router-link>
 
           </div>
 
@@ -214,6 +214,7 @@
             >
               Media contact email
             </a>
+            
 
           </div>
 
@@ -231,9 +232,9 @@
 
           <div class="menu-content flex flex-col gap-5 text-left ">
 
-            <a href="/techno-lab">
-              The CLEARiT System
-            </a>
+            <router-link to="/techno-lab"  @click="closeMenu">
+                The CLEARiT System
+            </router-link>
             <!--
             <a href="/brand-overview">
               Research philosophy
@@ -259,17 +260,17 @@
 
           <div class="menu-content flex flex-col gap-5 text-left ">
 
-            <a href="/before-after">
-              Before &amp; After
-            </a>
+            <router-link to="/before-after"  @click="closeMenu">
+                Before &amp; After
+            </router-link>
 
-            <a href="/techno-lab">
-              The Skin First Solution
-            </a>
+            <router-link to="/techno-lab"  @click="closeMenu">
+                The Skin First Solution
+            </router-link>
 
-            <a href="/techno-lab">
-              Your Tattoo Removal Journey
-            </a>
+            <router-link to="/techno-lab"  @click="closeMenu">
+                Your Tattoo Removal Journey
+            </router-link>
 
             <router-link to="/faqs" @click="closeMenu">
               FAQs
@@ -314,13 +315,13 @@
                 Company overview
             </router-link>
 
-            <a href="/brand-overview">
-              Vision &amp; Roadmap
-            </a>
-
-            <a href="/brand-overview#team">
-              Leadership team
-            </a>
+            <router-link to="/brand-overview" @click="closeMenu">
+                Vision &amp; Roadmap
+            </router-link>
+            
+            <router-link to="/brand-overview#team" @click="closeMenu">
+                Leadership team
+            </router-link>
             <!--
             <a href="/brand-overview#team">
               Scientific advisory board

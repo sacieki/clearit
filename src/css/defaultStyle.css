@@ -240,7 +240,7 @@
 a.BookConsultationBtn {
   display: flex;
   align-items: center;
-  width: fit-content;
+  /*width: fit-content;*/
   margin: 0 auto;
   text-align: center;
   margin-top: clamp(40px, 5vw, 80px);
@@ -248,7 +248,7 @@ a.BookConsultationBtn {
   font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 500;
   letter-spacing: .16em;
-  padding: 0 66px;
+  /*padding: 0 66px;*/
   /*
   display: inline-flex;
   align-items: center;
@@ -670,7 +670,7 @@ a.BookConsultationBtn {
 ================================================================================ */
 
 a.solid-button {
-    padding: 0 120px 0 120px;
+    /*padding: 0 120px 0 120px;*/
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
     font-style: normal;

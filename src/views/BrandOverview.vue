@@ -15,18 +15,18 @@
     <div class="default-container  ">
       <div class="default-content-width  pj-TheCLEARiTDifference-content ">
         <div class=" default-media">
-      <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-      >
-        <source src="/media/envato_video_gen_Mar_20_2026_3_28_01.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="/media/envato_video_gen_Mar_20_2026_3_28_01.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
@@ -60,7 +60,19 @@
           <div class="default-hero__content bo-hero-text">
             <p class="mx-auto bo-hero-p1 colorGray">CLEARiT exists for one purpose:</p>
             <p class="mx-auto bo-hero-p2 colorGray">to make tattoo removal</p>
-            <p class="mx-auto bo-hero-p3 colorBlue">FASTER</p>
+            <div class="bo-hero-p3-wrapper">
+              <p
+                v-for="(word, index) in heroWords"
+                :key="word"
+                class="bo-hero-p3 colorBlue"
+                :class="{
+                  active: index === activeWord,
+                  next: index === nextWord
+                }"
+              >
+                {{ word }}
+              </p>
+            </div>
           </div>
 
           <div class="bo-hero-textdetail colorGray">
@@ -237,7 +249,7 @@ closer to their full potential.<br/>
             Meet the <br/><span class="bo-MeettheTeam-p1-team colorBlue">Team</span>
             <span class="bo-MeettheTeam-p1-behide">Behind CLEARiT</span>
           </p>
-          <div class="flex-column bo-MeettheTeam-columnsplit colorGray" style="margin-top: clamp(60px, 8vw, 120px);">
+          <div class="flex-column bo-MeettheTeam-columnsplit colorGray bo-MeettheTeam-columnsplitMain" style="margin-top: clamp(60px, 8vw, 120px);">
             <div class="bo-MeettheTeam-card">
               <img
                 alt="Logo"
@@ -435,7 +447,32 @@ closer to their full potential.<br/>
 
 <script>
 export default {
-  name: 'BrandOverview'
+  name: 'BrandOverview',
+  data() {
+    return {
+      activeWord: 0,
+
+      heroWords: [
+        "FASTER",
+        "SAFER",
+        "MORE PREDICTABLE"
+      ]
+    };
+  },
+  computed: {
+    nextWord() {
+      return (this.activeWord + 1) % this.heroWords.length;
+    }
+  },
+    mounted() {
+    this.wordInterval = setInterval(() => {
+      this.activeWord = this.nextWord;
+    }, 2500);
+  },
+
+  beforeUnmount() {
+    clearInterval(this.wordInterval);
+  },
 }
 </script>
 

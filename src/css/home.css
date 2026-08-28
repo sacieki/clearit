@@ -323,7 +323,6 @@
 .solid-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 2px 0 #29BCFB;
-  width:fit-content;
   color: var(--home-gray);
 }
 

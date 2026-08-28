@@ -20,7 +20,7 @@
             <div style="width:50%;margin-right:clamp(60px, 8vw, 120px);">
 
               <div class="footer-newsletter underline-gray-fullwidth">
-                <h2>Partner with CLEARiT</h2>
+                <h2>Partner with <span class="colorBlack">CLEAR</span><span class="colorBlue">i</span><span class="colorBlack">T</span></h2>
 
                 <form class="newsletter-form" style="display:flex" @submit.prevent>
                   <input
