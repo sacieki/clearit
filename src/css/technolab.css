@@ -189,7 +189,7 @@
 }
 
 .tl-TwoStepProtocol-Topics {
-  min-height:980px;
+  padding-bottom:clamp(80px, 13vw, 200px);
 }
 
 .tl-TwoStepProtocol-p1 {
@@ -264,7 +264,7 @@
   line-height: 1.1;
   letter-spacing: 15%;
   text-align: center;
-  margin-top: clamp(-20px, -3vw, -40px);
+  margin-top: clamp(5px, 0.8vw, 10px);
 }
 
 .tl-RemovalPhilosophy-p3 {
