@@ -73,11 +73,9 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
     <div class="blue-line" style="width:95%;"></div>
     <Navigator_desktop />
 
-    <section class="hero-section ">
-      <div class="default-container  home-container hero-inner pt-5">
-        <div class="default-content-width hero-visual media-placeholder hero-products">
-          
-          
+    <section class="default-section hero-section">
+      <div class="default-container  ">
+        <div class="default-content-width default-content-border-radius ho-hero-content BG-GradientGrayToWhite">
           <div class="hero-copy">
 
             <p class="hero-lead mx-auto colorBlue">
@@ -107,7 +105,23 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         </div>
       </div>
     </section>
-    
+
+
+
+
+
+
+<!--
+    <section class="hero-section ">
+      <div class="default-container  home-container hero-inner pt-5">
+        <div class="default-content-width hero-visual media-placeholder hero-products">
+          
+          
+          
+        </div>
+      </div>
+    </section>
+ -->   
     <!-- Science / positioning -->
     <section class="science-section">
       <div class="home-container science-grid">

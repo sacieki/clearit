@@ -709,12 +709,17 @@ a.solid-button {
     flex-direction: column;
   }
 
-  .small-full {
+  .small-full, .smallone-full {
     width: 100% !important;
   }
 
   .small-full img {
     width: 100%;
     height: auto;
+  }
+  .smallone-full img {
+    width: 50%;
+    height: auto;
+    margin:auto;
   }
 }

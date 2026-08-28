@@ -373,7 +373,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             </p>
 
             <div class="default-split-content default-content-border-radius" style="align-items: end;padding:0px clamp(10px, 1.5vw, 20px)">
-              <div class="default-split-content__image" style="width:30%">
+              <div class="default-split-content__image smallone-full" style="width:30%">
                 <img
                   alt="Logo"
                   loading="lazy"

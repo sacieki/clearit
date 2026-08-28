@@ -926,6 +926,9 @@
 }
 
 @media (max-width: 640px) {
+  .science-quote {
+    transform: translateY(0);
+  }
   .section-pad {
     padding: 60px 0;
   }
@@ -950,6 +953,7 @@
   .hero-feature-grid,
   .find-filters-preview {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .preparation-card,
