@@ -17,14 +17,14 @@
 }
 
 .pj-Hero-Topics__image {
-  width: 50%;
+  width: 40%;
   flex-shrink: 0;
   overflow: visible;
 }
 
 .pj-Hero-Topics__image img {
   display: block;
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -39,7 +39,7 @@
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(24px, 3vw, 30px);
+  font-size: clamp(8px, 1vw, 30px);
   line-height: 2;
   letter-spacing: 10%;
 }
@@ -227,4 +227,8 @@
   line-height: 1.65;
   letter-spacing: 10%;
   width: min(640px, 100%);
+}
+
+.pj-OurVision-Topics {
+  padding-bottom: clamp(60px, 8vw, 100px);
 }

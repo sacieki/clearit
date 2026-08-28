@@ -40,7 +40,10 @@
               <div class="default-split-content__content bm-before-after-content">
 
                 <p class="bm-BeforeAfterModule-p1 colorBlack">
-                  REAL PROGRESS. REAL PEOPLE.
+                  REAL PROGRESS.
+                </p>
+                <p class="bm-BeforeAfterModule-p1 colorBlack underline-blue">
+                  REAL PEOPLE.
                 </p>
 
                 <router-link to="/before-after" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);width:294px;min-height: 36px;font-size: clamp(16px, 2vw, 19px);padding:0;">
@@ -233,6 +236,8 @@ export default {
   letter-spacing: 10%;
 }
 
+
+/*
 .bm-BeforeAfterModule-p1::after {
   content: "";
   display: block;
@@ -244,7 +249,7 @@ export default {
 
   background: #29BCFB;
 }
-
+*/
 
 /* ========================================
    TABLET

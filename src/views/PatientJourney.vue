@@ -93,8 +93,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               <p class="pj-hero-description-p6 colorGray">
                 Over time, your body clears the ink fragments, revealing clearer skin with each step forward.
               </p>
-
-              <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style="padding: 0 160px 0 160px;font-size: clamp(12px, 1.4vw, 14px);margin-bottom: clamp(60px, 8vw, 100px);">Schedule Your FREE Consultation</a>
+             
             </div>
           </div>
         </div>
@@ -199,7 +198,12 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </div>
           </div>
 
-          <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Schedule Your FREE Consultation</a>
+          <router-link
+            to="/contact-us"
+            class="solid-button mx-auto BookConsultationBtn"
+          >
+            Schedule Your FREE Consultation
+          </router-link>
 
         </div>
       </div>
@@ -226,7 +230,10 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
               "Technology is the bridge between uncertainty and accuracy. 
-CLEARiT exists to eliminate the margin of error, using the power of AI to bring a new level of precision to tattoo removal."
+            </p>
+
+            <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
+              CLEARiT exists to eliminate the margin of error, using the power of AI to bring a new level of precision to tattoo removal."
             </p>
 
             <img
