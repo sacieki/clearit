@@ -136,7 +136,12 @@ It is a calculated process.</p>
               Removing a tattoo is a journey. CLEARiT is designed to guide that journey with precision and care.
             </p>
             
-            <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Book Consultation</a>
+            <router-link
+              to="/contact-us"
+              class="solid-button mx-auto BookConsultationBtn"
+            >
+              Book Consultation
+            </router-link>
             
             <p  class="bo-ClearitDifferent-p4 colorGray mx-auto">
               Engineered Around Skin Behavior<br/>

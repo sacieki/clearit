@@ -137,7 +137,6 @@
   font-size: clamp(24px, 2.5vw, 38px);
   line-height: 1.4;
   letter-spacing: 0.15em;
-  margin-top: clamp(-30px, -4.5vw, -60px);
 }
 
 .bo-ClearitDifferent-p2 {

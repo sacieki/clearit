@@ -9,6 +9,7 @@ import PatientJourney from '../views/PatientJourney.vue'
 import BeforeAfter from '../views/BeforeAfter.vue'
 import Welcomebook from '../views/Welcomebook.vue'
 
+
 const routes = [
   {
     path: '/',
@@ -52,9 +53,26 @@ const routes = [
   }
 ]
 
+
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+
+  scrollBehavior(to, from, savedPosition) {
+    // ถ้ากด Back / Forward ให้กลับตำแหน่งเดิม
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    // เปลี่ยนหน้าใหม่ → ขึ้นบนสุด
+    return {
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    };
+  }
+});
+
+
 
 export default router
