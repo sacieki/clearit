@@ -106,18 +106,18 @@
 
       <!-- LOGO -->
       <div class="nav-logo cursor-pointer">
-
-        <img
-          alt="Logo"
-          loading="lazy"
-          width="250"
-          height="40"
-          decoding="async"
-          class="w-35 lg:w-45"
-          style="color: transparent"
-          src="/media/logo.f02482b3.png"
-        />
-
+        <router-link to="/" class="outline-button ">
+          <img
+            alt="Logo"
+            loading="lazy"
+            width="250"
+            height="40"
+            decoding="async"
+            class="w-35 lg:w-45"
+            style="color: transparent"
+            src="/media/logo.f02482b3.png"
+          />
+        </router-link>
       </div>
 
 

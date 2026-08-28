@@ -42,7 +42,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="default-containerBK ho-contrainer-banner text-overlap__top" style="position: relative;padding-left:40px;">
           <div class=" ho-hero-banner ">
             <div class="ho-hero-Topics mx-auto">
-              <div style="width:60%">
+              <div class="splitLeft" style="width:60%">
                 <p class="ho-hero-Topics-p1">
                   TATTOO REMOVAL
                 </p>
