@@ -1055,7 +1055,12 @@
   color: var(--home-gray);
 }
 
-.splitRgiht {
+
+.splitLeft {
+  width: 60%;
+}
+
+.splitRight {
   display: grid;
   width: 40%;
   text-align: right;
@@ -1124,5 +1129,26 @@
   z-index: 2;
   background: #fff;
   margin-top: 300px;
+}
+
+
+@media (max-width: 767px) {
+
+  .ho-hero-Topics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ho-hero-Topics-main {
+    width: 100%;
+  }
+
+  .splitRgiht {
+    width: 100%;
+    margin-top: 40px;
+  }
+
 }
 
