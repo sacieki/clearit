@@ -299,7 +299,7 @@
 }
 .tl-RemovalPhilosophy-p6 {
   margin-top: clamp(140px, 22vw, 340px);
-  width: 280px;
+  width: 40%;
 }
 .tl-RemovalPhilosophy-p6,
 .tl-RemovalPhilosophy-p7 {
@@ -408,6 +408,7 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 60% auto;
-  min-height: 600px;
+  /*min-height: 600px;*/
   justify-content:start;
+  padding: clamp(30px, 4.5vw, 60px) 0;
 }
