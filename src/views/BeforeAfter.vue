@@ -1,10 +1,18 @@
 <script setup>
   import FindUs from '../components/FindUs.vue'
   import FAQ from '../components/FAQs.vue'
-  import BookANAppointment from '../components/BookANAppointment.vue'
+  import ShortContact from '../components/ShortContact.vue'
+  import Navigator_desktop from '../components/Navigator_desktop.vue'
 </script>
 <template>
    <main class="home-page">
+
+    <ShortContact />
+
+    <div style="padding-top: clamp(30px, 4.5vw, 60px);">
+      <Navigator_desktop  />
+    </div>
+
     <section class="default-section Hero">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius ba-Hero-content ">
@@ -61,7 +69,7 @@
         class="ba-gallery-modal"
         @click.self="closeModal"
         >
-
+        
         <button
             class="ba-gallery-modal__close"
             @click="closeModal"
@@ -97,13 +105,13 @@
             ›
         </button>
         -->
+        
     </div>
 
 
 
     <FindUs />
     <FAQ />
-    <BookANAppointment />
 
   </main>
 </template>

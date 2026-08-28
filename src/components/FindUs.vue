@@ -1,6 +1,6 @@
 <template>
   <div class="find-us-page py-16 md:py-24 lg:py-32">
-    <section class="w-full overflow-hidden">
+    <section class="w-full overflow-hidden" style="width: min(1000px, 100%);margin: auto;">
       <div class="w-[92%] max-w-[1550px] mx-auto px-4 md:px-8">
 
         <!-- ====================================== -->

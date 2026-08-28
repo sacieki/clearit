@@ -2,7 +2,6 @@
   import BeforeAfterModule from '../components/BeforeAfterModule.vue'
   import FindUs from '../components/FindUs.vue'
   import FAQ from '../components/FAQs.vue'
-  import BookANAppointment from '../components/BookANAppointment.vue'
 </script>
 <template>
    <main class="home-page">
@@ -34,7 +33,6 @@
 
     <FAQ />
 
-    <BookANAppointment />
 
   </main>
 </template>

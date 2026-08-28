@@ -2,31 +2,46 @@
   import BeforeAfterModule from '../components/BeforeAfterModule.vue'
   import FindUs from '../components/FindUs.vue'
   import FAQ from '../components/FAQs.vue'
-  import BookANAppointment from '../components/BookANAppointment.vue'
+  import ShortContact from '../components/ShortContact.vue'
+  import Navigator_desktop from '../components/Navigator_desktop.vue'
 </script>
 <template>
    <main class="default-page">
 
+    <ShortContact />
     
+
+      <section class=" TheCLEARiTDifference">
+    <div class="default-container  ">
+      <div class="default-content-width  pj-TheCLEARiTDifference-content ">
+        <div class=" default-media">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="/media/envato_video_gen_Mar_20_2026_3_28_01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      </div>
+    </div>
+  </section>
+
+
+    
+    <Navigator_desktop />
+
+
 
     <section class="default-section default-hero">
       <div class="default-container  ">
         
         <div class="default-content-width BG-GradientWhiteToGray default-content-border-radius bo-hero-content">
-          <div class=" default-media">
-            <video
-              class="hero-video"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="auto"
-            >
-              <source src="/media/envato_video_gen_Mar_20_2026_3_28_01.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
+          
           <div class="bo-hero-Topics mx-auto">
             
             <span class="mx-auto colorBlue">About</span>
@@ -48,10 +63,10 @@
             <p class="mx-auto bo-hero-p3 colorBlue">FASTER</p>
           </div>
 
-          <div class="bo-hero-textdetail colorBlack">
-            <p class="mx-auto">We developed CLEARiT as a system that supports the skin before each laser session.</p>
+          <div class="bo-hero-textdetail colorGray">
+            <p class="mx-auto bo-hero-textdetail-p1">We developed CLEARiT as a system that supports the skin before each laser session.</p>
 
-            <p class="mx-auto"><br/>CLEARiT system helps create a cleaner surface to optimize ink access. When the skin is properly prepared, every laser pulse can perform closer to its full potential.</p>
+            <p class="mx-auto bo-hero-textdetail-p2"><br/>CLEARiT system helps create a cleaner surface to optimize ink access. When the skin is properly prepared, every laser pulse can perform closer to its full potential.</p>
             <p class="mx-auto">CLEARiT is not a laser.</p>
             <p class="mx-auto">CLEARiT optimizes every treatment.</p>
           </div>
@@ -59,7 +74,7 @@
       </div>
   </section>
 
-  <section class="default-section WhyWeDevelop">
+  <section class="default-section WhyWeDevelop" style="margin-top: clamp(-20px, -3vw, -40px);">
       <div class="default-container  ">
         <div class="default-content-width BG-GradientGrayToWhite default-content-border-radius bo-WhyWeDevelop-content ">
           <img
@@ -96,7 +111,7 @@ It is a calculated process.</p>
             src="/media/Group 98 1.png"
           />
           <div class="bo-ClearitDifferent-Topics mx-auto">
-            <p class="bo-ClearitDifferent-p1 colorGray">
+            <p class="bo-ClearitDifferent-p1 colorBlack">
               The CLEAR<span class="colorBlue">i</span>T 
               <span class="colorBlue bo-ClearitDifferent-p1-Second">Difference</span>
             </p>
@@ -152,7 +167,7 @@ closer to their full potential.<br/>
     <div class="default-container  ">
       <div class="default-content-width default-content-border-radius bo-OurPhilosophy-content ">
           <div class="bo-ClearitDifferent-Topics mx-auto">
-            <p class="bo-OurPhilosophy-p1 colorGray">
+            <p class="bo-OurPhilosophy-p1 colorBlack">
               <span class="colorBlue">Our</span><br>Philosophy
             </p>
 
@@ -218,11 +233,11 @@ closer to their full potential.<br/>
     <div class="default-container  ">
       <div class="default-content-width default-content-border-radius bo-MeettheTeam-content bg-image fade-bottom">
         <div class="bo-MeettheTeam-Topics mx-auto ">
-          <p class="bo-MeettheTeam-p1 colorGray">
+          <p class="bo-MeettheTeam-p1 colorBlack">
             Meet the <br/><span class="bo-MeettheTeam-p1-team colorBlue">Team</span>
             <span class="bo-MeettheTeam-p1-behide">Behind CLEARiT</span>
           </p>
-          <div class="flex-column bo-MeettheTeam-columnsplit colorGray">
+          <div class="flex-column bo-MeettheTeam-columnsplit colorGray" style="margin-top: clamp(60px, 8vw, 120px);">
             <div class="bo-MeettheTeam-card">
               <img
                 alt="Logo"
@@ -251,7 +266,7 @@ closer to their full potential.<br/>
                 decoding="async"
                 class="mx-auto "
                 style="color: transparent;"
-                src="/media/image-gen p-1-1.png"
+                src="/media/image-gen p-1-2.png"
               />
               <p class="bo-MeettheTeam-name">
                 David Monk
@@ -414,7 +429,6 @@ closer to their full potential.<br/>
   <BeforeAfterModule/>
   <FindUs />
   <FAQ />
-  <BookANAppointment />
 
   </main>
 </template>

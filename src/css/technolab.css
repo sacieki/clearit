@@ -40,8 +40,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(24px, 3vw, 30px);
-  line-height: 1.1;
-  letter-spacing: 10%;
+  line-height: 2;
+  letter-spacing: 0.2em;
 }
 
 .tl-hero-p2 {
@@ -50,7 +50,7 @@
   font-style: normal;
   font-size: clamp(24px, 3vw, 36px);
   line-height: 1.1;
-  letter-spacing: 35%;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
@@ -69,8 +69,8 @@
   font-weight: 600;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
   text-align: center;
   width: min(420px, 100%);
   padding-top: clamp(10px, 8vw, 40px);
@@ -81,8 +81,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(18px, 2vw, 26px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
   text-align: center;
   width: min(690px, 100%);
   padding-top: clamp(60px, 8vw, 120px);
@@ -93,8 +93,8 @@
   font-weight: 300;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 60px);
   width: min(640px, 100%);
@@ -105,8 +105,8 @@
   font-weight: 300;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 30px);
   width: min(640px, 100%);
@@ -117,8 +117,8 @@
   font-weight: 600;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 30px);
   width: min(640px, 100%);
@@ -160,8 +160,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding-top: clamp(40px, 6vw, 80px);
 }
 
@@ -170,8 +170,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding-top: clamp(20px, 3vw, 40px);
 }
 
@@ -206,8 +206,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(24px, 3vw, 36px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-top: clamp(60px, 8vw, 120px);
   width: min(520px, 100%);
 }
@@ -221,7 +221,7 @@
   font-style: normal;
   font-size: clamp(24px, 3vw, 36px);
   line-height: 100%;
-  letter-spacing: 10%;
+  letter-spacing: 0.02em;
   padding-top: clamp(80px, 13vw, 200px);
 }
 
@@ -299,6 +299,7 @@
 }
 .tl-RemovalPhilosophy-p6 {
   margin-top: clamp(140px, 22vw, 340px);
+  width: 280px;
 }
 .tl-RemovalPhilosophy-p6,
 .tl-RemovalPhilosophy-p7 {
@@ -368,8 +369,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 15%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   width: min(700px, 100%);
   padding-top: clamp(30px, 4.5vw, 60px);
@@ -380,8 +381,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 15%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   width: min(700px, 100%);
   padding-top: clamp(15px, 2.5vw, 30px);
@@ -392,8 +393,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.1;
-  letter-spacing: 15%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   width: min(700px, 100%);
   padding-top: clamp(15px, 2.5vw, 30px);

@@ -2,12 +2,20 @@
 import BeforeAfterModule from '../components/BeforeAfterModule.vue'
 import FindUs from '../components/FindUs.vue'
 import FAQ from '../components/FAQs.vue'
-import BookANAppointment from '../components/BookANAppointment.vue'
+import ShortContact from '../components/ShortContact.vue'
+import Navigator_desktop from '../components/Navigator_desktop.vue'
 </script>
 
 <template>
   <main class="default-page">
-    <section class="default-section Hero">
+
+    <ShortContact />
+
+    <div style="padding-top: clamp(30px, 4.5vw, 60px);">
+      <Navigator_desktop  />
+    </div>
+
+    <section class="default-section Hero" style="margin-top: clamp(-60px, -8vw, -120px);">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius tl-Hero-content BG-GradientGrayToWhite">
           <div class="tl-Hero-Topics">
@@ -22,7 +30,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             </div>
 
             <div class="tl-Hero-Topics__content">
-              <p class="tl-hero-p1 colorBlack">
+              <p class="tl-hero-p1 colorBlack underline-blue">
                 YOUR SKIN.<br />
                 YOUR CONFIDENCE.<br />
                 OUR PRIORITY.
@@ -33,7 +41,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             THE SKIN FIRST PHILOSOPHY
           </p>
 
-          <div class="blue-line"></div>
+          <div class="blue-line" style="width:99%"></div>
         </div>
       </div>
     </section>
@@ -194,7 +202,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
 
 
           <div class="default-split-content bg-image default-content-border-radius" style="margin-top: clamp(80px, 13vw, 200px);">
-              <div class="default-split-content__image" style="width:70%;text-align:right;">
+              <div class="default-split-content__image" style="width 70%;text-align:right;">
                 <p class="tl-Technology-p3 colorBlue" style="width: min(540px, 100%);">
                   Step 2: Condition
                 </p>
@@ -319,10 +327,10 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             </p>
 
             <img
-                src="/media/7f0be2b9-ba10-45dd-afa75a2588ffa5f5.png"
+                src="/media/7f0be2b9-ba10-45dd-afa7-5a2588ffa5f5.png"
                 alt="Team Member"
                 loading="lazy"
-                width="500"
+                width="50%"
                 class="img-overflow-bottom-right"
               />
           </div>
@@ -351,8 +359,8 @@ import BookANAppointment from '../components/BookANAppointment.vue'
               <div class="blue-line" style="width:60px;margin-left:0px;margin-top:clamp(5px, 0.8vw, 10px);"></div>
               <p class="tl-RemovalPhilosophy-p5 colorBlue">Smart. Simple. Predictable.</p>
 
-              <p class="tl-RemovalPhilosophy-p6 colorGray">Removes guesswork, </p>
-              <p class="tl-RemovalPhilosophy-p7 colorGray">ensures faster, more consistent treatments.</p>
+              <p class="tl-RemovalPhilosophy-p6 colorGray">Removes guesswork, ensures faster, more consistent treatments.</p>
+              <p class="tl-RemovalPhilosophy-p7 colorGray"></p>
             </div>
           </div>
 
@@ -445,7 +453,6 @@ import BookANAppointment from '../components/BookANAppointment.vue'
     <BeforeAfterModule/>
     <FindUs />
     <FAQ />
-    <BookANAppointment />
   </main>
 </template>
 

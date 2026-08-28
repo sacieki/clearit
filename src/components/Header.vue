@@ -2,6 +2,7 @@
   <div class="fixed top-0 left-0 right-0 z-50">
 
     <!-- TOP BAR -->
+    <!--
     <div
       class="hidden sm:flex flex-wrap sm:flex-nowrap gap-y-3 gap-x-4 items-center justify-between bg-[#1a1a1a] text-white py-3 px-4 sm:px-8 text-sm font-medium tracking-wide"
     >
@@ -60,11 +61,11 @@
         </svg>
       </div>
     </div>
-
+    -->
 
     <!-- NAVIGATION -->
     <nav
-      class="bg-white flex items-center justify-between pb-6 px-4 pt-6 lg:pb-12 sm:px-8 relative z-50"
+      class="bg-white lg:hidden flex items-center justify-between pb-6 px-4 pt-6 lg:pb-12 sm:px-8 relative z-50"
     >
 
       <!-- MENU BUTTON -->

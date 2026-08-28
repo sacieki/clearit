@@ -2,12 +2,19 @@
 import BeforeAfterModule from '../components/BeforeAfterModule.vue'
 import FindUs from '../components/FindUs.vue'
 import FAQ from '../components/FAQs.vue'
-import BookANAppointment from '../components/BookANAppointment.vue'
+import ShortContact from '../components/ShortContact.vue'
+import Navigator_desktop from '../components/Navigator_desktop.vue'
 </script>
 
 <template>
   <main class="default-page">
-    <section class="default-section Hero">
+
+    <ShortContact />
+
+    <div style="padding-top: clamp(30px, 4.5vw, 60px);">
+      <Navigator_desktop  />
+    </div>
+    <section class="default-section Hero" style="margin-top: clamp(-60px, -8vw, -120px);">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius pj-Hero-content BG-GradientGrayToWhite">
           <div class="pj-Hero-Topics">
@@ -22,7 +29,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             </div>
 
             <div class="pj-Hero-Topics__content">
-              <p class="pj-hero-p1 colorBlack">
+              <p class="pj-hero-p1 colorBlack underline-blue">
                 YOUR SKIN.<br />
                 YOUR CONFIDENCE.<br />
                 OUR PRIORITY.
@@ -33,7 +40,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             Your Tattoo Removal Journey
           </p>
 
-          <div class="blue-line"></div>
+          <div class="blue-line" style="width:99%;"></div>
 
           <p class="pj-hero-p3 colorGray mx-auto">
             A smarter, client first guide to how laser tattoo removal works, how to prepare, and what to expect at every step.
@@ -48,7 +55,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
       </div>
     </section>
 
-    <section class="default-section OurVision">
+    <section class="default-section OurVision" style="margin-top: clamp(-30px, -4.5vw, -60px);">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius pj-OurVision-content bg-image fade-top">
           <div class="pj-OurVision-Topics mx-auto">
@@ -87,7 +94,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
                 Over time, your body clears the ink fragments, revealing clearer skin with each step forward.
               </p>
 
-              <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Schedule Your FREE Consultation</a>
+              <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style="padding: 0 160px 0 160px;font-size: clamp(12px, 1.4vw, 14px);margin-bottom: clamp(60px, 8vw, 100px);">Schedule Your FREE Consultation</a>
             </div>
           </div>
         </div>
@@ -98,7 +105,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius pj-GetStarted-content ">
           <div class="pj-GetStarted-Topics mx-auto">
-              <p class="pj-GetStarted-p1 colorGray mx-auto">
+              <p class="pj-GetStarted-p1 colorBlack mx-auto">
                 <span class="colorBlue">Get Started</span> in 3 simple steps...
               </p>
 
@@ -198,9 +205,9 @@ import BookANAppointment from '../components/BookANAppointment.vue'
       </div>
   </section>
 
-  <section class="default-section TheCLEARiTDifference">
+  <section class="default-section TheCLEARiTDifference" style="margin-top: clamp(-60px, -8vw, -120px);">
     <div class="default-container  ">
-      <div class="default-content-width default-content-border-radius pj-TheCLEARiTDifference-content bg-image fade-bottom">
+      <div class="default-content-width default-content-border-radius pj-TheCLEARiTDifference-content bg-image">
         <div class="pj-TheCLEARiTDifference-Topics mx-auto">
             <p class="pj-TheCLEARiTDifference-p1 colorBlue">
               The CLEARiT Difference
@@ -226,29 +233,9 @@ CLEARiT exists to eliminate the margin of error, using the power of AI to bring 
               src="/media/Clearit_Home_img01.png"
               alt=""
               loading="lazy"
-              
+              class="img-overflow-bottom"
+              style="transform: translateY(clamp(120px, 20vw, 300px));"
             />
-
-            <p class="pj-TheCLEARiTDifference-p4 mx-auto colorBlue">
-              Engineered Around Skin Behavior 
-            </p>
-
-            <p class="pj-TheCLEARiTDifference-p5 colorGray mx-auto">
-              CLEARiT is not a laser, it is what makes the laser work smarter.
-            </p>
-
-            <p class="pj-TheCLEARiTDifference-p6 colorGray mx-auto">
-              We focus on how skin actually behaves under treatment, optimizing every session so lasers can perform closer to their full potential. 
-            </p>
-
-            <div class="pj-TheCLEARiTDifference-ul mx-auto">
-              <ul >
-                <li>Surface clarity for consistent laser absorption</li>
-                <li>Controlled, repeatable session outcomes </li>
-                <li>Protection and support for treatment-day skin biology</li>
-                <li>Safer, more predictable removal journeys</li>
-              </ul>
-            </div>
             
               
         </div>
@@ -256,10 +243,46 @@ CLEARiT exists to eliminate the margin of error, using the power of AI to bring 
     </div>
   </section>
 
+  <section class="default-section Engineered" style="margin-top: clamp(80px, 13vw, 200px);">
+    <div class="default-container  ">
+      <div class="default-content-width default-content-border-radius pj-Engineered-content ">
+        <div class="pj-Engineered-Topics mx-auto">
+            
+
+            <p class="pj-Engineered-p1 mx-auto colorBlue">
+              Engineered Around Skin Behavior 
+            </p>
+
+            <p class="pj-Engineered-p2 colorGray mx-auto">
+              CLEARiT is not a laser, it is what makes the laser work smarter.
+            </p>
+
+            <p class="pj-Engineered-p3 colorGray mx-auto">
+              We focus on how skin actually behaves under treatment, optimizing every session so lasers can perform closer to their full potential. 
+            </p>
+
+            <div class="pj-TheCLEARiTDifference-ul mx-auto colorGray">
+              <ul >
+                <li>Surface clarity for consistent laser absorption</li>
+                <li>Controlled, repeatable session outcomes </li>
+                <li>Protection and support for treatment-day skin biology</li>
+                <li>Safer, more predictable removal journeys</li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
     <BeforeAfterModule/>
     <FindUs />
     <FAQ />
-    <BookANAppointment />
   </main>
 </template>
 

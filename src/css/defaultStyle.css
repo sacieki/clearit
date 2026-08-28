@@ -81,8 +81,8 @@
   place-items: center;
   min-width: 0;
   min-height: 260px;
-  border: var(--tl-line);
-  border-radius: var(--tl-radius);
+  /*border: var(--tl-line);*/
+  /*border-radius: var(--tl-radius);*/
   background: #f4f4f4;
   color: #999;
   font-size: 10px;
@@ -668,3 +668,38 @@ a.BookConsultationBtn {
 /* ================================================================================
    End Grid System
 ================================================================================ */
+
+a.solid-button {
+    padding: 0 120px 0 120px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(18px, 2.8vw, 28px);
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.underline-blue::after {
+  content: "";
+  display: block;
+
+  width: 10%;
+  height: 2px;
+
+  margin-top: 8px;
+
+  background: #29BCFB;
+}
+.underline-gray-fullwidth::after {
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  margin-top: 8px;
+
+  /*background: var(--home-gray);*/
+  background: #d9d9d9;
+}

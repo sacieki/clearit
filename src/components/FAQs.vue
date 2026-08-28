@@ -1,25 +1,31 @@
+```vue
 <template>
 
   <div class="faq-page">
 
+    <!-- ================================= -->
     <!-- PAGE HEADER -->
+    <!-- ================================= -->
+
     <section class="faq-header">
 
       <h1>
         Frequently Asked Questions
       </h1>
+
       <!--
       <p>
         Find answers to common questions about CLEARiT,
         consultations, appointments, pricing, and treatment.
       </p>
       -->
+
     </section>
 
 
-    <!-- ============================= -->
+    <!-- ================================= -->
     <!-- DESKTOP TABS -->
-    <!-- ============================= -->
+    <!-- ================================= -->
 
     <div class="faq-tabs-wrapper">
 
@@ -28,6 +34,7 @@
         <button
           v-for="tab in faqSections"
           :key="tab.id"
+          ref="faqTabs"
           type="button"
           class="faq-tab"
           :class="{ active: activeTab === tab.id }"
@@ -38,24 +45,20 @@
 
       </div>
 
-
       <!-- TAB LINE -->
-
       <div class="faq-tab-line">
-
         <div
           class="faq-tab-indicator"
           :style="indicatorStyle"
         ></div>
-
       </div>
 
     </div>
 
 
-    <!-- ============================= -->
+    <!-- ================================= -->
     <!-- DESKTOP FAQ -->
-    <!-- ============================= -->
+    <!-- ================================= -->
 
     <section class="faq-desktop">
 
@@ -70,9 +73,9 @@
     </section>
 
 
-    <!-- ============================= -->
+    <!-- ================================= -->
     <!-- MOBILE FAQ -->
-    <!-- ============================= -->
+    <!-- ================================= -->
 
     <section class="faq-mobile">
 
@@ -82,14 +85,9 @@
         class="mobile-faq-section"
       >
 
-        <!-- CATEGORY -->
-
         <h2>
           {{ section.title }}
         </h2>
-
-
-        <!-- QUESTIONS -->
 
         <FaqAccordion
           :items="section.items"
@@ -99,10 +97,21 @@
 
     </section>
 
-    <p class="mx-auto" style="width:250px;transform:translateY(80px);text-align:center;color:#5C5A5A;">
+
+    <!-- ================================= -->
+    <!-- CONTACT -->
+    <!-- ================================= -->
+
+    <p class="faq-contact">
+
       Still have questions?
-      <a href="/contact-us" class="" style="color:#5C5A5A;">Contact Us</a>
+
+      <router-link to="/contact-us">
+        Contact Us
+      </router-link>
+
     </p>
+
   </div>
 
 </template>
@@ -110,6 +119,7 @@
 
 <script>
 
+import { nextTick } from "vue";
 import FaqAccordion from "@/components/FaqAccordion.vue";
 
 export default {
@@ -126,6 +136,10 @@ export default {
     return {
 
       activeTab: "about",
+
+      indicatorLeft: 0,
+
+      indicatorWidth: 0,
 
 
       faqSections: [
@@ -406,6 +420,10 @@ export default {
 
   computed: {
 
+    /* ========================= */
+    /* CURRENT SECTION */
+    /* ========================= */
+
     currentSection() {
 
       return this.faqSections.find(
@@ -415,21 +433,17 @@ export default {
     },
 
 
+    /* ========================= */
+    /* INDICATOR */
+    /* ========================= */
+
     indicatorStyle() {
-
-      const index =
-        this.faqSections.findIndex(
-          section => section.id === this.activeTab
-        );
-
-      const width =
-        100 / this.faqSections.length;
 
       return {
 
-        width: `${width}%`,
+        width: `${this.indicatorWidth}px`,
 
-        left: `${index * width}%`
+        transform: `translateX(${this.indicatorLeft}px)`
 
       };
 
@@ -438,11 +452,83 @@ export default {
   },
 
 
+  mounted() {
+
+    this.updateIndicator();
+
+    window.addEventListener(
+      "resize",
+      this.updateIndicator
+    );
+
+  },
+
+
+  beforeUnmount() {
+
+    window.removeEventListener(
+      "resize",
+      this.updateIndicator
+    );
+
+  },
+
+
   methods: {
 
-    selectTab(id) {
+    /* ========================= */
+    /* SELECT TAB */
+    /* ========================= */
+
+    async selectTab(id) {
 
       this.activeTab = id;
+
+      await nextTick();
+
+      this.updateIndicator();
+
+    },
+
+
+    /* ========================= */
+    /* UPDATE INDICATOR */
+    /* ========================= */
+
+    updateIndicator() {
+
+      const tabs = this.$refs.faqTabs;
+
+      if (!tabs) {
+        return;
+      }
+
+
+      const activeIndex =
+        this.faqSections.findIndex(
+          section => section.id === this.activeTab
+        );
+
+
+      const activeTab = tabs[activeIndex];
+
+      if (!activeTab) {
+        return;
+      }
+
+      const tabsContainer = activeTab.parentElement;
+
+      const tabRect = activeTab.getBoundingClientRect();
+
+      const containerRect = tabsContainer.getBoundingClientRect();
+
+
+      this.indicatorWidth =
+        activeTab.offsetWidth;
+
+
+      this.indicatorLeft =
+        tabRect.left - containerRect.left;
 
     }
 
@@ -455,11 +541,17 @@ export default {
 
 <style scoped>
 
+/* ================================= */
+/* PAGE */
+/* ================================= */
+
 .faq-page {
+
   padding-top: 180px;
   padding-bottom: 100px;
 
   background: #fff;
+
 }
 
 
@@ -468,6 +560,7 @@ export default {
 /* ================================= */
 
 .faq-header {
+
   max-width: 830px;
 
   margin: 0 auto 60px;
@@ -475,6 +568,7 @@ export default {
   padding: 0 20px;
 
   text-align: center;
+
 }
 
 
@@ -484,8 +578,11 @@ export default {
 
   color: #1f1f1f;
 
-  font-size: 42px;
+  font-size: clamp(32px, 5vw, 42px);
+
   font-weight: 400;
+
+  line-height: 1.4;
 
   letter-spacing: 0.02em;
 
@@ -496,9 +593,9 @@ export default {
 
   color: #989898;
 
-  font-size: 17px;
+  font-size: clamp(14px, 1.5vw, 17px);
 
-  line-height: 1.7;
+  line-height: 1.4;
 
 }
 
@@ -526,6 +623,8 @@ export default {
 
   gap: 32px;
 
+  width: 100%;
+
 }
 
 
@@ -545,9 +644,13 @@ export default {
 
   color: #5c5a5a;
 
-  font-size: 17px;
+  font-family: Figtree, sans-serif;
+
+  font-size: clamp(14px, 1.5vw, 17px);
 
   font-weight: 400;
+
+  line-height: 1.4;
 
   letter-spacing: 0.025em;
 
@@ -570,9 +673,15 @@ export default {
 }
 
 
+/* ================================= */
+/* TAB LINE */
+/* ================================= */
+
 .faq-tab-line {
 
   position: relative;
+
+  width: 100%;
 
   height: 3px;
 
@@ -587,7 +696,9 @@ export default {
 
   position: absolute;
 
-  top: 0;
+  top: -2px;
+
+  left: 0;
 
   height: 3px;
 
@@ -595,8 +706,12 @@ export default {
 
   background: #1f1f1f;
 
+  pointer-events: none;
+
   transition:
+
     left 0.35s ease,
+
     width 0.35s ease;
 
 }
@@ -620,6 +735,41 @@ export default {
   margin: 0 auto;
 
   padding: 0 20px;
+
+}
+
+
+/* ================================= */
+/* CONTACT */
+/* ================================= */
+
+.faq-contact {
+
+  width: 250px;
+
+  margin: 80px auto 0;
+
+  text-align: center;
+
+  color: #5c5a5a;
+
+}
+
+
+.faq-contact a {
+
+  color: #5c5a5a;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+
+}
+
+
+.faq-contact a:hover {
+
+  color: #29bcfb;
 
 }
 
@@ -655,7 +805,7 @@ export default {
 
   .faq-header h1 {
 
-    font-size: 30px;
+    font-size: clamp(24px, 7vw, 30px);
 
   }
 
@@ -707,11 +857,20 @@ export default {
 
     color: #1f1f1f;
 
-    font-size: 24px;
+    font-size: clamp(20px, 5vw, 24px);
 
     font-weight: 400;
 
+    line-height: 1.4;
+
     letter-spacing: 0.02em;
+
+  }
+
+
+  .faq-contact {
+
+    margin-top: 40px;
 
   }
 

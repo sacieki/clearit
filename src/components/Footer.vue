@@ -1,106 +1,196 @@
 <template>
-  <footer class="site-footer">
-    <!-- Logo -->
-    <div class="footer-brand">
-      <div class="footer-logo">
-        CLEAR<span style="color:#29bcfb;">i</span>T
-      </div>
+  <footer class="site-footer default-page">
 
-      <div class="footer-tagline">
-        TATTOO REMOVAL REDEFINED
-      </div>
-    </div>
+    <section class="default-section Footer">
+      <div class="default-container  ">
+        <div class="default-content-width default-content-border-radius ft-Footer-content ">
+          <div class="ft-Footer-Topics mx-auto BG-GradientWhiteToGray default-content-border-radius">
 
-    <!-- Divider -->
-    <div class="footer-divider"></div>
+            <div class="flex flex-col gap-5">
+              <router-link
+                v-for="item in navItems"
+                :key="item.to"
+                :to="item.to"
+                :aria-label="item.label"
+              >
+                {{ item.label }}
+              </router-link>
+            </div>
 
-    <!-- Footer Content -->
-    <div class="footer-content">
+            <div style="width:50%;margin-right:clamp(60px, 8vw, 120px);">
 
-      <!-- About -->
-      <div class="footer-column">
-        <h3>About CLEARiT</h3>
+              <div class="footer-newsletter underline-gray-fullwidth">
+                <h2>Partner with CLEARiT</h2>
 
-        <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/find-us">Locations</router-link>
-          <router-link to="/brand-overview">Brand Overview</router-link>
-          <router-link to="/product">Product</router-link>
-          <router-link to="/team">Team</router-link>
-        </nav>
+                <form class="newsletter-form" style="display:flex" @submit.prevent>
+                  <input
+                    type="email"
+                    placeholder="Your email here"
+                    aria-label="Your email"
+                  />
 
-        <div class="footer-social">
-          <h3>Follow us</h3>
+                  <button type="submit" aria-label="Subscribe" style="align-items: end;margin-left:auto;">
+                    →
+                  </button>
+                </form>
+              </div>
 
-          <div class="social-links">
-            <a href="#" aria-label="Instagram">
-              <span class="social-icon">◎</span>
-            </a>
+              <div class="ft-contact-zone">
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">E-MAIL ADDRESS</p>
+                  <p class="contact-data colorBlue">info@yclearit.com</p>
+                </div>
 
-            <a href="#" aria-label="YouTube">
-              <span class="social-icon youtube">▶</span>
-            </a>
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">PHONE NUMBER</p>
+                  <p class="contact-data colorBlue">(+1) 877-55-CLEAR (25327)</p>
+                </div>
 
-            <a href="#" aria-label="TikTok">
-              <span class="social-icon">♪</span>
-            </a>
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">PHONE NUMBER</p>
+                  <p class="contact-data colorBlue">(+1) 877-55-CLEAR (25327)</p>
+                </div>
+              </div>
+
+              <div class="ft-social-zone">
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">INSTAGRAM</p>
+                </div>
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">LINKEDIN</p>
+                </div>
+                <div class="underline-gray-fullwidth">
+                  <p class="contact-topic colorGray">YOUTUBE</p>
+                </div>
+              </div>
+
+              
+            </div>
+
+            <img
+                alt="Logo"
+                loading="lazy"
+                height="auto"
+                width="50%"
+                decoding="async"
+                class=" image-container__bg img-overflow-bottom"
+                style="color: transparent"
+                src="/media/7f0be2b9-ba10-45dd-afa7-5a2588ffa5f5.png"
+              />
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Learn -->
-      <div class="footer-column">
-        <h3>Learn</h3>
-
-        <nav>
-          <router-link to="/blog">Blog</router-link>
-          <router-link to="/press-media">Press &amp; Media</router-link>
-          <router-link to="/faqs">FAQs</router-link>
-        </nav>
-      </div>
-
-      <!-- Contact -->
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="footer-newsletter">
-        <h2>Partner with CLEARiT</h2>
-
-        <form class="newsletter-form" @submit.prevent>
-          <input
-            type="email"
-            placeholder="Your email here"
-            aria-label="Your email"
-          />
-
-          <button type="submit" aria-label="Subscribe">
-            →
-          </button>
-        </form>
-      </div>
-
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>
-        Copyright 2026 ©
-        <strong>Clear Intradermal Technologies, Inc</strong>
-        <span class="copyright-divider">|</span>
-        All rights reserved
-      </p>
-    </div>
   </footer>
 </template>
 
 <script>
     export default {
-    name: "SiteFooter",
+      name: "SiteFooter",
+      data() {
+        return {
+          navItems: [
+            { label: "Home", to: "/" },
+            { label: "Locations", to: "/locations" },
+            { label: "Brand Overview", to: "/brand-overview" },
+            { label: "Product", to: "/techno-lab" },
+            { label: "Team", to: "/brand-overview#team" },
+            { label: "Patient Journey", to: "/patient-journey" },
+            { label: "FAQs", to: "/faqs" },
+            { label: "Contact", to: "/contact-us" }
+          ]
+        };
+      }
     };
 </script>
 <style scoped>
+@import "../css/defaultStyle.css";
+
+div:has(> .image-container__bg) {
+  overflow: visible;
+}
+.image-container__bg {
+  position: absolute;
+  bottom: -1%;
+  left: 0%;
+
+  width: 40%;
+  height: auto;
+
+  
+  z-index: 0;
+  pointer-events: none;
+
+  transform: translateY(clamp(30px, 4.5vw, 60px));
+}
+
+.image-container > *:not(.image-container__bg) {
+  position: relative;
+  z-index: 1;
+}
+
+.ft-Footer-Topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ft-contact-zone {
+  margin-top: clamp(40px, 6vw, 80px);
+}
+
+.ft-contact-zone div{
+  margin-top: clamp(20px, 3vw, 40px);
+}
+
+.ft-social-zone {
+  margin-top: clamp(40px, 6vw, 80px);
+  padding-bottom: clamp(80px, 12vw, 160px);
+}
+
+.ft-social-zone div{
+  margin-top: clamp(20px, 3vw, 40px);
+}
+
+.ft-Footer-Topics div a {
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  padding-left: clamp(5px, 0.8vw, 10px);
+}
+
+.footer-newsletter h2 {
+  font-family: Figtree, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(28px, 4vw, 39px);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.contact-topic {
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.contact-data {
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.4;
+  letter-spacing: 25%;
+}
+
+/************************************************************************* */
 .site-footer {
   width: 100%;
   background: #fff;
@@ -108,250 +198,6 @@
   color: #202020;
 }
 
-/* =========================
-   Brand
-========================= */
-
-.footer-brand {
-  text-align: center;
-  padding-bottom: 75px;
-}
-
-.footer-logo {
-  font-family: 'Lato', sans-serif;
-  font-size: clamp(48px, 5vw, 76px);
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 1;
-}
-
-.footer-logo span {
-  position: relative;
-  color: #202020;
-}
-
-.footer-tagline {
-  margin-top: 14px;
-
-  font-family: 'Figtree', sans-serif;
-  font-size: clamp(12px, 1.2vw, 18px);
-  font-weight: 400;
-  letter-spacing: 0.25em;
-}
-
-/* =========================
-   Divider
-========================= */
-
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  background: #29bcfb;
-}
-
-/* =========================
-   Main Content
-========================= */
-
-.footer-content {
-  display: grid;
-  grid-template-columns:
-    minmax(170px, 1fr)
-    minmax(150px, 0.9fr)
-    minmax(150px, 0.9fr)
-    minmax(350px, 2fr);
-
-  gap: 40px;
-
-  padding-top: 80px;
-}
-
-/* =========================
-   Columns
-========================= */
-
-.footer-column h3,
-.footer-newsletter h2 {
-  margin: 0;
-
-  font-family: 'Figtree', sans-serif;
-  font-weight: 400;
-}
-
-.footer-column h3 {
-  font-size: clamp(18px, 1.6vw, 24px);
-  line-height: 1.3;
-}
-
-.footer-column nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  margin-top: 45px;
-}
-
-.footer-column nav a {
-  color: #666;
-  text-decoration: none;
-
-  font-family: 'Figtree', sans-serif;
-  font-size: clamp(14px, 1.2vw, 18px);
-  font-weight: 400;
-  letter-spacing: 0.08em;
-
-  transition: color 0.2s ease;
-}
-
-.footer-column nav a:hover {
-  color: #29bcfb;
-}
-
-/* =========================
-   Social
-========================= */
-
-.footer-social {
-  margin-top: 48px;
-}
-
-.footer-social h3 {
-  margin-bottom: 18px;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.social-links a {
-  color: #606060;
-  text-decoration: none;
-}
-
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 42px;
-  height: 42px;
-
-  font-family: Arial, sans-serif;
-  font-size: 34px;
-  font-weight: 600;
-
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.social-icon:hover {
-  color: #29bcfb;
-  transform: translateY(-3px);
-}
-
-.social-icon.youtube {
-  font-size: 24px;
-}
-
-/* =========================
-   Newsletter
-========================= */
-
-.footer-newsletter {
-  padding-left: 20px;
-}
-
-.footer-newsletter h2 {
-  color: #5d5d5d;
-
-  font-size: clamp(28px, 3vw, 42px);
-  line-height: 1.2;
-}
-
-.newsletter-form {
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-
-  margin-top: 30px;
-  border-bottom: 1px solid #888;
-}
-
-.newsletter-form input {
-  flex: 1;
-
-  min-width: 0;
-
-  border: 0;
-  outline: none;
-  background: transparent;
-
-  padding: 12px 0;
-
-  font-family: 'Figtree', sans-serif;
-  font-size: clamp(18px, 2vw, 28px);
-  font-weight: 400;
-  color: #333;
-}
-
-.newsletter-form input::placeholder {
-  color: #d7d7d7;
-}
-
-.newsletter-form button {
-  flex-shrink: 0;
-
-  border: 0;
-  background: transparent;
-
-  padding: 0 0 5px 20px;
-
-  color: #29bcfb;
-
-  font-family: Arial, sans-serif;
-  font-size: 48px;
-  font-weight: 300;
-  line-height: 1;
-
-  cursor: pointer;
-
-  transition: transform 0.2s ease;
-}
-
-.newsletter-form button:hover {
-  transform: translateX(6px);
-}
-
-/* =========================
-   Bottom
-========================= */
-
-.footer-bottom {
-  margin-top: 70px;
-}
-
-.footer-bottom p {
-  margin: 0;
-
-  color: #666;
-
-  font-family: 'Figtree', sans-serif;
-  font-size: clamp(13px, 1.3vw, 18px);
-  font-weight: 400;
-  letter-spacing: 0.06em;
-}
-
-.footer-bottom strong {
-  font-weight: 700;
-}
-
-.copyright-divider {
-  margin: 0 8px;
-}
 
 /* =========================
    Tablet

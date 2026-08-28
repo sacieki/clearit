@@ -2,33 +2,85 @@
 import BeforeAfterModule from '../components/BeforeAfterModule.vue'
 import FindUs from '../components/FindUs.vue'
 import FAQ from '../components/FAQs.vue'
-import BookANAppointment from '../components/BookANAppointment.vue'
+import ShortContact from '../components/ShortContact.vue'
+import Navigator_desktop from '../components/Navigator_desktop.vue'
+
+
 </script>
 
 <template>
-  <main class="home-page">
-    <!-- Hero -->
-    <section class="hero-section">
-      <div class="home-container hero-inner pt-5">
-        <div class="hero-visual media-placeholder hero-products">
-          <img
-            alt="Logo"
-            width="auto"
-            loading="lazy"
-            decoding="async"
-            class="hero-visual-img"
-            style=""
-            src="/media/7f0be2b9-ba10-45dd-afa75a2588ffa5f5.png"
-          />
+  <main class="home-page ">
+    
+    <ShortContact />
+    <!-- Hero --><!--
+      <div class="hero ">
         
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source
+            src="/media/8972fd41-39dc-49f3-bc80-8c81d430fe7e.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <img
+          src="/media/d1d81a7ea8f071f0bcbc9ec4233a30b171192312.gif"
+          alt="Team Member"
+          loading="lazy"
+          width="100%"
+          style=
+          class=""
+        />
+      -->
+       
+      <section class="text-overlap TheCLEARiTDifference ">
+        <div class="default-containerBK ho-contrainer-banner text-overlap__top" style="position: relative;padding-left:40px;">
+          <div class=" ho-hero-banner ">
+            <div class="ho-hero-Topics mx-auto">
+              <div style="width:60%">
+                <p class="ho-hero-Topics-p1">
+                  TATTOO REMOVAL
+                </p>
+                <p class="ho-hero-Topics-p2">
+                  REDEFINED
+                </p>
+              </div>
+              <div class="splitRgiht" style="">
+                <div class="InvestorText">
+                  Investor
+                </div>
 
-          <div class="hero-copy">
-            <div class="eyebrow-title">
-              <span>TATTOO REMOVAL</span>
-              <strong>REDEFINED</strong>
+                <div class="contact-bar">
+                  <span class="contact-bar__text">
+                    CONTACT US
+                  </span>
+
+                  <span class="contact-bar__arrow">
+                    →
+                  </span>
+                </div>
+
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+    <div class="blue-line" style="width:95%;"></div>
+    <Navigator_desktop />
 
-            <p class="hero-lead mx-auto">
+    <section class="hero-section ">
+      <div class="default-container  home-container hero-inner pt-5">
+        <div class="default-content-width hero-visual media-placeholder hero-products">
+          
+          
+          <div class="hero-copy">
+
+            <p class="hero-lead mx-auto colorBlue">
               CLEARiT is a science-driven <br />
               skin preparation system <br />
               designed to optimize <br />
@@ -37,8 +89,8 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             </p>
 
             <p class="hero-body mx-auto">
-              By conditioning and priming the skin, <br />
-              CLEARiT helps the laser target ink more effectively, enabling safer, <br />
+              By conditioning and priming the skin,<br />
+              CLEARiT helps the laser target ink more effectively, enabling safer,
               faster, and more predictable tattoo-removal outcomes.
             </p>
 
@@ -55,7 +107,7 @@ import BookANAppointment from '../components/BookANAppointment.vue'
         </div>
       </div>
     </section>
-
+    
     <!-- Science / positioning -->
     <section class="science-section">
       <div class="home-container science-grid">
@@ -84,7 +136,10 @@ import BookANAppointment from '../components/BookANAppointment.vue'
 
           <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">Removal, guided by science, not guesswork.</p>
 
-          <a href="#session" class="outline-button button-radius">LEARN MORE</a>
+          <router-link to="/welcome-book" class="outline-button ">
+              LEARN MORE
+          </router-link>
+
         </div>
       </div>
 
@@ -96,7 +151,9 @@ import BookANAppointment from '../components/BookANAppointment.vue'
 
         <div class="blue-line"></div>
 
-        <a href="#contact" class="solid-button">Book Consultation</a>
+        <router-link to="/contact-us" class="solid-button">
+            BOOK CONSULTATION
+        </router-link>
 
         <img
             alt="Logo"
@@ -127,7 +184,10 @@ import BookANAppointment from '../components/BookANAppointment.vue'
             Each treatment begins with a professional assessment of your tattoo including pigment type, density, depth, and placement, so your session settings are performed with intention, not approximation.
           </p>
 
-          <a href="#contact" class="outline-button button-radius">BOOK CONSULTATION</a>
+          <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);">
+              BOOK CONSULTATION
+          </router-link>
+
         </div>
 
         <div class="preparation-copy mx-auto">
@@ -160,7 +220,6 @@ import BookANAppointment from '../components/BookANAppointment.vue'
     <BeforeAfterModule />
     <FindUs />
     <FAQ />
-    <BookANAppointment />
 
   </main>
 </template>

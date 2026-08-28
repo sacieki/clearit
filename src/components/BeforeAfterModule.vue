@@ -1,12 +1,12 @@
 <template>
   <main class="default-page">
-
-    <section class="default-section BeforeAfterModule">
+    
+    <section class=" BeforeAfterModule">
 
       <div class="default-container">
 
         <div
-          class="default-content-width BG-GradientWhiteToGray bm-BeforeAfterModule-content"
+          class="default-content-width bm-BeforeAfterModule-content"
         >
 
           <div class="bm-BeforeAfterModule-Topics mx-auto">
@@ -39,9 +39,13 @@
 
               <div class="default-split-content__content bm-before-after-content">
 
-                <p class="bm-BeforeAfterModule-p1 colorGray">
+                <p class="bm-BeforeAfterModule-p1 colorBlack">
                   REAL PROGRESS. REAL PEOPLE.
                 </p>
+
+                <router-link to="/before-after" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);width:294px;min-height: 36px;font-size: clamp(16px, 2vw, 19px);padding:0;">
+                    SEE MORE >
+                </router-link>
 
               </div>
 
@@ -142,7 +146,7 @@ export default {
 .bm-image-slider {
   position: relative;
 
-  width: 60%;
+  width: 50%;
 
   flex-shrink: 0;
 
@@ -199,7 +203,6 @@ export default {
 .bm-before-after-content {
   width: 40%;
 
-  display: flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -210,7 +213,7 @@ export default {
 ======================================== */
 
 .bm-BeforeAfterModule-p1 {
-  width: min(540px, 100%);
+  width: min(650px, 100%);
 
   margin: 0;
 
@@ -225,10 +228,21 @@ export default {
     2.4vw,
     29px
   );
-
-  line-height: 1.1;
+  line-height: 2;
 
   letter-spacing: 10%;
+}
+
+.bm-BeforeAfterModule-p1::after {
+  content: "";
+  display: block;
+
+  width: 10%;
+  height: 2px;
+
+  margin-top: 8px;
+
+  background: #29BCFB;
 }
 
 
