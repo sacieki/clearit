@@ -17,7 +17,7 @@
 }
 
 .tl-Hero-Topics__image {
-  width: 50%;
+  width: 40%;
   flex-shrink: 0;
   overflow: visible;
 }
@@ -29,7 +29,7 @@
 }
 
 .tl-Hero-Topics__content {
-  width: 50%;
+  width: 60%;
 }
 
 .tl-hero-p1 {
