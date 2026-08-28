@@ -391,29 +391,20 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             </div>
 
             <div class="default-split-content default-content-border-radius" style="padding:0px clamp(10px, 1.5vw, 20px)">
-              <div class="default-split-content__image" style="width:50%">
+              <div class="default-split-content__image small-full">
                 <p class="tl-RemovalPhilosophy-p11 colorGray">
                   By analyzing ink colors, the CDA matches pigments to specific laser wavelengths. The app then analyzes the depth of the pigment to deliver a data-driven treatment plan. The CDA will track progress in real-time, helping to achieve better results through scientific accuracy. (Launching late 2026). 
                 </p>
               </div>
 
-              <div class="default-split-content__content" style="width:25%;">
+              <div class="default-split-content__content small-full">
                 <img
-                  alt="Logo"
-                  loading="lazy"
-                  decoding="async"
-                  class=""
-                  src="/media/Screenshot02.png"
-                />
-              </div>
-              <div class="default-split-content__content" style="width:25%;">
-                <img
-                  alt="Logo"
-                  loading="lazy"
-                  decoding="async"
-                  class=""
-                  src="/media/Screenshot03.png"
-                />
+                    alt="Logo"
+                    loading="lazy"
+                    decoding="async"
+                    class=""
+                    src="/media/img-p-1.png"
+                  />
               </div>
             </div>
 

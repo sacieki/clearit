@@ -703,3 +703,18 @@ a.solid-button {
   /*background: var(--home-gray);*/
   background: #d9d9d9;
 }
+
+@media (max-width: 767px) {
+  .default-split-content {
+    flex-direction: column;
+  }
+
+  .small-full {
+    width: 100% !important;
+  }
+
+  .small-full img {
+    width: 100%;
+    height: auto;
+  }
+}
