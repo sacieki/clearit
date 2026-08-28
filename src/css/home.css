@@ -93,10 +93,10 @@
   letter-spacing: .08em;
   text-transform: uppercase;
 }
-
+/*
 .hero-section {
   padding: 45px 0 105px;
-}
+}*/
 
 .hero-inner {
   display: grid;
@@ -932,10 +932,10 @@
   .section-pad {
     padding: 60px 0;
   }
-
+/*
   .hero-section {
     padding-top: 20px;
-  }
+  }*/
 
   .hero-inner {
     gap: 28px;
