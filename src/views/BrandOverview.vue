@@ -125,8 +125,8 @@ It is a calculated process.</p>
           <div class="bo-ClearitDifferent-Topics mx-auto">
             <p class="bo-ClearitDifferent-p1 colorBlack">
               The CLEAR<span class="colorBlue">i</span>T 
-              <span class="colorBlue bo-ClearitDifferent-p1-Second">Difference</span>
             </p>
+            <p class="colorBlue bo-ClearitDifferent-p1-Second">Difference</p>
 
             <p class="bo-ClearitDifferent-p2 colorGray">
               We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
@@ -216,19 +216,19 @@ closer to their full potential.<br/>
           <div class="flex-column bo-OurVision-columnsplit colorGray">
             <div class="left">
               <p class="bo-OurVision-columnsplit-top">Safe</p>
-              <div class="" style="width: 33%;height: 1px;background: #29BCFB;"></div>
+              <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
               <p class="bo-OurVision-columnsplit-bottom">for patients</p>
             </div>
 
             <div class="center">
               <p class="bo-OurVision-columnsplit-top">Smarter</p>
-              <div class="" style="width: 33%;height: 1px;background: #29BCFB;"></div>
+              <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
               <p class="bo-OurVision-columnsplit-bottom">for practitioners</p>
             </div>
 
             <div class="right">
               <p class="bo-OurVision-columnsplit-top">Scalable</p>
-              <div class="" style="width: 33%;height: 1px;background: #29BCFB;"></div>
+              <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
               <p class="bo-OurVision-columnsplit-bottom">for the industry</p>
             </div>
           </div>

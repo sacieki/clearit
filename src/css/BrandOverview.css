@@ -1,8 +1,9 @@
 .default-media {
   position: relative;
   overflow: hidden;
-  height:450px;
+  height: 450px;
 }
+
 .hero-video {
   position: absolute;
   inset: 0;
@@ -14,34 +15,33 @@
 }
 
 .bo-hero-content {
-  padding-bottom:150px;
+  padding-bottom: 150px;
 }
 
 .bo-hero-Topics {
-  width: min(500px, 100%);  
+  width: min(500px, 100%);
   text-align: left;
   margin-top: clamp(30px, 4.5vw, 60px);
-  
 }
 
 .bo-hero-Topics span {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 64px;
-  line-height: 45px;
-  letter-spacing: -3.2px;
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 1.4;
+  letter-spacing: -0.05em;
 }
 
-.bo-hero-p1  {
-    font-family: "Figtree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(18px, 2.7vw, 26px);
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-    text-align: center;
-    padding-top: clamp(10px, 1.5vw, 20px);
+.bo-hero-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(18px, 2.7vw, 26px);
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: clamp(10px, 1.5vw, 20px);
 }
 
 .bo-hero-p2 {
@@ -49,7 +49,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: clamp(32px, 5vw, 48px);
-  line-height: 100px;
+  line-height: 1.4;
   letter-spacing: 0.1em;
   text-align: center;
 }
@@ -59,7 +59,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: clamp(28px, 4.5vw, 46px);
-  line-height: 100px;
+  line-height: 1.4;
   letter-spacing: 0.25em;
   text-align: center;
   margin-top: clamp(16px, 2vw, 32px);
@@ -70,8 +70,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(14px, 1.9vw, 17px);
-  line-height: 45px;
-  letter-spacing: 2.4px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   width: min(640px, 100%);
   padding-top: clamp(40px, 6vw, 80px);
@@ -81,9 +81,13 @@
 }
 
 .bo-hero-textdetail-p2 {
-  padding-top:0!important;
+  padding-top: 0 !important;
 }
 
+
+/* ========================================================= */
+/* WHY WE DEVELOP */
+/* ========================================================= */
 
 .bo-WhyWeDevelop-Topics {
   width: min(640px, 100%);
@@ -91,38 +95,49 @@
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   font-size: clamp(14px, 2vw, 18px);
-  line-height: 45px;
+  line-height: 1.4;
   letter-spacing: 0.1em;
   text-align: center;
   padding-top: 20px;
 }
 
 .bo-WhyWeDevelop-p1 {
-  
 }
+
 .bo-WhyWeDevelop-p2 {
-  margin-top:20px;
+  margin-top: 20px;
   width: min(440px, 100%);
 }
+
 .bo-WhyWeDevelop-p3 {
-  margin-top:20px;
+  margin-top: 20px;
   width: min(640px, 100%);
 }
+
+
+/* ========================================================= */
+/* CLEARiT DIFFERENT */
+/* ========================================================= */
+
 .bo-ClearitDifferent-Topics {
   padding: 0 clamp(32px, 7vw, 100px);
   padding-top: clamp(40px, 6vw, 80px);
 }
+
 .bo-ClearitDifferent-p1 {
   font-family: "Figtree", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: clamp(40px, 6.5vw, 100px);
-  line-height: 0.4;
-  letter-spacing: 5%;
-  width: min(740px, 100%);
+  line-height: 1.4;
+  letter-spacing: 0.05em;
 }
-.bo-ClearitDifferent-p1 span.bo-ClearitDifferent-p1-Second {
+
+.bo-ClearitDifferent-p1-Second {
   font-size: clamp(24px, 2.5vw, 38px);
+  line-height: 1.4;
+  letter-spacing: 0.15em;
+  margin-top: clamp(-30px, -4.5vw, -60px);
 }
 
 .bo-ClearitDifferent-p2 {
@@ -130,8 +145,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.5;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   width: min(680px, 100%);
   padding-top: clamp(60px, 8vw, 120px);
 }
@@ -141,8 +156,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.5;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   padding-top: clamp(60px, 8vw, 120px);
   width: min(680px, 100%);
@@ -153,38 +168,47 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.6;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   width: min(680px, 100%);
-  text-align: center;
 }
+
 .bo-ClearitDifferent-ul {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.6;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
-  
+
   list-style-type: disc;
   list-style-position: inside;
   padding-left: 0;
 }
 
 
+/* ========================================================= */
+/* WHY WE DEVELOP CONTENT */
+/* ========================================================= */
+
 .bo-WhyWeDevelop-content {
   overflow: visible;
 }
+
+
+/* ========================================================= */
+/* OUR PHILOSOPHY */
+/* ========================================================= */
 
 .bo-OurPhilosophy-p1 {
   font-family: "Figtree", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: clamp(40px, 6.5vw, 100px);
-  line-height: 0.85;
-  letter-spacing: 5%;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
   text-align: center;
 }
 
@@ -193,8 +217,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.5;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   padding-top: clamp(50px, 7vw, 100px);
 }
@@ -204,8 +228,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.5;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 60px);
   width: min(680px, 100%);
@@ -216,30 +240,37 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.5;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 60px);
   width: min(670px, 100%);
 }
+
+
+/* ========================================================= */
+/* OUR VISION */
+/* ========================================================= */
 
 .bo-OurVision-p1 {
   font-family: "Figtree", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: clamp(40px, 6.5vw, 100px);
-  line-height: 1.1;
-  letter-spacing: 5%;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
   text-align: center;
 }
+
 .bo-OurVision-p2 {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 100%;
-  letter-spacing: 15%;
+  line-height: 1.4;
+  letter-spacing: 0.15em;
   text-align: center;
+  padding-top: clamp(30px, 4.5vw, 60px);
 }
 
 .bo-OurVision-columnsplit div p.bo-OurVision-columnsplit-top {
@@ -247,8 +278,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(32px, 4.5vw, 50px);
-  line-height: 100%;
-  letter-spacing: 15%;
+  line-height: 1.4;
+  letter-spacing: 0.15em;
   padding-top: clamp(30px, 4.5vw, 60px);
   padding-bottom: clamp(10px, 1.5vw, 18px);
 }
@@ -258,8 +289,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 100%;
-  letter-spacing: 15%;
+  line-height: 1.4;
+  letter-spacing: 0.15em;
   padding-top: clamp(10px, 1.5vw, 18px);
 }
 
@@ -268,20 +299,25 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.85;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   text-align: center;
   width: min(630px, 100%);
   padding-top: clamp(50px, 7vw, 100px);
 }
+
+
+/* ========================================================= */
+/* MEET THE TEAM */
+/* ========================================================= */
 
 .bo-MeettheTeam-p1 {
   font-family: "Figtree", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: clamp(40px, 6.5vw, 100px);
-  line-height: 1;
-  letter-spacing: 5%;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   text-align: center;
   padding-top: clamp(60px, 8vw, 120px);
 }
@@ -297,20 +333,16 @@
 }
 
 .bo-MeettheTeam-columnsplit {
-  gap:15px;
+  gap: 15px;
 }
 
 .bo-MeettheTeam-columnsplitMain {
-  /*gap:10px;*/
   flex-wrap: wrap;
   justify-content: center;
 }
-.bo-MeettheTeam-columnsplitSup div.bo-MeettheTeam-card {
-  width: 200px;
-}
 
 .bo-MeettheTeam-columnsplitSup {
-  gap:10px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -322,7 +354,7 @@
 .bo-MeettheTeam-card {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   height: 500px;
 }
 
@@ -337,8 +369,8 @@
   font-weight: 700;
   font-style: normal;
   font-size: clamp(12px, 1.3vw, 16px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   color: var(--home-black);
   text-align: left;
   padding-top: clamp(5px, 0.8vw, 10px);
@@ -349,8 +381,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(12px, 1.3vw, 16px);
-  line-height: 100%;
-  letter-spacing: 10%;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
   color: var(--home-blue);
   text-align: left;
 }
@@ -360,7 +392,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: clamp(32px, 4.5vw, 64px);
-  line-height: 100%;
+  line-height: 1.4;
   letter-spacing: 0.2em;
   text-align: center;
   width: min(560px, 100%);
@@ -378,6 +410,11 @@
   width: min(560px, 100%);
   margin-top: clamp(50px, 7vw, 100px);
 }
+
+
+/* ========================================================= */
+/* HERO TEXT ROTATION */
+/* ========================================================= */
 
 .bo-hero-p3-wrapper {
   position: relative;
@@ -413,41 +450,24 @@
   transform: translateY(100%);
   opacity: 0;
 }
-/*##############################################################################
-################################################################################
-################################################################################
-.default-section-heading {
-  margin-bottom: clamp(28px, 5vw, 56px);
-  max-width: 650px;
+@media (max-width: 767px) {
+
+  .bo-OurVision-columnsplit {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .bo-OurVision-columnsplit > .left,
+  .bo-OurVision-columnsplit > .center,
+  .bo-OurVision-columnsplit > .right {
+    width: 100%;
+    flex: none;
+    text-align: center;
+  }
+
+  .bo-OurVision-columnsplit div .lineblueColumnsplit {
+    margin:0 auto;
+  }
+
 }
-
-.default-section-heading h2,
-.tl-copy-block h2,
-.tl-product-panel h2,
-.tl-tech-story h2,
-.tl-team-story h2,
-.tl-skin-science h2,
-.tl-comparison h2,
-.tl-content h2,
-.tl-cta h2 {
-  margin: 0;
-  line-height: 1.04;
-  font-weight: 500;
-}
---*/
-
-/*****************************Custom Page************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
