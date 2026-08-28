@@ -1011,7 +1011,7 @@
 }
 .ho-contrainer-banner {
   position: relative;
-  background-image: url("../assets/d1d81a7ea8f071f0bcbc9ec4233a30b171192312.gif");
+  /*background-image: url("../assets/d1d81a7ea8f071f0bcbc9ec4233a30b171192312.gif");*/
   background-image: url("../assets/d1d81a7ea8f071f0bcbc9ec4233a30b171192312_2.gif");
   background-size: cover;
   background-position: center;
