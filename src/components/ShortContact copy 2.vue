@@ -22,25 +22,18 @@
         </button>
 
         <!-- Menu Items -->
-        <Transition :name="menuTransition">
+        <div class="short-contact__menu-list">
 
-          <div
-            class="short-contact__menu-list"
-            :key="currentMenuIndex"
+          <router-link
+            v-for="item in visibleMenuItems"
+            :key="item.to"
+            :to="item.to"
+            class="short-contact__menu-item"
           >
+            {{ item.label }}
+          </router-link>
 
-            <router-link
-              v-for="item in visibleMenuItems"
-              :key="item.to"
-              :to="item.to"
-              class="short-contact__menu-item"
-            >
-              {{ item.label }}
-            </router-link>
-
-          </div>
-
-        </Transition>
+        </div>
 
         <!-- Next -->
         <button
@@ -235,7 +228,6 @@ export default {
       isExpanded: false,
 
       currentMenuIndex: 0,
-      menuTransition: "menu-next",
 
       menuItems: [
         {
@@ -290,22 +282,15 @@ export default {
     },
 
     previousMenu() {
-
-      this.menuTransition = "menu-prev";
-
       if (this.currentMenuIndex > 0) {
         this.currentMenuIndex--;
       } else {
         this.currentMenuIndex =
           this.menuItems.length - 3;
       }
-
     },
 
     nextMenu() {
-
-      this.menuTransition = "menu-next";
-
       if (
         this.currentMenuIndex <
         this.menuItems.length - 3
@@ -314,7 +299,6 @@ export default {
       } else {
         this.currentMenuIndex = 0;
       }
-
     }
 
   }
@@ -757,74 +741,4 @@ export default {
   }
 
 }
-
-/* ========================================================= */
-/* MENU SLIDE ANIMATION */
-/* ========================================================= */
-
-.short-contact__menu {
-  position: relative;
-  overflow: hidden;
-}
-
-.short-contact__menu-list {
-  position: absolute;
-
-  left: 30px;
-  right: 30px;
-  top: 0;
-
-  height: 45px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-/* ========================================================= */
-/* NEXT */
-/* ========================================================= */
-
-.menu-next-enter-active,
-.menu-next-leave-active {
-  transition:
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.35s ease;
-}
-
-.menu-next-enter-from {
-  opacity: 0;
-  transform: translateX(35px);
-}
-
-.menu-next-leave-to {
-  opacity: 0;
-  transform: translateX(-35px);
-}
-
-
-/* ========================================================= */
-/* PREVIOUS */
-/* ========================================================= */
-
-.menu-prev-enter-active,
-.menu-prev-leave-active {
-  transition:
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.35s ease;
-}
-
-.menu-prev-enter-from {
-  opacity: 0;
-  transform: translateX(-35px);
-}
-
-.menu-prev-leave-to {
-  opacity: 0;
-  transform: translateX(35px);
-}
-
-
-
 </style>
