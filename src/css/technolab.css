@@ -182,7 +182,7 @@
 
 .tl-TechnologyStep1-Topics,
 .tl-TechnologyStep2-Topics {
-  margin-top: 200px;
+  margin-top: clamp(80px, 13vw, 200px);
 }
 
 .tl-TwoStepProtocol-content,
