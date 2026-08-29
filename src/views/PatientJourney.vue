@@ -1,4 +1,5 @@
 <script setup>
+import ScrollReveal from '../components/ScrollReveal.vue'
 import BeforeAfterModule from '../components/BeforeAfterModule.vue'
 import FindUs from '../components/FindUs.vue'
 import FAQ from '../components/FAQs.vue'
@@ -14,93 +15,98 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
     <div style="padding-top: clamp(30px, 4.5vw, 60px);">
       <Navigator_desktop  />
     </div>
-    <section class="default-section Hero" style="margin-top: clamp(-60px, -8vw, -120px);">
-      <div class="default-container  ">
-        <div class="default-content-width default-content-border-radius pj-Hero-content BG-GradientGrayToWhite">
-          <div class="pj-Hero-Topics">
-            <div class="pj-Hero-Topics__image">
-              <img
-                alt="Logo"
-                loading="lazy"
-                decoding="async"
-                class="img-overflow-top"
-                src="/media/b 62fe4efe-67bf-462e-9371-3b8fc7b3d96f-2026-08-21 1.png"
-              />
+    <ScrollReveal>
+      <section class="default-section Hero" style="margin-top: clamp(-60px, -8vw, -120px);">
+        <div class="default-container  ">
+          <div class="default-content-width default-content-border-radius pj-Hero-content BG-GradientGrayToWhite">
+            <div class="pj-Hero-Topics">
+              <div class="pj-Hero-Topics__image">
+                <img
+                  alt="Logo"
+                  loading="lazy"
+                  decoding="async"
+                  class="img-overflow-top"
+                  src="/media/b 62fe4efe-67bf-462e-9371-3b8fc7b3d96f-2026-08-21 1.png"
+                />
+              </div>
+
+              <div class="pj-Hero-Topics__content">
+                <p class="pj-hero-p1 colorBlack underline-blue">
+                  YOUR SKIN.<br />
+                  YOUR CONFIDENCE.<br />
+                  OUR PRIORITY.
+                </p>
+              </div>
             </div>
+            <p class="pj-hero-p2 colorGray">
+              Your Tattoo Removal Journey
+            </p>
 
-            <div class="pj-Hero-Topics__content">
-              <p class="pj-hero-p1 colorBlack underline-blue">
-                YOUR SKIN.<br />
-                YOUR CONFIDENCE.<br />
-                OUR PRIORITY.
-              </p>
-            </div>
-          </div>
-          <p class="pj-hero-p2 colorGray">
-            Your Tattoo Removal Journey
-          </p>
+            <div class="blue-line" style="width:99%;"></div>
 
-          <div class="blue-line" style="width:99%;"></div>
+            <p class="pj-hero-p3 colorGray mx-auto">
+              A smarter, client first guide to how laser tattoo removal works, how to prepare, and what to expect at every step.
+            </p>
 
-          <p class="pj-hero-p3 colorGray mx-auto">
-            A smarter, client first guide to how laser tattoo removal works, how to prepare, and what to expect at every step.
-          </p>
+            <p class="pj-hero-p4 colorGray mx-auto">
+              Engineered with the preparation mindset, the CLEARiT journey focuses on the client experience skin condition during and between sessions allows treatment to be performed more efficiently and safely.
+            </p>
 
-          <p class="pj-hero-p4 colorGray mx-auto">
-            Engineered with the preparation mindset, the CLEARiT journey focuses on the client experience skin condition during and between sessions allows treatment to be performed more efficiently and safely.
-          </p>
-
-          
-        </div>
-      </div>
-    </section>
-
-    <section class="default-section OurVision" style="margin-top: clamp(-30px, -4.5vw, -60px);">
-      <div class="default-container  ">
-        <div class="default-content-width default-content-border-radius pj-OurVision-content bg-image fade-top">
-          <div class="pj-OurVision-Topics mx-auto">
-            <div class="default-content-border-radius mx-auto" style="width:90%;margin-top: clamp(60px, 8vw, 120px);">
-              <img
-                    alt="Logo"
-                    loading="lazy"
-                    decoding="async"
-                    class=""
-                    src="/media/ripple-blur-water-texture-with-shadows-on-white-2026-03-19-06-36-35-utc 10.png"
-                  />
-            </div>
-
-            <div class="pj-hero-description mx-auto">
-              <p class="pj-hero-description-p1 colorBlue">
-                Your Laser Tattoo Removal Appointment
-              </p>
-
-              <p class="pj-hero-description-p2 colorGray">
-                At CLEARiT, every laser tattoo removal appointment is designed with intention: precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
-              </p>
-
-              <p class="pj-hero-description-p3 colorGray">
-                Your journey begins with a complimentary consultation. We assess your tattoo’s size, color range, density, and placement, then map a treatment plan that works strategically not uniformly. 
-              </p>
-
-              <p class="pj-hero-description-p4 colorGray">
-                Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as quick, light snaps, that are brief and manageable.
-              </p>
-
-              <p class="pj-hero-description-p5 colorGray">
-                After treatment, it is normal to see mild redness, or slight swelling similar to a light sun reaction. These effects typically settle within a few days. Most people return to normal daily activity immediately after treatment. 
-              </p>
-
-              <p class="pj-hero-description-p6 colorGray">
-                Over time, your body clears the ink fragments, revealing clearer skin with each step forward.
-              </p>
-             
-            </div>
+            
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </ScrollReveal>
 
-    <section class="default-section GetStarted">
+    <ScrollReveal :delay="100">
+      <section class="default-section OurVision" style="margin-top: clamp(-30px, -4.5vw, -60px);">
+        <div class="default-container  ">
+          <div class="default-content-width default-content-border-radius pj-OurVision-content bg-image fade-top">
+            <div class="pj-OurVision-Topics mx-auto">
+              <div class="default-content-border-radius mx-auto" style="width:90%;margin-top: clamp(60px, 8vw, 120px);">
+                <img
+                      alt="Logo"
+                      loading="lazy"
+                      decoding="async"
+                      class=""
+                      src="/media/ripple-blur-water-texture-with-shadows-on-white-2026-03-19-06-36-35-utc 10.png"
+                    />
+              </div>
+
+              <div class="pj-hero-description mx-auto">
+                <p class="pj-hero-description-p1 colorBlue">
+                  Your Laser Tattoo Removal Appointment
+                </p>
+
+                <p class="pj-hero-description-p2 colorGray">
+                  At CLEARiT, every laser tattoo removal appointment is designed with intention: precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
+                </p>
+
+                <p class="pj-hero-description-p3 colorGray">
+                  Your journey begins with a complimentary consultation. We assess your tattoo’s size, color range, density, and placement, then map a treatment plan that works strategically not uniformly. 
+                </p>
+
+                <p class="pj-hero-description-p4 colorGray">
+                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as quick, light snaps, that are brief and manageable.
+                </p>
+
+                <p class="pj-hero-description-p5 colorGray">
+                  After treatment, it is normal to see mild redness, or slight swelling similar to a light sun reaction. These effects typically settle within a few days. Most people return to normal daily activity immediately after treatment. 
+                </p>
+
+                <p class="pj-hero-description-p6 colorGray">
+                  Over time, your body clears the ink fragments, revealing clearer skin with each step forward.
+                </p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </ScrollReveal>
+
+    <ScrollReveal :delay="200">
+      <section class="default-section GetStarted">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius pj-GetStarted-content ">
           <div class="pj-GetStarted-Topics mx-auto">
@@ -207,81 +213,85 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
         </div>
       </div>
-  </section>
+      </section>
+    </ScrollReveal>
 
-  <section class="default-section TheCLEARiTDifference" style="margin-top: clamp(-60px, -8vw, -120px);">
-    <div class="default-container  ">
-      <div class="default-content-width default-content-border-radius pj-TheCLEARiTDifference-content bg-image">
-        <div class="pj-TheCLEARiTDifference-Topics mx-auto">
-            <p class="pj-TheCLEARiTDifference-p1 colorBlue">
-              The CLEARiT Difference
-            </p>
+    <ScrollReveal :delay="300">
+      <section class="default-section TheCLEARiTDifference" style="margin-top: clamp(-60px, -8vw, -120px);">
+        <div class="default-container  ">
+          <div class="default-content-width default-content-border-radius pj-TheCLEARiTDifference-content bg-image">
+            <div class="pj-TheCLEARiTDifference-Topics mx-auto">
+                <p class="pj-TheCLEARiTDifference-p1 colorBlue">
+                  The CLEARiT Difference
+                </p>
 
-            <p class="pj-TheCLEARiTDifference-p2 colorGray mx-auto">
-              We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
-            </p>
+                <p class="pj-TheCLEARiTDifference-p2 colorGray mx-auto">
+                  We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
+                </p>
 
-            <img
-              src="/media/water-miracle-bubble-or-cosmetic-liquid-serum-drop-2024-10-18-04-12-05-utc copy 2.png"
-              alt=""
-              loading="lazy"
-              style="height:400px;margin-left: auto;margin-right: -160px;"
-            />
+                <img
+                  src="/media/water-miracle-bubble-or-cosmetic-liquid-serum-drop-2024-10-18-04-12-05-utc copy 2.png"
+                  alt=""
+                  loading="lazy"
+                  style="height:400px;margin-left: auto;margin-right: -160px;"
+                />
 
-            <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
-              "Technology is the bridge between uncertainty and accuracy. 
-            </p>
+                <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
+                  "Technology is the bridge between uncertainty and accuracy. 
+                </p>
 
-            <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
-              CLEARiT exists to eliminate the margin of error, using the power of AI to bring a new level of precision to tattoo removal."
-            </p>
+                <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
+                  CLEARiT exists to eliminate the margin of error, using the power of AI to bring a new level of precision to tattoo removal."
+                </p>
 
-            <img
-              src="/media/Clearit_Home_img01.png"
-              alt=""
-              loading="lazy"
-              class="img-overflow-bottom"
-              style="transform: translateY(clamp(120px, 20vw, 300px));"
-            />
-            
-              
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="default-section Engineered" style="margin-top: clamp(80px, 13vw, 200px);">
-    <div class="default-container  ">
-      <div class="default-content-width default-content-border-radius pj-Engineered-content ">
-        <div class="pj-Engineered-Topics mx-auto">
-            
-
-            <p class="pj-Engineered-p1 mx-auto colorBlue">
-              Engineered Around Skin Behavior 
-            </p>
-
-            <p class="pj-Engineered-p2 colorGray mx-auto">
-              CLEARiT is not a laser, it is what makes the laser work smarter.
-            </p>
-
-            <p class="pj-Engineered-p3 colorGray mx-auto">
-              We focus on how skin actually behaves under treatment, optimizing every session so lasers can perform closer to their full potential. 
-            </p>
-
-            <div class="pj-TheCLEARiTDifference-ul mx-auto colorGray">
-              <ul >
-                <li>Surface clarity for consistent laser absorption</li>
-                <li>Controlled, repeatable session outcomes </li>
-                <li>Protection and support for treatment-day skin biology</li>
-                <li>Safer, more predictable removal journeys</li>
-              </ul>
+                <img
+                  src="/media/Clearit_Home_img01.png"
+                  alt=""
+                  loading="lazy"
+                  class="img-overflow-bottom"
+                  style="transform: translateY(clamp(120px, 20vw, 300px));"
+                />
+                
+                  
             </div>
-
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </ScrollReveal>
 
+    <ScrollReveal :delay="400">
+      <section class="default-section Engineered" style="margin-top: clamp(80px, 13vw, 200px);">
+        <div class="default-container  ">
+          <div class="default-content-width default-content-border-radius pj-Engineered-content ">
+            <div class="pj-Engineered-Topics mx-auto">
+                
+
+                <p class="pj-Engineered-p1 mx-auto colorBlue">
+                  Engineered Around Skin Behavior 
+                </p>
+
+                <p class="pj-Engineered-p2 colorGray mx-auto">
+                  CLEARiT is not a laser, it is what makes the laser work smarter.
+                </p>
+
+                <p class="pj-Engineered-p3 colorGray mx-auto">
+                  We focus on how skin actually behaves under treatment, optimizing every session so lasers can perform closer to their full potential. 
+                </p>
+
+                <div class="pj-TheCLEARiTDifference-ul mx-auto colorGray">
+                  <ul >
+                    <li>Surface clarity for consistent laser absorption</li>
+                    <li>Controlled, repeatable session outcomes </li>
+                    <li>Protection and support for treatment-day skin biology</li>
+                    <li>Safer, more predictable removal journeys</li>
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </ScrollReveal>
   
 
 

@@ -364,7 +364,7 @@
   line-height: 100%;
   letter-spacing: 0.02em;
   text-align: center;
-  width: min(390px, 100%);
+  width: min(700px, 100%);
   padding-top: clamp(40px, 6vw, 80px);
 }
 

@@ -1,4 +1,3 @@
-```vue
 <template>
   <section
     class="sticky short-contact mx-auto hidden lg:flex"
@@ -8,49 +7,8 @@
     <!-- TOP / CONTENT AREA -->
     <div class="short-contact__content">
 
-      <!-- MENU -->
-      <div class="short-contact__menu">
-
-        <!-- Previous -->
-        <button
-          type="button"
-          class="short-contact__menu-arrow short-contact__menu-arrow--prev"
-          aria-label="Previous menu"
-          @click="previousMenu"
-        >
-          &lt;
-        </button>
-
-        <!-- Menu Items -->
-        <div class="short-contact__menu-list">
-
-          <router-link
-            v-for="item in visibleMenuItems"
-            :key="item.to"
-            :to="item.to"
-            class="short-contact__menu-item"
-          >
-            {{ item.label }}
-          </router-link>
-
-        </div>
-
-        <!-- Next -->
-        <button
-          type="button"
-          class="short-contact__menu-arrow short-contact__menu-arrow--next"
-          aria-label="Next menu"
-          @click="nextMenu"
-        >
-          &gt;
-        </button>
-
-      </div>
-
-
       <!-- CONTACT -->
       <div class="short-contact__contact">
-
         <h3>CONTACT</h3>
 
         <a href="mailto:info@yclearit.com">
@@ -60,13 +18,11 @@
         <a href="tel:+187755325327">
           (+1) 877-55-CLEAR (25327)
         </a>
-
       </div>
 
 
       <!-- FOLLOW US -->
       <div class="short-contact__social">
-
         <h3>FOLLOW US</h3>
 
         <div class="short-contact__social-links">
@@ -186,16 +142,20 @@
 
     <!-- LOGO -->
     <div class="short-contact__logo">
-
       <router-link
         to="/"
         aria-label="CLEARiT Home"
       >
+        <!--
+        <img
+          src="/media/logoWhite.f02482b3.png"
+          alt="CLEARiT"
+        />
+        -->
         <p class="logo">
-          CLEAR<span class="colorBlue">i</span>T
+        CLEAR<span class="colorBlue">i</span>T
         </p>
       </router-link>
-
     </div>
 
 
@@ -203,11 +163,7 @@
     <button
       type="button"
       class="short-contact__toggle"
-      :aria-label="
-        isExpanded
-          ? 'Close contact information'
-          : 'Open contact information'
-      "
+      :aria-label="isExpanded ? 'Close contact information' : 'Open contact information'"
       :aria-expanded="isExpanded"
       @click="toggleContact"
     >
@@ -225,117 +181,37 @@ export default {
 
   data() {
     return {
-      isExpanded: false,
-
-      currentMenuIndex: 0,
-
-      menuItems: [
-        {
-          label: "HOME",
-          to: "/"
-        },
-        {
-          label: "LOCATIONS",
-          to: "/locations"
-        },
-        {
-          label: "BRAND OVERVIEW",
-          to: "/brand-overview"
-        },
-        {
-          label: "PRODUCT",
-          to: "/techno-lab"
-        },
-        {
-          label: "TEAM",
-          to: "/brand-overview#team"
-        },
-        {
-          label: "PATIENT JOURNEY",
-          to: "/patient-journey"
-        },
-        {
-          label: "FAQS",
-          to: "/faqs"
-        },
-        {
-          label: "CONTACT",
-          to: "/contact-us"
-        }
-      ]
+      isExpanded: false
     };
   },
 
-  computed: {
-    visibleMenuItems() {
-      return this.menuItems.slice(
-        this.currentMenuIndex,
-        this.currentMenuIndex + 3
-      );
-    }
-  },
-
   methods: {
-
     toggleContact() {
       this.isExpanded = !this.isExpanded;
-    },
-
-    previousMenu() {
-      if (this.currentMenuIndex > 0) {
-        this.currentMenuIndex--;
-      } else {
-        this.currentMenuIndex =
-          this.menuItems.length - 3;
-      }
-    },
-
-    nextMenu() {
-      if (
-        this.currentMenuIndex <
-        this.menuItems.length - 3
-      ) {
-        this.currentMenuIndex++;
-      } else {
-        this.currentMenuIndex = 0;
-      }
     }
-
   }
 };
 </script>
 
 
 <style scoped>
-
 .logo {
-  color: white;
-
+  color:white;
   font-family: Figtree, sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: clamp(18px, 2vw, 24px);
   line-height: 1.4;
-
   letter-spacing: 5%;
   text-align: center;
-
-  padding-left: clamp(5px, 0.8vw, 10px);
+  padding-left:clamp(5px, 0.8vw, 10px);
 }
-
 .logo span.colorBlue {
-  color: #29BCFB;
+  color:#29BCFB;
 }
-
-
-/* ========================================================= */
-/* SHORT CONTACT */
-/* ========================================================= */
-
 .short-contact {
   transform: translateX(-50%);
-
   position: fixed;
-
   top: 0;
   left: 50%;
 
@@ -343,9 +219,7 @@ export default {
   height: 40px;
 
   background: #1F1F1F;
-
   overflow: hidden;
-
   z-index: 9999;
 
   flex-direction: column;
@@ -360,7 +234,7 @@ export default {
 /* ========================================================= */
 
 .short-contact--expanded {
-  height: 320px;
+  height: 280px;
 }
 
 
@@ -370,16 +244,12 @@ export default {
 
 .short-contact__content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 
   width: 100%;
-
-  padding: 25px 45px 0;
-
-  box-sizing: border-box;
+  padding: 45px 45px 0;
 
   opacity: 0;
-
   transform: translateY(-20px);
 
   transition:
@@ -394,129 +264,12 @@ export default {
 
 
 /* ========================================================= */
-/* MENU */
-/* ========================================================= */
-
-.short-contact__menu {
-  width: 100%;
-
-  height: 45px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin-bottom: 30px;
-}
-
-
-/* Menu list */
-
-.short-contact__menu-list {
-  flex: 1;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  min-width: 0;
-}
-
-
-/* Menu item */
-
-.short-contact__menu-item {
-  flex: 1;
-
-  text-align: center;
-
-  padding: 0 8px;
-
-  color: #F8F8F8;
-
-  text-decoration: none;
-
-  font-family: Figtree, sans-serif;
-
-  font-size: clamp(11px, 1.2vw, 14px);
-
-  font-weight: 400;
-
-  letter-spacing: 0.04em;
-
-  white-space: nowrap;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.short-contact__menu-item:hover {
-  opacity: 0.55;
-}
-
-
-/* ========================================================= */
-/* MENU ARROWS */
-/* ========================================================= */
-
-.short-contact__menu-arrow {
-  flex: 0 0 30px;
-
-  width: 30px;
-  height: 30px;
-
-  padding: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  background: transparent;
-
-  border: none;
-
-  color: #F8F8F8;
-
-  cursor: pointer;
-
-  font-family: Figtree, sans-serif;
-
-  font-size: 22px;
-
-  font-weight: 400;
-
-  line-height: 1;
-
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-}
-
-.short-contact__menu-arrow:hover {
-  opacity: 0.5;
-}
-
-.short-contact__menu-arrow--prev:hover {
-  transform: translateX(-3px);
-}
-
-.short-contact__menu-arrow--next:hover {
-  transform: translateX(3px);
-}
-
-
-/* ========================================================= */
 /* CONTACT */
 /* ========================================================= */
 
 .short-contact__contact {
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
 }
 
@@ -524,34 +277,22 @@ export default {
 .short-contact__social h3 {
   margin: 0 0 22px;
 
-  font-family: Figtree, sans-serif;
-
   font-size: 14px;
-
   font-weight: 500;
-
   letter-spacing: 0.08em;
-
   color: #989898;
 }
 
 .short-contact__contact a {
   color: #F8F8F8;
-
   text-decoration: none;
 
-  font-family: Figtree, sans-serif;
-
   font-size: 16px;
-
   font-weight: 400;
-
   line-height: 1.8;
-
   letter-spacing: 0.25em;
 
-  transition:
-    opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .short-contact__contact a:hover {
@@ -565,19 +306,13 @@ export default {
 
 .short-contact__social {
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
-
-  margin-top: 35px;
 }
 
 .short-contact__social-links {
   display: flex;
-
   align-items: center;
-
   gap: 14px;
 }
 
@@ -586,7 +321,6 @@ export default {
   height: 30px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -599,7 +333,6 @@ export default {
 
 .short-contact__social-links a:hover {
   transform: translateY(-3px);
-
   opacity: 0.6;
 }
 
@@ -608,9 +341,7 @@ export default {
   height: 24px;
 
   fill: none;
-
   stroke: #F8F8F8;
-
   stroke-width: 1.7;
 }
 
@@ -622,8 +353,7 @@ export default {
 .short-contact__logo {
   position: absolute;
 
-  left: 0;
-
+  left: 0px;
   top: 50%;
 
   transform: translateY(-50%);
@@ -633,9 +363,16 @@ export default {
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.short-contact__logo img {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+
+/* Logo moves to bottom when expanded */
 .short-contact--expanded .short-contact__logo {
   top: auto;
-
   bottom: 5px;
 
   transform: translateY(0);
@@ -650,7 +387,6 @@ export default {
   position: absolute;
 
   right: 40px;
-
   top: 18%;
 
   width: 40px;
@@ -659,29 +395,26 @@ export default {
   transform: translateY(-50%);
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   padding: 0;
 
   background: transparent;
-
   border: none;
 
   color: #F8F8F8;
 
   cursor: pointer;
 
-  font-family: Figtree, sans-serif;
-
+  font-family: Figtree;
   font-weight: 900;
-
+  font-style: Black;
   font-size: clamp(28px, 4.5vw, 48px);
-
-  line-height: 1;
-
+  line-height: 100px;
   letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
 
   transition:
     transform 0.35s ease,
@@ -694,45 +427,10 @@ export default {
 
 .short-contact--expanded .short-contact__toggle {
   top: auto;
-
   bottom: 5px;
 
   transform: none;
 
   font-size: 32px;
-}
-
-
-/* ========================================================= */
-/* TABLET LANDSCAPE */
-/* ========================================================= */
-
-@media (max-width: 1024px) and (orientation: landscape) {
-
-  .short-contact {
-    width: min(600px, 70vw);
-  }
-
-}
-
-
-/* ========================================================= */
-/* HIDE MOBILE + TABLET PORTRAIT */
-/* ========================================================= */
-
-@media (max-width: 1024px) and (orientation: portrait) {
-
-  .short-contact {
-    display: none !important;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  .short-contact {
-    display: none !important;
-  }
-
 }
 </style>

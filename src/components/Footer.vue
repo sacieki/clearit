@@ -7,14 +7,16 @@
           <div class="ft-Footer-Topics mx-auto BG-GradientWhiteToGray default-content-border-radius">
 
             <div class="flex flex-col gap-5 footer-nav">
-              <router-link
-                v-for="item in navItems"
-                :key="item.to"
-                :to="item.to"
-                :aria-label="item.label"
-              >
-                {{ item.label }}
-              </router-link>
+              <div style="display:none;">
+                <router-link
+                  v-for="item in navItems"
+                  :key="item.to"
+                  :to="item.to"
+                  :aria-label="item.label"
+                >
+                  {{ item.label }}
+                </router-link>
+              </div>
             </div>
 
             <div class="ft-contact-contrainer">
@@ -302,6 +304,7 @@ div:has(> .image-container__bg) {
 
 .footer-nav {
   display: flex;
+  
   flex-direction: column;
   gap: 1.25rem;
 }

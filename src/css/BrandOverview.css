@@ -77,8 +77,7 @@
   padding-top: clamp(40px, 6vw, 80px);
 }
 
-.bo-hero-textdetail-p1 {
-}
+
 
 .bo-hero-textdetail-p2 {
   padding-top: 0 !important;
@@ -101,8 +100,7 @@
   padding-top: 20px;
 }
 
-.bo-WhyWeDevelop-p1 {
-}
+
 
 .bo-WhyWeDevelop-p2 {
   margin-top: 20px;
@@ -393,9 +391,9 @@
   font-style: normal;
   font-size: clamp(32px, 4.5vw, 64px);
   line-height: 1.4;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   text-align: center;
-  width: min(560px, 100%);
+  width: min(700px, 100%);
   margin-top: clamp(80px, 13vw, 200px);
 }
 
