@@ -1,4 +1,5 @@
 <script setup>
+import ScrollReveal from '../components/ScrollReveal.vue'
 import BeforeAfterModule from '../components/BeforeAfterModule.vue'
 import FindUs from '../components/FindUs.vue'
 import FAQ from '../components/FAQs.vue'
@@ -73,43 +74,45 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
     <div class="blue-line" style="width:95%;"></div>
     <Navigator_desktop />
 
-    <section class="default-section hero-section">
-      <div class="default-container  ">
-        <div class="default-content-width default-content-border-radius ho-hero-content BG-GradientGrayToWhite">
-          <div class="hero-copy">
+    
+      <section class="default-section hero-section">
+        <div class="default-container  ">
+          <div class="default-content-width default-content-border-radius ho-hero-content BG-GradientGrayToWhite">
+            <div class="hero-copy">
+              <ScrollReveal>
+                <p class="hero-lead mx-auto colorBlue">
+                  CLEARiT is a science-driven <br />
+                  skin preparation system <br />
+                  designed to optimize <br />
+                  how skin behaves <br />
+                  between laser sessions.
+                </p>
+              </ScrollReveal>
 
-            <p class="hero-lead mx-auto colorBlue">
-              CLEARiT is a science-driven <br />
-              skin preparation system <br />
-              designed to optimize <br />
-              how skin behaves <br />
-              between laser sessions.
-            </p>
+              <ScrollReveal :delay="200">
+                <p class="hero-body mx-auto">
+                  By conditioning and priming the skin,<br />
+                  CLEARiT helps the laser target ink more effectively, enabling safer,
+                  faster, and more predictable tattoo-removal outcomes.
+                </p>
+              </ScrollReveal>
 
-            <p class="hero-body mx-auto">
-              By conditioning and priming the skin,<br />
-              CLEARiT helps the laser target ink more effectively, enabling safer,
-              faster, and more predictable tattoo-removal outcomes.
-            </p>
-
-            <div class="hero-feature-grid mx-auto">
-              <article
-                v-for="feature in heroFeatures"
-                :key="feature.title"
-                class="feature-card mx-auto"
-              >
-                <span>{{ feature.title }}</span>
-              </article>
+              <div class="hero-feature-grid mx-auto">
+                <ScrollReveal
+                  v-for="(feature, index) in heroFeatures"
+                  :key="feature.title"
+                  :delay="200 + (index * 100)"
+                >
+                  <article class="feature-card mx-auto">
+                    <span>{{ feature.title }}</span>
+                  </article>
+                </ScrollReveal>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-
+      </section>
+    
 
 <!--
     <section class="hero-section ">
@@ -123,119 +126,164 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
     </section>
  -->   
     <!-- Science / positioning -->
-    <section class="science-section">
-      <div class="home-container science-grid">
-        <div class="media-placeholder science-portrait">
-          <div class=" default-media">
-              <video
-                class="hero-video"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="auto"
-              >
-                <source src="/media/0bf7bc18-71ca-4e63-85a5-7001d1652cc9.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+    
+      <section class="science-section">
+        <div class="home-container science-grid">
+          <div class="media-placeholder science-portrait">
+            <ScrollReveal :delay="500">
+              <div class=" default-media">
+                  <video
+                    class="hero-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                  >
+                    <source src="/media/0bf7bc18-71ca-4e63-85a5-7001d1652cc9.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+            </ScrollReveal>
+          </div>
+
+          <div class="science-quote">
+            <ScrollReveal :delay="600">
+              <b>Faster throughput —</b> more ink removed per session <br/>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="650">
+              <b>Safer multi-pass protocol —</b> less thermal stress <br/>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="700">
+              <b>Predictable planning —</b> improved patient satisfaction
+            </ScrollReveal>
+          </div>
+
+          <div class="science-copy mx-auto">
+            
+            <ScrollReveal :delay="800">
+              <p>
+                CLEARiT is engineered around how the body actually clears ink, maximizing each treatment window and improving consistency between visits through disciplined preparation, planning and execution.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="900">
+              <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">Removal, guided by science, not guesswork.</p>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="900">
+              <router-link to="/welcome-book" class="outline-button ">
+                  LEARN MORE
+              </router-link>
+            </ScrollReveal>
+
+          </div>
         </div>
 
-        <div class="science-quote">
-          <b>Faster throughput —</b> more ink removed per session <br/>
-          <b>Safer multi-pass protocol —</b> less thermal stress <br/>
-          <b>Predictable planning —</b> improved patient satisfaction
+        <div class="home-container control-message">
+          <ScrollReveal :delay="950">
+            <p class="control-heading">
+              MOST PROBLEMS DON'T COME FROM TOO LITTLE POWER.<br />
+              THEY COME FROM TOO LITTLE CONTROL.
+            </p>
+          </ScrollReveal>
+
+          <div class="blue-line"></div>
+
+          <ScrollReveal :delay="1050">
+            <router-link to="/contact-us" class="solid-button">
+                BOOK CONSULTATION
+            </router-link>
+          </ScrollReveal>
+
+          <img
+              alt="Logo"
+              loading="lazy"
+              decoding="async"
+              class=""
+              style="color: transparent"
+              src="/media/82fea67e-691a-46b4-81d6-f9b5eef6f74e 2.png"
+            />
         </div>
+      </section>
+    
 
-        <div class="science-copy mx-auto">
-          
-
-          <p>
-            CLEARiT is engineered around how the body actually clears ink, maximizing each treatment window and improving consistency between visits through disciplined preparation, planning and execution.
-          </p>
-
-          <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">Removal, guided by science, not guesswork.</p>
-
-          <router-link to="/welcome-book" class="outline-button ">
-              LEARN MORE
-          </router-link>
-
-        </div>
-      </div>
-
-      <div class="home-container control-message">
-        <p class="control-heading">
-          MOST PROBLEMS DON'T COME FROM TOO LITTLE POWER.<br />
-          THEY COME FROM TOO LITTLE CONTROL.
-        </p>
-
-        <div class="blue-line"></div>
-
-        <router-link to="/contact-us" class="solid-button">
-            BOOK CONSULTATION
-        </router-link>
-
-        <img
-            alt="Logo"
-            loading="lazy"
-            decoding="async"
-            class=""
-            style="color: transparent"
-            src="/media/82fea67e-691a-46b4-81d6-f9b5eef6f74e 2.png"
-          />
-      </div>
-    </section>
 
     <!-- Session -->
-    <section id="session" class="session-section ">
-      <div class="home-container background-card">
-        <div class="split-copy">
-          <span class="section-kicker">Your Laser Tattoo Removal Session</span>
+    
+      <section id="session" class="session-section ">
+        <div class="home-container background-card">
+          <div class="split-copy">
+            <ScrollReveal :delay="1150">
+              <span class="section-kicker">Your Laser Tattoo Removal Session</span>
+            </ScrollReveal>
 
-          <p>
-            Laser tattoo removal is not guesswork. <br/>It is a structured process built around how ink behaves in the skin and how skin heals.
-          </p>
+            <ScrollReveal :delay="1200">
+              <p>
+                Laser tattoo removal is not guesswork. <br/>It is a structured process built around how ink behaves in the skin and how skin heals.
+              </p>
+            </ScrollReveal>
 
-          <p>
-            Our role is to guide that process carefully and deliberately.
-          </p>
+            <ScrollReveal :delay="1250">
+              <p>
+                Our role is to guide that process carefully and deliberately.
+              </p>
+            </ScrollReveal>
 
-          <p>
-            Each treatment begins with a professional assessment of your tattoo including pigment type, density, depth, and placement, so your session settings are performed with intention, not approximation.
-          </p>
+            <ScrollReveal :delay="1300">
+              <p>
+                Each treatment begins with a professional assessment of your tattoo including pigment type, density, depth, and placement, so your session settings are performed with intention, not approximation.
+              </p>
+            </ScrollReveal>
 
-          <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);">
-              BOOK CONSULTATION
-          </router-link>
+            <ScrollReveal :delay="1350">
+              <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);">
+                  BOOK CONSULTATION
+              </router-link>
+            </ScrollReveal>
+          </div>
+
+          <div class="preparation-copy mx-auto">
+            <ScrollReveal :delay="1400">
+              <span class="section-kicker">How to Prepare for Laser Tattoo Removal</span>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="1450">
+              <p>Proper skin preparation helps ensure consistent laser response and supports predictable healing between sessions.</p>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="1500">
+              <p><br/>Before your appointment:</p>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="1550">
+              <ul>
+                <li>Avoid tanning, sun exposure, and self tanning products for at least two weeks prior to treatment</li>
+                <li>Use daily SPF on the area that may be exposed to sunlight</li>
+                <li>Pause exfoliants, retinoids, peels, and other potentially irritating products in the treatment zone, keeping the skin intact</li>
+                <li>Arrive with clean, product free skin (no makeup, lotion, or sunscreen on the area)</li>
+              </ul>
+            </ScrollReveal>
+
+            <ScrollReveal :delay="1600">
+              <p class="preparation-note">
+                <br/>Your CLEARiT clinician will review your tattoo and skin condition and provide session specific pre-care guidance.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal :delay="1750">
+              <p class="preparation-note">
+                Preparation is part of the process, it helps ensure treatment accuracy, skin safety, and consistent progress across sessions.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal :delay="1800">
+              <a href="#contact" class="outline-button">Get Started</a>
+            </ScrollReveal>
+          </div>
 
         </div>
-
-        <div class="preparation-copy mx-auto">
-          <span class="section-kicker">How to Prepare for Laser Tattoo Removal</span>
-          <p>Proper skin preparation helps ensure consistent laser response and supports predictable healing between sessions.</p>
-
-          <p><br/>Before your appointment:</p>
-
-          <ul>
-            <li>Avoid tanning, sun exposure, and self tanning products for at least two weeks prior to treatment</li>
-            <li>Use daily SPF on the area that may be exposed to sunlight</li>
-            <li>Pause exfoliants, retinoids, peels, and other potentially irritating products in the treatment zone, keeping the skin intact</li>
-            <li>Arrive with clean, product free skin (no makeup, lotion, or sunscreen on the area)</li>
-          </ul>
-
-          <p class="preparation-note">
-            <br/>Your CLEARiT clinician will review your tattoo and skin condition and provide session specific pre-care guidance.
-          </p>
-
-          <p class="preparation-note">
-            Preparation is part of the process, it helps ensure treatment accuracy, skin safety, and consistent progress across sessions.
-          </p>
-
-          <a href="#contact" class="outline-button">Get Started</a>
-        </div>
-
-      </div>
-    </section>
+      </section>
 
     <BeforeAfterModule />
     <FindUs />
