@@ -389,6 +389,10 @@ a.BookConsultationBtn {
     min-height: 340px;
     margin-top: 54px;
   }
+
+  .small-hide {
+    display:none;
+  }
 }
 
 

@@ -15,33 +15,28 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
       <Navigator_desktop  />
     </div>
 
-    <section class="">
-      <div class="  ">
-        <div class="default-content-border-radius ">
-            <div class=" default-media" style="height:calc(100vh - 132px);">
-            <video
-              class="hero-video"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="auto"
-
-              style="height: calc(100vh - 100px);"
-            >
-              <source src="/media/7bd30761-6eae-487b-93a6-252f91ec00ea.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <section class="default-section Hero" style="margin-top: clamp(-60px, -8vw, -120px);">
       <div class="default-container  ">
-        <div class="default-content-width default-content-border-radius tl-Hero-conten">
-          
+        <div class="default-content-width default-content-border-radius tl-Hero-content BG-GradientGrayToWhite">
+          <div class="tl-Hero-Topics">
+            <div class="tl-Hero-Topics__image">
+              <img
+                alt="Logo"
+                loading="lazy"
+                decoding="async"
+                class="img-overflow-top"
+                src="/media/b 62fe4efe-67bf-462e-9371-3b8fc7b3d96f-2026-08-21 1.png"
+              />
+            </div>
+
+            <div class="tl-Hero-Topics__content">
+              <p class="tl-hero-p1 colorBlack underline-blue">
+                YOUR SKIN.<br />
+                YOUR CONFIDENCE.<br />
+                OUR PRIORITY.
+              </p>
+            </div>
+          </div>
           <p class="tl-hero-p2 colorGray">
             THE SKIN FIRST PHILOSOPHY
           </p>

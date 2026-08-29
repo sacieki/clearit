@@ -52,6 +52,7 @@
   line-height: 1.1;
   letter-spacing: 0.2em;
   text-align: center;
+  padding-top: clamp(20px, 3vw, 40px);
 }
 
 .tl-OurMission-p1 {
@@ -175,6 +176,9 @@
   padding-top: clamp(20px, 3vw, 40px);
 }
 
+.tl-Technology-step{
+  gap:clamp(30px, 4.5vw, 60px);
+}
 
 .tl-TechnologyStep1-Topics,
 .tl-TechnologyStep2-Topics {
@@ -358,7 +362,7 @@
   font-style: normal;
   font-size: clamp(24px, 3vw, 37px);
   line-height: 100%;
-  letter-spacing: 25%;
+  letter-spacing: 0.02em;
   text-align: center;
   width: min(390px, 100%);
   padding-top: clamp(40px, 6vw, 80px);
@@ -411,4 +415,20 @@
   /*min-height: 600px;*/
   justify-content:start;
   padding: clamp(30px, 4.5vw, 60px) 0;
+}
+
+@media (max-width: 480px) {
+    .tl-TechnologyStep1-Topics div .team-card {
+        margin-top: clamp(80px, 13vw, 200px);
+    }
+
+    .tl-Technology-p3,.tl-Technology-p4 {
+      text-align: left;;
+  }
+  .tl-Technology-p3 {
+    margin-top: clamp(60px, 8vw, 120px);
+  }
+  .tl-Technology-content .default-split-content .default-split-content__content {
+      margin-top: clamp(60px, 8vw, 120px);
+  }
 }

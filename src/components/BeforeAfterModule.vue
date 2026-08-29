@@ -363,6 +363,7 @@ export default {
       5vw,
       24px
     );
+    text-align: left;
   }
 
 }

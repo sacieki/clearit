@@ -1,6 +1,6 @@
 <template>
   <section
-    class="short-contact mx-auto hidden lg:flex"
+    class="sticky short-contact mx-auto hidden lg:flex"
     :class="{ 'short-contact--expanded': isExpanded }"
   >
 
@@ -29,7 +29,7 @@
 
           <!-- Instagram -->
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/clearit_tattooremoval/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -64,7 +64,7 @@
 
           <!-- YouTube -->
           <a
-            href="https://www.youtube.com/"
+            href="https://www.youtube.com/@CLEARiTTV1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
@@ -87,7 +87,7 @@
 
           <!-- LinkedIn -->
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/company/clearittattooremoval"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -211,14 +211,19 @@ export default {
 }
 .short-contact {
   transform: translateX(-50%);
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 50%;
+
   width: 600px;
   height: 40px;
+
   background: #1F1F1F;
   overflow: hidden;
-  z-index: 999;
+  z-index: 9999;
+
   flex-direction: column;
+
   transition:
     height 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }

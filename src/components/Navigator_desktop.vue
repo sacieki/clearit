@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 z-50 navigator-desktop">
+  <div class=" top-0 z-50 navigator-desktop">
     
     <!-- ====================================================== -->
     <!-- DESKTOP NAVIGATION -->

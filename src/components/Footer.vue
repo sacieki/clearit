@@ -6,7 +6,7 @@
         <div class="default-content-width default-content-border-radius ft-Footer-content ">
           <div class="ft-Footer-Topics mx-auto BG-GradientWhiteToGray default-content-border-radius">
 
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 footer-nav">
               <router-link
                 v-for="item in navItems"
                 :key="item.to"
@@ -17,7 +17,7 @@
               </router-link>
             </div>
 
-            <div style="width:50%;margin-right:clamp(60px, 8vw, 120px);">
+            <div class="ft-contact-contrainer">
 
               <div class="footer-newsletter underline-gray-fullwidth">
                 <h2>Partner with <span class="colorBlack">CLEAR</span><span class="colorBlue">i</span><span class="colorBlack">T</span></h2>
@@ -38,29 +38,48 @@
               <div class="ft-contact-zone">
                 <div class="underline-gray-fullwidth">
                   <p class="contact-topic colorGray">E-MAIL ADDRESS</p>
-                  <p class="contact-data colorBlue">info@yclearit.com</p>
+                  <a href="mailto:info@yclearit.com" class="contact-data colorBlue">
+                    info@yclearit.com
+                  </a>
                 </div>
 
                 <div class="underline-gray-fullwidth">
                   <p class="contact-topic colorGray">PHONE NUMBER</p>
-                  <p class="contact-data colorBlue">(+1) 877-55-CLEAR (25327)</p>
+                  <a href="tel:+187755325327" class="contact-data colorBlue">
+                    (+1) 877-55-CLEAR (25327)
+                  </a>
                 </div>
 
-                <div class="underline-gray-fullwidth">
-                  <p class="contact-topic colorGray">PHONE NUMBER</p>
-                  <p class="contact-data colorBlue">(+1) 877-55-CLEAR (25327)</p>
-                </div>
+                
               </div>
 
               <div class="ft-social-zone">
                 <div class="underline-gray-fullwidth">
-                  <p class="contact-topic colorGray">INSTAGRAM</p>
+                  <router-link
+                    to="/"
+                    aria-label="CLEARiT INSTAGRAM"
+                    class="contact-topic colorGray"
+                  >
+                    INSTAGRAM
+                  </router-link>
                 </div>
                 <div class="underline-gray-fullwidth">
-                  <p class="contact-topic colorGray">LINKEDIN</p>
+                  <router-link
+                    to="/"
+                    aria-label="CLEARiT LINKEDIN"
+                    class="contact-topic colorGray"
+                  >
+                    LINKEDIN
+                  </router-link>
                 </div>
                 <div class="underline-gray-fullwidth">
-                  <p class="contact-topic colorGray">YOUTUBE</p>
+                  <router-link
+                    to="/"
+                    aria-label="CLEARiT YOUTUBE"
+                    class="contact-topic colorGray"
+                  >
+                    YOUTUBE
+                  </router-link>
                 </div>
               </div>
 
@@ -189,13 +208,20 @@ div:has(> .image-container__bg) {
   line-height: 1.4;
   letter-spacing: 25%;
 }
-
+.ft-contact-contrainer {
+  width:50%;
+  margin-right:clamp(60px, 8vw, 120px);
+}
 /************************************************************************* */
 .site-footer {
   width: 100%;
   background: #fff;
   padding: 70px 3% 45px;
   color: #202020;
+}
+
+.ft-social-zone div a:hover{
+  color:#29bcfb;
 }
 
 
@@ -260,5 +286,25 @@ div:has(> .image-container__bg) {
   .copyright-divider {
     display: none;
   }
+
+  .footer-nav {
+    display: none!important;
+  }
+
+  .ft-contact-contrainer {
+    padding-left: clamp(15px, 2.5vw, 30px);
+    width:100%
+  }
+  .image-container__bg {
+    display:none;
+  }
 }
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
 </style>
