@@ -237,19 +237,6 @@ export default {
 }
 
 
-/*
-.bm-BeforeAfterModule-p1::after {
-  content: "";
-  display: block;
-
-  width: 10%;
-  height: 2px;
-
-  margin-top: 8px;
-
-  background: #29BCFB;
-}
-*/
 
 /* ========================================
    TABLET
@@ -304,15 +291,17 @@ export default {
     text-align: center;
   }
 
+
   .bm-BeforeAfterModule-p1 {
-    width: min(
-      540px,
-      90%
+    width: 100%;
+
+    font-size: clamp(
+      18px,
+      5vw,
+      24px
     );
-
-    text-align: center;
+    text-align: left;
   }
-
 }
 
 
@@ -355,16 +344,7 @@ export default {
     width: 100%;
   }
 
-  .bm-BeforeAfterModule-p1 {
-    width: 100%;
-
-    font-size: clamp(
-      18px,
-      5vw,
-      24px
-    );
-    text-align: left;
-  }
+  
 
 }
 
