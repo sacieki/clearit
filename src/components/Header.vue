@@ -1,68 +1,6 @@
 <template>
   <div class="fixed top-0 left-0 right-0 z-50">
 
-    <!-- TOP BAR -->
-    <!--
-    <div
-      class="hidden sm:flex flex-wrap sm:flex-nowrap gap-y-3 gap-x-4 items-center justify-between bg-[#1a1a1a] text-white py-3 px-4 sm:px-8 text-sm font-medium tracking-wide"
-    >
-      <div class="flex items-center gap-4 sm:gap-10">
-
-        <div
-          class="cursor-pointer flex items-center gap-1.5 text-sm sm:text-lg lg:text-xl"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-map-pin size-3 sm:size-4 lg:size-5"
-            aria-hidden="true"
-          >
-            <path
-              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-            />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-
-          Affiliate locator
-        </div>
-
-        <div class="opacity-85 text-sm sm:text-lg lg:text-xl">
-          United States
-        </div>
-
-      </div>
-
-      <div
-        class="flex items-center gap-1.5 text-sm sm:text-lg lg:text-xl font-medium opacity-100 cursor-pointer tracking-wide transition-opacity duration-200 hover:opacity-70"
-      >
-        Book a consultation
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-chevron-right size-3 sm:size-4 lg:size-6"
-          aria-hidden="true"
-        >
-          <path d="m9 18 6-6-6-6" />
-        </svg>
-      </div>
-    </div>
-    -->
-
     <!-- NAVIGATION -->
     <nav
       class="bg-white lg:hidden flex items-center justify-between pb-6 px-4 pt-6 lg:pb-12 sm:px-8 relative z-50"
@@ -154,186 +92,28 @@
         class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-20 max-w-[760px] mx-auto"
       >
 
-        <!-- ABOUT -->
-        <div>
-
-          <div
-            class="text-left text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
+        <div class="flex flex-col gap-5 footer-nav">
+          <router-link
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
+            :aria-label="item.label"
+            @click="closeMenu"
           >
-            About
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-
-            <router-link to="/brand-overview"  @click="closeMenu">
-                Who We Are
-            </router-link>
-
-            <router-link to="/techno-lab"  @click="closeMenu">
-                What We Do
-            </router-link>
-
-            <router-link to="/techno-lab"  @click="closeMenu">
-                Why CLEARiT
-            </router-link>
-
-            <router-link to="/brand-overview"  @click="closeMenu">
-                Our Difference
-            </router-link>
-
-          </div>
-
+            {{ item.label }}
+          </router-link>
         </div>
 
 
-        <!-- PRESS & BLOG -->
-        <div>
-
-          <div
-            class="text-left  text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
-          >
-            Press &amp; Blog
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-            <!--
-            <a href="/press">
-              Press releases
-            </a>
-
-            <a href="/press">
-              Featured articles
-            </a>
-
-            <a href="/press">
-              News / Blog
-            </a>
-            -->
-            <a
-              href="mailto:info@clearit.com?subject=Media Inquiry&body=Hello CLEARiT team,"
-            >
-              Media contact email
-            </a>
-            
-
-          </div>
-
-        </div>
+      
 
 
-        <!-- PRODUCT / SCIENCE -->
-        <div>
-
-          <div
-            class="text-left text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
-          >
-            Product / Science
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-
-            <router-link to="/techno-lab"  @click="closeMenu">
-                The CLEARiT System
-            </router-link>
-            <!--
-            <a href="/brand-overview">
-              Research philosophy
-            </a>
-
-            <a href="#">
-              Data
-            </a>
-            -->
-          </div>
-
-        </div>
 
 
-        <!-- LEARN -->
-        <div>
 
-          <div
-            class="text-left text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
-          >
-            Learn
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-
-            <router-link to="/before-after"  @click="closeMenu">
-                Before &amp; After
-            </router-link>
-
-            <router-link to="/techno-lab"  @click="closeMenu">
-                The Skin First Solution
-            </router-link>
-
-            <router-link to="/techno-lab"  @click="closeMenu">
-                Your Tattoo Removal Journey
-            </router-link>
-
-            <router-link to="/faqs" @click="closeMenu">
-              FAQs
-            </router-link>
-          </div>
-
-        </div>
+     
 
 
-        <!-- CONTACT -->
-        <div>
-
-          <div
-            class="text-left text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
-          >
-            Contact
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-
-            <router-link to="/contact-us" @click="closeMenu">
-                Contact Us
-            </router-link>
-
-          </div>
-
-        </div>
-
-
-        <!-- INVESTORS -->
-        <div>
-
-          <div
-            class="text-left text-2xl lg:text-2.5xl font-normal text-black tracking-wide mb-5"
-          >
-            Investors
-          </div>
-
-          <div class="menu-content flex flex-col gap-5 text-left ">
-
-            <router-link to="/brand-overview"  @click="closeMenu">
-                Company overview
-            </router-link>
-
-            <router-link to="/brand-overview" @click="closeMenu">
-                Vision &amp; Roadmap
-            </router-link>
-            
-            <router-link to="/brand-overview#team" @click="closeMenu">
-                Leadership team
-            </router-link>
-            <!--
-            <a href="/brand-overview#team">
-              Scientific advisory board
-            </a>
-
-            <a href="#">
-              Investor deck
-            </a>
-            -->
-          </div>
-
-        </div>
 
       </div>
 
@@ -349,8 +129,18 @@ export default {
 
   data() {
     return {
+      navItems: [
+        { label: "Home", to: "/" },
+        { label: "Locations", to: "/locations" },
+        { label: "Brand Overview", to: "/brand-overview" },
+        { label: "Product", to: "/techno-lab" },
+        { label: "Team", to: "/brand-overview#team" },
+        { label: "Patient Journey", to: "/patient-journey" },
+        { label: "FAQs", to: "/faqs" },
+        { label: "Contact", to: "/contact-us" }
+      ],
       isMenuOpen: false
-    };
+    }
   },
 
   methods: {

@@ -232,3 +232,14 @@
 .pj-OurVision-Topics {
   padding-bottom: clamp(60px, 8vw, 100px);
 }
+
+.pj-TechnologyStep1-Topics,
+.pj-TechnologyStep2-Topics {
+  margin-top: 200px;
+}
+
+@media (max-width: 480px) {
+  .pj-TechnologyStep1-Topics div .team-card {
+      margin-top: clamp(80px, 13vw, 200px);
+  }
+}

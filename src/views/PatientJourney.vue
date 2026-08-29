@@ -113,7 +113,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
           </div>
 
-          <div class="tl-TechnologyStep1-Topics mx-auto">
+          <div class="pj-TechnologyStep1-Topics mx-auto">
               <div class="team-grid">
 
                 <!-- Card 1 -->
