@@ -56,33 +56,42 @@
               </div>
 
               <div class="ft-social-zone">
+
                 <div class="underline-gray-fullwidth">
-                  <router-link
-                    to="/"
-                    aria-label="CLEARiT INSTAGRAM"
+                  <a
+                    href="https://www.instagram.com/clearit_tattooremoval/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CLEARiT Instagram"
                     class="contact-topic colorGray"
                   >
                     INSTAGRAM
-                  </router-link>
+                  </a>
                 </div>
+
                 <div class="underline-gray-fullwidth">
-                  <router-link
-                    to="/"
-                    aria-label="CLEARiT LINKEDIN"
+                  <a
+                    href="https://www.linkedin.com/company/clearittattooremoval"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CLEARiT LinkedIn"
                     class="contact-topic colorGray"
                   >
                     LINKEDIN
-                  </router-link>
+                  </a>
                 </div>
+
                 <div class="underline-gray-fullwidth">
-                  <router-link
-                    to="/"
-                    aria-label="CLEARiT YOUTUBE"
+                  <a
+                    href="https://www.youtube.com/@CLEARiTTV1"
+                    target="_blank"
+                    aria-label="CLEARiT YouTube"
                     class="contact-topic colorGray"
                   >
                     YOUTUBE
-                  </router-link>
+                  </a>
                 </div>
+
               </div>
 
               
@@ -155,6 +164,10 @@ div:has(> .image-container__bg) {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.ft-Footer-content .BG-GradientWhiteToGray::before {
+  position:unset;
 }
 
 .ft-contact-zone {
@@ -309,5 +322,11 @@ div:has(> .image-container__bg) {
   gap: 1.25rem;
 }
 
+a.contact-topic.colorGray:hover {
+  color: #29bcfb;
+}
+a.contact-data.colorBlue:hover {
+  color: #1f1f1f;
+}
 
 </style>

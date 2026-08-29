@@ -242,10 +242,7 @@ export default {
           label: "HOME",
           to: "/"
         },
-        {
-          label: "LOCATIONS",
-          to: "/locations"
-        },
+        
         {
           label: "BRAND OVERVIEW",
           to: "/brand-overview"
@@ -255,17 +252,22 @@ export default {
           to: "/techno-lab"
         },
         {
-          label: "TEAM",
-          to: "/brand-overview#team"
-        },
-        {
           label: "PATIENT JOURNEY",
           to: "/patient-journey"
+        },
+        {
+          label: "BEFORE & AFTER",
+          to: "/before-after"
+        },
+        {
+          label: "LOCATIONS",
+          to: "/find-us"
         },
         {
           label: "FAQS",
           to: "/faqs"
         },
+
         {
           label: "CONTACT",
           to: "/contact-us"

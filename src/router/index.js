@@ -8,7 +8,7 @@ import TechnoLab from '../views/TechnoLab.vue'
 import PatientJourney from '../views/PatientJourney.vue'
 import BeforeAfter from '../views/BeforeAfter.vue'
 import Welcomebook from '../views/Welcomebook.vue'
-
+import FindUs from '../views/FindUs.vue'
 
 const routes = [
   {
@@ -45,6 +45,11 @@ const routes = [
     path: '/faqs',
     name: 'FAQs',
     component: FAQs
+  },
+  {
+    path: '/find-us',
+    name: 'FindUs',
+    component: FindUs
   },
   {
     path: '/contact-us',
