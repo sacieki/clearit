@@ -10,10 +10,13 @@
 
     <ShortContact />
     
+    <div style="padding-top: clamp(30px, 4.5vw, 60px);">
+      <Navigator_desktop  />
+    </div>
 
-      <section class=" TheCLEARiTDifference">
-    <div class="default-container  ">
-      <div class="default-content-width  pj-TheCLEARiTDifference-content ">
+    <section class="default-section Hero">
+      <div class="default-container  ">
+        <div class="default-content-width default-content-border-radius ba-Hero-content ">
         <div class=" default-media">
           <video
             class="hero-video"
@@ -30,12 +33,6 @@
       </div>
     </div>
   </section>
-
-
-    
-    <Navigator_desktop />
-
-
 
     <section class="default-section default-hero">
       <div class="default-container  ">

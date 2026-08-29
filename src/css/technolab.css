@@ -428,7 +428,4 @@
   .tl-Technology-p3 {
     margin-top: clamp(60px, 8vw, 120px);
   }
-  .tl-Technology-content .default-split-content .default-split-content__content {
-      margin-top: clamp(60px, 8vw, 120px);
-  }
 }
