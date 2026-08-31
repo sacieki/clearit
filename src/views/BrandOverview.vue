@@ -254,7 +254,7 @@
       </section>
     </ScrollReveal>
 
-    <ScrollReveal :delay="500">
+    
       <section class="default-section MeettheTeam ">
         <div class="default-container  ">
           <div class="default-content-width default-content-border-radius bo-MeettheTeam-content bg-image fade-bottom">
@@ -450,7 +450,6 @@
           </div>
         </div>
       </section>
-    </ScrollReveal>
 
 
   <BeforeAfterModule/>
