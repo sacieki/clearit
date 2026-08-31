@@ -105,7 +105,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
       </section>
     </ScrollReveal>
 
-    <ScrollReveal :delay="200">
+  
       <section class="default-section GetStarted">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius pj-GetStarted-content ">
@@ -214,7 +214,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         </div>
       </div>
       </section>
-    </ScrollReveal>
+
 
     <ScrollReveal :delay="300">
       <section class="default-section TheCLEARiTDifference" style="margin-top: clamp(-60px, -8vw, -120px);">

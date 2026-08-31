@@ -131,7 +131,7 @@ export default {
     return {
       navItems: [
         { label: "Home", to: "/" },
-        { label: "Locations", to: "/locations" },
+        { label: "Locations", to: "/find-us" },
         { label: "Brand Overview", to: "/brand-overview" },
         { label: "Product", to: "/techno-lab" },
         { label: "Team", to: "/brand-overview#team" },

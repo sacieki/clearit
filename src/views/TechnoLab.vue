@@ -89,7 +89,6 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
       </section>
     </ScrollReveal>
 
-    <ScrollReveal :delay="200">
       <section class="default-section Technology">
         <div class="default-container  ">
           <div class="default-content-width default-content-border-radius tl-Technology-content ">
@@ -312,7 +311,6 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
           </div>
         </div>
       </section>
-    </ScrollReveal>
 
     <ScrollReveal :delay="300">
       <section class="default-section TwoStepProtocol">
