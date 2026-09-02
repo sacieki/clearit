@@ -227,6 +227,8 @@
 
 
 <script>
+//import { navItems } from "@/data/navigation";
+
 export default {
   name: "ShortContact",
 
@@ -237,51 +239,23 @@ export default {
       currentMenuIndex: 0,
       menuTransition: "menu-next",
 
-      menuItems: [
-        {
-          label: "HOME",
-          to: "/"
-        },
-        
-        {
-          label: "BRAND OVERVIEW",
-          to: "/brand-overview"
-        },
-        {
-          label: "PRODUCT",
-          to: "/techno-lab"
-        },
-        {
-          label: "PATIENT JOURNEY",
-          to: "/patient-journey"
-        },
-        {
-          label: "BEFORE & AFTER",
-          to: "/before-after"
-        },
-        {
-          label: "LOCATIONS",
-          to: "/find-us"
-        },
-        {
-          label: "FAQS",
-          to: "/faqs"
-        },
-
-        {
-          label: "CONTACT",
-          to: "/contact-us"
-        }
-      ]
+      navItems: [ { label: "HOME", to: "/" }, { label: "BRAND OVERVIEW", to: "/brand-overview" }, { label: "PRODUCT", to: "/the-clearit-method" }, { label: "PATIENT JOURNEY", to: "/patient-journey" }, { label: "BEFORE & AFTER", to: "/before-after" }, { label: "LOCATIONS", to: "/find-us" }, { label: "FAQS", to: "/faqs" }, { label: "CONTACT", to: "/contact-us" } ]
     };
   },
 
   computed: {
     visibleMenuItems() {
-      return this.menuItems.slice(
-        this.currentMenuIndex,
-        this.currentMenuIndex + 3
-      );
+      const items = this.navItems;
+
+      if (items.length <= 3) {
+        return items;
+      }
+
+      // ทำให้เลื่อนได้แบบวนรอบ
+      return [
+        ...items,
+        ...items
+      ].slice(this.currentMenuIndex, this.currentMenuIndex + 3);
     }
   },
 
@@ -292,31 +266,23 @@ export default {
     },
 
     previousMenu() {
-
       this.menuTransition = "menu-prev";
 
       if (this.currentMenuIndex > 0) {
         this.currentMenuIndex--;
       } else {
-        this.currentMenuIndex =
-          this.menuItems.length - 3;
+        this.currentMenuIndex = this.navItems.length - 1;
       }
-
     },
 
     nextMenu() {
-
       this.menuTransition = "menu-next";
 
-      if (
-        this.currentMenuIndex <
-        this.menuItems.length - 3
-      ) {
+      if (this.currentMenuIndex < this.navItems.length - 1) {
         this.currentMenuIndex++;
       } else {
         this.currentMenuIndex = 0;
       }
-
     }
 
   }

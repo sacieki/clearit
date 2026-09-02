@@ -182,7 +182,7 @@
   font-family: Figtree, sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-align: center;
 
   
@@ -219,7 +219,7 @@
   background: linear-gradient(180deg, #F5F5F5 0%, #F8F8F8 100%);
   display: flex;
   align-items: center;
-  color: var(--home-blue);
+  color: var(--home-black);
   font-size: 14px;
   line-height: 1.35;
   letter-spacing: .05em;
@@ -1128,6 +1128,8 @@
   background: #fff;
   margin-top: 300px;
 }
+
+
 
 
 @media (max-width: 767px) {

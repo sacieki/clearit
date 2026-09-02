@@ -20,23 +20,13 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="default-container  ">
           <div class="default-content-width default-content-border-radius pj-Hero-content BG-GradientGrayToWhite">
             <div class="pj-Hero-Topics">
-              <div class="pj-Hero-Topics__image">
-                <img
-                  alt="Logo"
-                  loading="lazy"
-                  decoding="async"
-                  class="img-overflow-top"
-                  src="/media/b 62fe4efe-67bf-462e-9371-3b8fc7b3d96f-2026-08-21 1.png"
-                />
-              </div>
-
-              <div class="pj-Hero-Topics__content">
-                <p class="pj-hero-p1 colorBlack underline-blue">
-                  YOUR SKIN.<br />
-                  YOUR CONFIDENCE.<br />
-                  OUR PRIORITY.
-                </p>
-              </div>
+              <img
+                alt="Logo"
+                loading="lazy"
+                decoding="async"
+                class=""
+                src="/media/pj-pic-01.png"
+              />
             </div>
             <p class="pj-hero-p2 colorGray">
               Your Tattoo Removal Journey
@@ -49,7 +39,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             </p>
 
             <p class="pj-hero-p4 colorGray mx-auto">
-              Engineered with the preparation mindset, the CLEARiT journey focuses on the client experience skin condition during and between sessions allows treatment to be performed more efficiently and safely.
+              Engineered with the preparation mindset, the CLEARiT journey focuses on the client experience attention to skin condition during and between sessions allows treatment to be performed more efficiently and safely.
             </p>
 
             
@@ -79,7 +69,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p2 colorGray">
-                  At CLEARiT, every laser tattoo removal appointment is designed with intention: precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
+                  At a CLEARiT Provider, your tattoo removal journey begins with a personalized evaluation, precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
                 </p>
 
                 <p class="pj-hero-description-p3 colorGray">
@@ -87,7 +77,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p4 colorGray">
-                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as quick, light snaps, that are brief and manageable.
+                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as quick, that are brief and manageable.
                 </p>
 
                 <p class="pj-hero-description-p5 colorGray">
@@ -237,11 +227,11 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 />
 
                 <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
-                  "Technology is the bridge between uncertainty and accuracy. 
+                  Technology can turn more information into greater treatment intelligence. 
                 </p>
 
                 <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
-                  CLEARiT exists to eliminate the margin of error, using the power of AI to bring a new level of precision to tattoo removal."
+                  CLEARiT is building AI-enabled tools designed to reduce variability and support more informed tattoo removal.
                 </p>
 
                 <img
@@ -249,9 +239,9 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                   alt=""
                   loading="lazy"
                   class="img-overflow-bottom"
-                  style="transform: translateY(clamp(120px, 20vw, 300px));"
+                  
                 />
-                
+                <!---style="transform: translateY(clamp(120px, 20vw, 300px));"-->
                   
             </div>
           </div>
@@ -266,10 +256,10 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             <div class="pj-Engineered-Topics mx-auto">
                 
 
-                <p class="pj-Engineered-p1 mx-auto colorBlue">
+                <p class="pj-Engineered-p1 mx-auto colorGray">
                   Engineered Around Skin Behavior 
                 </p>
-
+                <!---
                 <p class="pj-Engineered-p2 colorGray mx-auto">
                   CLEARiT is not a laser, it is what makes the laser work smarter.
                 </p>
@@ -286,7 +276,14 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                     <li>Safer, more predictable removal journeys</li>
                   </ul>
                 </div>
+                --->
+                <p class="pj-Engineered-p2ex1 mx-auto colorBlue">
+                  CLEARiT is not another laser.
+                </p>
 
+                <p class="pj-Engineered-p2ex2 mx-auto colorBlue">
+                  We are the method behind the laser.
+                </p>
             </div>
           </div>
         </div>

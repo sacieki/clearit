@@ -22,7 +22,7 @@ const routes = [
     component: BrandOverview
   },
   {
-    path: '/techno-lab',
+    path: '/the-clearit-method',
     name: 'TechnoLab',
     component: TechnoLab
   },

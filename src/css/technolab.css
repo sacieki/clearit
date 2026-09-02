@@ -192,9 +192,6 @@
   overflow: visible;
 }
 
-.tl-TwoStepProtocol-Topics {
-  padding-bottom:clamp(80px, 13vw, 200px);
-}
 
 .tl-TwoStepProtocol-p1 {
   font-family: "Figtree", sans-serif;
@@ -302,8 +299,7 @@
   margin-top: clamp(-10px, -1.5vw, -20px);
 }
 .tl-RemovalPhilosophy-p6 {
-  margin-top: clamp(140px, 22vw, 340px);
-  width: 40%;
+  margin-top: clamp(80px, 12vw, 160px);
 }
 .tl-RemovalPhilosophy-p6,
 .tl-RemovalPhilosophy-p7 {
@@ -329,9 +325,10 @@
   font-family: "Figtree", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: clamp(16px, 1.8vw, 22px);
+  /*font-size: clamp(16px, 1.8vw, 22px);*/
+  font-size: clamp(24px, 3vw, 37px);
   line-height: 1.1;
-  letter-spacing: 25%;
+  letter-spacing: 0.05em;
   padding-left:clamp(10px, 1.5vw, 20px);
 }
 
@@ -408,13 +405,9 @@
 .tl-RemovalPhilosophy-content2 {
   width:90%;
   background:white;
-  background-image: url("../assets/CLEARiT woman-with-modern-smartphone-on-white-background-2026-01-11-11-07-41-utc 1.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 60% auto;
   /*min-height: 600px;*/
   justify-content:start;
-  padding: clamp(30px, 4.5vw, 60px) 0;
+  padding-top: clamp(30px, 4.5vw, 60px);
 }
 
 @media (max-width: 480px) {

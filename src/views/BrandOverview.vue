@@ -75,11 +75,9 @@
             </div>
 
             <div class="bo-hero-textdetail colorGray">
-              <p class="mx-auto bo-hero-textdetail-p1">We developed CLEARiT as a system that supports the skin before each laser session.</p>
+              <p class="mx-auto bo-hero-textdetail-p1">We developed the CLEARiT method around science, technology and intelligence.</p>
 
-              <p class="mx-auto bo-hero-textdetail-p2"><br/>CLEARiT system helps create a cleaner surface to optimize ink access. When the skin is properly prepared, every laser pulse can perform closer to its full potential.</p>
-              <p class="mx-auto">CLEARiT is not a laser.</p>
-              <p class="mx-auto">CLEARiT optimizes every treatment.</p>
+              
             </div>
           </div>
         </div>
@@ -101,10 +99,13 @@
                 src="/media/Clearit_Home_img01.png"
               />
               <div class="bo-WhyWeDevelop-Topics mx-auto">
-                <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">Why We Develop CLEARiT</p>
+                <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">Why We Developed CLEARiT</p>
                 <p class="mx-auto bo-WhyWeDevelop-p2 colorGray">Tattoo removal should never be guesswork. 
     It is a calculated process.</p>
-                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">CLEARiT addresses the inefficiency in the current standard of care. While lasers have evolved, preparation protocols have not.</p>
+                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT method made clarity and intelligence a top priority. Our science driven technology focused approch brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
+                <p class="mx-auto bo-WhyWeDevelop-p4 colorGray"><br/>Out with the old, in with the new. </p>
+                <p class="mx-auto bo-WhyWeDevelop-p5 colorGray"><br/>The CLEARiT method of tattoo removal </p> 
+                <p class="mx-auto bo-WhyWeDevelop-p6 colorBlack">smarter science- smarter technology- smarter removal. </p>
               </div>
             </div>
           </div>
@@ -123,7 +124,7 @@
                 decoding="async"
                 class="mx-auto"
                 style="color: transparent; headimage-OverY"
-                src="/media/Group 98 1.png"
+                src="/media/bo-pic02.png"
               />
               <div class="bo-ClearitDifferent-Topics mx-auto">
                 <p class="bo-ClearitDifferent-p1 colorBlack">
@@ -155,9 +156,6 @@
                 </p>
 
                 <ul class="bo-ClearitDifferent-ul colorGray">
-                  <li>
-                    Surface clarity for consistent laser absorption
-                  </li>
                   <li>
                     Controlled, repeatable session outcomes
                   </li>
@@ -221,30 +219,40 @@
                 <span class="colorBlue">Our</span> Vision
               </p>
 
+              <!---
               <p class="bo-OurVision-p2">
                 Leading the Next Era of Tattoo Removal Technology
               </p>
-
+              -->
+              <img
+                    alt="Slogan"
+                    loading="lazy"
+                    decoding="async"
+                    class=""
+                    style="padding-top: clamp(40px, 6vw, 80px);margin:auto;"
+                    src="/media/bo-pic04.png"
+                  />
+              <!--
               <div class="flex-column bo-OurVision-columnsplit colorGray">
                 <div class="left">
-                  <p class="bo-OurVision-columnsplit-top">Safe</p>
+                  <p class="bo-OurVision-columnsplit-top">Greater Clarity</p>
                   <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
                   <p class="bo-OurVision-columnsplit-bottom">for patients</p>
                 </div>
 
                 <div class="center">
-                  <p class="bo-OurVision-columnsplit-top">Smarter</p>
+                  <p class="bo-OurVision-columnsplit-top">Greater Intelligence</p>
                   <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
-                  <p class="bo-OurVision-columnsplit-bottom">for practitioners</p>
+                  <p class="bo-OurVision-columnsplit-bottom">for providers</p>
                 </div>
 
                 <div class="right">
                   <p class="bo-OurVision-columnsplit-top">Scalable</p>
                   <div class="lineblueColumnsplit" style="width: 33%;height: 1px;background: #29BCFB;"></div>
-                  <p class="bo-OurVision-columnsplit-bottom">for the industry</p>
+                  <p class="bo-OurVision-columnsplit-bottom">for providers</p>
                 </div>
               </div>
-
+              -->
               <p class="bo-OurVision-p3 mx-auto colorGray">
                 CLEARiT was engineered as part of a comprehensive professional protocol, creating consistent surface conditions and clinically evaluated technique for every tattoo removal session. Founded by industry experts, the brand is dedicated to elevating standards and providing reliable, repeatable preparation to optimize our clients’ tattoo removal experience.
               </p>
@@ -444,7 +452,7 @@
               </p>
 
               <p class="bo-MeettheTeam-p3 colorGray mx-auto">
-                CLEARiT combines world class advisory expertise in clinical medicine and artificial intelligence. We are dedicated to replacing subjectivity with science, providing the governance to lead CLEARiT as the new global standard in tattoo removal technology.
+                CLEARiT combines world-class advisory expertise in clinical medicine and artificial intelligence. We are dedicated to replacing subjectivity with science, providing the governance to lead CLEARiT as the new global standard in tattoo removal technology.
               </p>
             </div>
           </div>

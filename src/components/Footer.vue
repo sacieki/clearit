@@ -4,7 +4,7 @@
     <section class="default-section Footer">
       <div class="default-container  ">
         <div class="default-content-width default-content-border-radius ft-Footer-content ">
-          <div class="ft-Footer-Topics mx-auto BG-GradientWhiteToGray default-content-border-radius">
+          <div class="ft-Footer-Topics mx-auto BG-GradientWhiteToGray bg-image-pic default-content-border-radius">
 
             <div class="flex flex-col gap-5 footer-nav">
               <div style="display:none;">
@@ -92,22 +92,24 @@
                   </a>
                 </div>
 
+                
               </div>
-
+              
+              
+            </div>
+            
+            <div style="display:flex;justify-content:flex-end;align-items:flex-end;width:100%;">
               
             </div>
 
-            <img
-                alt="Logo"
-                loading="lazy"
-                height="auto"
-                width="50%"
-                decoding="async"
-                class=" image-container__bg img-overflow-bottom"
-                style="color: transparent"
-                src="/media/7f0be2b9-ba10-45dd-afa7-5a2588ffa5f5.png"
-              />
           </div>
+          
+            
+        </div>
+        <div>
+          <p class="colorGray copyright-divider">
+            Copyright 2026 © Clear Intradermal Technologies, Inc | All rights reserved
+          </p>
         </div>
       </div>
     </section>
@@ -124,7 +126,7 @@
             { label: "Home", to: "/" },
             { label: "Locations", to: "/locations" },
             { label: "Brand Overview", to: "/brand-overview" },
-            { label: "Product", to: "/techno-lab" },
+            { label: "The CLEARiT Method", to: "/the-clearit-method" },
             { label: "Team", to: "/brand-overview#team" },
             { label: "Patient Journey", to: "/patient-journey" },
             { label: "FAQs", to: "/faqs" },
@@ -142,17 +144,17 @@ div:has(> .image-container__bg) {
 }
 .image-container__bg {
   position: absolute;
-  bottom: -1%;
-  left: 0%;
 
-  width: 40%;
+  bottom: -3%;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: clamp(250px, 40%, 700px);
   height: auto;
 
-  
   z-index: 0;
   pointer-events: none;
-
-  transform: translateY(clamp(30px, 4.5vw, 60px));
 }
 
 .image-container > *:not(.image-container__bg) {
@@ -164,6 +166,9 @@ div:has(> .image-container__bg) {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  
+  padding-bottom: clamp(120px, 20vw, 300px);
 }
 
 .ft-Footer-content .BG-GradientWhiteToGray::before {
@@ -180,7 +185,7 @@ div:has(> .image-container__bg) {
 
 .ft-social-zone {
   margin-top: clamp(40px, 6vw, 80px);
-  padding-bottom: clamp(80px, 12vw, 160px);
+  /*padding-bottom: clamp(120px, 20vw, 300px);*/
 }
 
 .ft-social-zone div{
@@ -223,6 +228,18 @@ div:has(> .image-container__bg) {
   line-height: 1.4;
   letter-spacing: 25%;
 }
+
+.copyright-divider {
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
+  font-size: clamp(7px, 0.9vw, 12px);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: clamp(20px, 3vw, 40px);
+  padding-right: clamp(10px, 1.5vw, 20px);
+}
+
 .ft-contact-contrainer {
   width:50%;
   margin-right:clamp(60px, 8vw, 120px);
@@ -298,10 +315,6 @@ div:has(> .image-container__bg) {
     line-height: 1.7;
   }
 
-  .copyright-divider {
-    display: none;
-  }
-
   .footer-nav {
     display: none!important;
   }
@@ -311,7 +324,17 @@ div:has(> .image-container__bg) {
     width:100%
   }
   .image-container__bg {
-    display:none;
+    margin-top: clamp(40px, 6vw, 80px);
+    /*display:none;*/
+  }
+
+  .bg-image-pic {
+    background-image:none !important;
+    z-index: 2;
+    
+  }
+  .ft-social-zone .underline-gray-fullwidth::after {
+    z-index: 3;
   }
 }
 
@@ -327,6 +350,15 @@ a.contact-topic.colorGray:hover {
 }
 a.contact-data.colorBlue:hover {
   color: #1f1f1f;
+}
+
+.bg-image-pic {
+  position: relative;
+
+  background-image: url("../assets//ft-img-bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: clamp(180px, 25vw, 340px);
 }
 
 </style>

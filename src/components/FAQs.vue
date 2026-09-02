@@ -176,7 +176,7 @@ export default {
               answer: [
                 "Yes. CLEARiT treatments are performed by licensed medical professionals who are trained specifically in laser tattoo removal.",
 
-                "Our providers follow structured treatment protocols, calibrated laser parameters, and skin safety guidelines every session. Beyond operating the device, they are trained to assess pigment behavior and skin condition, then adjust the plan to keep results consistent.",
+                "Our providers follow structured treatment protocols, calibrated laser parameters, and skin safety guidelines every session. Beyond operating the device, they are trained to assess ink behavior and skin condition, then adjust the plan to keep results consistent.",
 
                 "Experience matters in laser tattoo removal. Provider judgment, timing between sessions, and skin evaluation all play a role in achieving predictable, responsible progress."
               ]
@@ -188,7 +188,7 @@ export default {
                 "Can CLEARiT completely remove my tattoo?",
 
               answer: [
-                "Many tattoos can be significantly reduced or fully cleared, but complete removal cannot be guaranteed in every case. Ink composition, depth, color mix, and skin response all influence the final outcome. We set removal goals based on what is technically achievable while protecting tissue integrity."
+                "Many tattoos can be significantly reduced or fully cleared, Ink composition, depth, color mix, and skin response all influence the final outcome. We set removal goals based on what is technically achievable while protecting tissue integrity."
               ]
             }
 

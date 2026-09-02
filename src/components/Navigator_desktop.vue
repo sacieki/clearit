@@ -24,17 +24,17 @@
           </router-link>
 
           <router-link
-            to="/techno-lab"
+            to="/the-clearit-method"
             class="desktop-nav-link"
           >
-            Products
+            The CLEARiT Method
           </router-link>
 
           <router-link
             to="/before-after"
             class="desktop-nav-link"
           >
-            Gallery
+            Results
           </router-link>
 
           <router-link
@@ -42,6 +42,13 @@
             class="desktop-nav-link"
           >
             Patient Journey
+          </router-link>
+
+          <router-link
+            to="/find-us"
+            class="desktop-nav-link"
+          >
+            Find Clearit Providers
           </router-link>
 
           <router-link

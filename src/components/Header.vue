@@ -124,25 +124,16 @@
 
 
 <script>
+import { navItems } from "@/data/navigation";
 export default {
   name: "SiteHeader",
 
   data() {
     return {
-      navItems: [
-        { label: "Home", to: "/" },
-        { label: "Locations", to: "/find-us" },
-        { label: "Brand Overview", to: "/brand-overview" },
-        { label: "Product", to: "/techno-lab" },
-        { label: "Team", to: "/brand-overview#team" },
-        { label: "Patient Journey", to: "/patient-journey" },
-        { label: "FAQs", to: "/faqs" },
-        { label: "Contact", to: "/contact-us" }
-      ],
-      isMenuOpen: false
-    }
+      navItems,
+      isMenuOpen: false,
+    };
   },
-
   methods: {
     openMenu() {
       this.isMenuOpen = true;

@@ -81,14 +81,12 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             <div class="hero-copy">
               <ScrollReveal>
                 <p class="hero-lead mx-auto colorBlue">
-                  CLEARiT is a science-driven <br />
-                  skin preparation system <br />
-                  designed to optimize <br />
-                  how skin behaves <br />
-                  between laser sessions.
+                  CLEARiT exists to redefine the tattoo removal experience. 
+                  <br/><br/>We bring science, technology, treatment methodology and practitioner expertise together to create a more informed, connected and consistent approach to tattoo removal.
                 </p>
               </ScrollReveal>
 
+              <!--
               <ScrollReveal :delay="200">
                 <p class="hero-body mx-auto">
                   By conditioning and priming the skin,<br />
@@ -96,8 +94,21 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                   faster, and more predictable tattoo-removal outcomes.
                 </p>
               </ScrollReveal>
+              -->
+              
+              <img
+                  alt="image"
+                  width="100%"
+                  loading="lazy"
+                  decoding="async"
+                  class=""
+                  style="margin-top: clamp(60px, 8vw, 120px);"
+                  src="/media/hm-pic02.png"
+                />
 
+              <!--
               <div class="hero-feature-grid mx-auto">
+                
                 <ScrollReveal
                   v-for="(feature, index) in heroFeatures"
                   :key="feature.title"
@@ -107,7 +118,10 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                     <span>{{ feature.title }}</span>
                   </article>
                 </ScrollReveal>
+                
+                
               </div>
+              -->
             </div>
           </div>
         </div>
@@ -140,7 +154,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                     playsinline
                     preload="auto"
                   >
-                    <source src="/media/0bf7bc18-71ca-4e63-85a5-7001d1652cc9.mp4" type="video/mp4" />
+                    <source src="/media/hm-vdo01.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -165,7 +179,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             
             <ScrollReveal :delay="800">
               <p>
-                CLEARiT is engineered around how the body actually clears ink, maximizing each treatment window and improving consistency between visits through disciplined preparation, planning and execution.
+                CLEARiT is engineered around how the body actually clears ink, maximizing each treatment session and improving consistency between visits through disciplined preparation, planning and execution.
               </p>
             </ScrollReveal>
 
@@ -204,7 +218,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               decoding="async"
               class=""
               style="color: transparent"
-              src="/media/82fea67e-691a-46b4-81d6-f9b5eef6f74e 2.png"
+              src="/media/hm-pic01.png"
             />
         </div>
       </section>
@@ -222,7 +236,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1200">
               <p>
-                Laser tattoo removal is not guesswork. <br/>It is a structured process built around how ink behaves in the skin and how skin heals.
+                Laser tattoo removal using the CLEARiT method is not guesswork. <br/>It is a structured process built around how ink behaves in the skin and how skin heals.
               </p>
             </ScrollReveal>
 
@@ -234,7 +248,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1300">
               <p>
-                Each treatment begins with a professional assessment of your tattoo including pigment type, density, depth, and placement, so your session settings are performed with intention, not approximation.
+                Each treatment begins with a professional assessment of your tattoo including ink type, density, depth, and placement, so your session settings are determined with intention, not approximation.
               </p>
             </ScrollReveal>
 
@@ -269,7 +283,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1600">
               <p class="preparation-note">
-                <br/>Your CLEARiT clinician will review your tattoo and skin condition and provide session specific pre-care guidance.
+                <br/>Your CLEARiT practitioner will review your tattoo and skin condition and provide session specific pre-care guidance.
               </p>
             </ScrollReveal>
             <ScrollReveal :delay="1750">
