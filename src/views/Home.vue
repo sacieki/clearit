@@ -128,24 +128,14 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
       </section>
     
 
-<!--
-    <section class="hero-section ">
-      <div class="default-container  home-container hero-inner pt-5">
-        <div class="default-content-width hero-visual media-placeholder hero-products">
-          
-          
-          
-        </div>
-      </div>
-    </section>
- -->   
+
     <!-- Science / positioning -->
     
       <section class="science-section">
         <div class="home-container science-grid">
-          <div class="media-placeholder science-portrait">
+          <div class="media-placeholder science-portrait" >
             <ScrollReveal :delay="500">
-              <div class=" default-media" style="height: 250px;min-height: 250px;max-height: 250px;">
+              <div class=" default-media" style="height: auto;min-height: 180px;max-height: auto;">
                   <video
                     class="hero-video hm-vdo-fullscale"
                     autoplay

@@ -27,6 +27,7 @@
 
 .hm-vdo-fullscale {
   object-fit: contain;
+  height: auto!important;
 }
 
 .media-placeholder {
@@ -106,10 +107,7 @@
   align-items: center;
 }
 
-.hero-visual {
-  min-height: 560px;
-  border-radius: 110px;
-}
+
 
 
 .hero-products {
@@ -236,7 +234,6 @@
 .science-grid {
   display: grid;
   /*grid-template-columns: minmax(280px, .8fr) minmax(300px, 1.2fr);*/
-  gap: 70px;
   align-items: center;
 }
 
@@ -906,12 +903,8 @@
     grid-template-columns: 1fr;
   }
 
-  .hero-visual,
-  .science-portrait,
-  .session-device,
-  .preparation-people {
-    min-height: 420px;
-  }
+
+
 
   .method-grid {
     grid-template-columns: 1fr;
@@ -939,8 +932,7 @@
     gap: 28px;
   }
 
-  .hero-visual,
-  .science-portrait,
+  
   .session-device,
   .preparation-people,
   .map-placeholder,
