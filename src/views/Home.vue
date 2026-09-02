@@ -145,14 +145,15 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="home-container science-grid">
           <div class="media-placeholder science-portrait">
             <ScrollReveal :delay="500">
-              <div class=" default-media">
+              <div class=" default-media" style="height: 250px;min-height: 250px;max-height: 250px;">
                   <video
-                    class="hero-video"
+                    class="hero-video hm-vdo-fullscale"
                     autoplay
                     muted
                     loop
                     playsinline
                     preload="auto"
+                    height="250px"
                   >
                     <source src="/media/hm-vdo01.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

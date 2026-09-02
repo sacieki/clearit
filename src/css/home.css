@@ -25,7 +25,9 @@
   padding: 110px 0;
 }
 
-
+.hm-vdo-fullscale {
+  object-fit: contain;
+}
 
 .media-placeholder {
   position: relative;
@@ -79,7 +81,7 @@
   line-height: 2;
   letter-spacing: 0.2em;
   color: #5C5A5A;
-  margin-top: clamp(20px, 3vw, 40px);
+  /*margin-top: clamp(20px, 3vw, 40px);*/
 }
 
 .media-label {
