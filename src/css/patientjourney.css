@@ -269,3 +269,9 @@
       margin-top: clamp(80px, 13vw, 200px);
   }
 }
+
+@media (max-width: 1100px) and (orientation: landscape) {
+  .team-card__image {
+    margin-top: clamp(80px, 13vw, 200px);
+  }
+}
