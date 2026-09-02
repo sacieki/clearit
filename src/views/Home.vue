@@ -169,7 +169,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
           <div class="science-copy mx-auto">
             
             <ScrollReveal :delay="800">
-              <p>
+              <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">
                 CLEARiT is engineered around how the body actually clears ink, maximizing each treatment session and improving consistency between visits through disciplined preparation, planning and execution.
               </p>
             </ScrollReveal>

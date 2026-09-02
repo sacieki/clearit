@@ -308,6 +308,7 @@ export default {
       24px
     );
     text-align: left;
+    padding-left:25px;
   }
 }
 
@@ -330,6 +331,7 @@ export default {
 
   .bm-BeforeAfterModule-p1 {
     width: 90%;
+    padding-left:25px;
   }
 
 }

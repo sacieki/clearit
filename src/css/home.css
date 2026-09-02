@@ -547,7 +547,7 @@
 .preparation-note {
   margin-top: 26px;
   padding-left:34px;
-  width:710px;
+  width: min(710px, 100%);
   line-height: 0.95;
 }
 
