@@ -526,7 +526,7 @@
   padding-left: 42px;
   transform: translateY(40px);
   list-style-type: disc;
-  width:589px;
+  width: min(589px, 100%);
 }
 
 .preparation-copy li {
@@ -538,6 +538,7 @@
   font-style: normal;
   font-size: clamp(16px, 2.3vw, 22px);
   letter-spacing: 0.05em;
+  width: min(589px, 90%);
 }
 
 .preparation-copy .outline-button {
@@ -822,9 +823,6 @@
   
 }
 
-.final-cta-copy {
-  height: 400px;
-}
 
 .final-cta-copy span.section-kicker {
   width: 100%;
@@ -841,12 +839,7 @@
   
 }
 
-.final-cta-copy a {
-  margin: 0 auto;
-  width: 300px;
-  text-align: center;
-  display: block;
-}
+
 
 .final-cta-copy a.solid-button.button-radius{
   padding-top:14px;
