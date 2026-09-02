@@ -145,7 +145,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="home-container science-grid">
           <div class="media-placeholder science-portrait">
             <ScrollReveal :delay="500">
-              <div class=" ">
+              <div class=" default-media">
                   <video
                     class="hero-video"
                     autoplay
