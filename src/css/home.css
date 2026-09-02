@@ -1068,6 +1068,12 @@
 
 .InvestorText {
   padding-bottom: clamp(5px, 0.8vw, 10px);
+      font-family: Figtree, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: right;
 }
 
 .contact-bar {
@@ -1153,5 +1159,8 @@
     background-size: 180% auto;
     transform: translateY(-50px);
   }
+  .InvestorText {
+    text-align: left;
+}
 } 
 

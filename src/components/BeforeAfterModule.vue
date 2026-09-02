@@ -38,12 +38,14 @@
               ========================== -->
 
               <div class="default-split-content__content bm-before-after-content">
-
-                
+                <p class="bm-BeforeAfterModule-p1 colorBlack underline-blue">
+                  Before & After
+                </p>
+                <!--
                 <p class="bm-BeforeAfterModule-p1 colorBlack underline-blue">
                   1<span class="bm-sup">st</span> Treatment
                 </p>
-
+                -->
                 <router-link to="/before-after" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);width:294px;min-height: 36px;font-size: clamp(16px, 2vw, 19px);padding:0;">
                     SEE MORE >
                 </router-link>
