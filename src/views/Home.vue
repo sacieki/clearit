@@ -135,7 +135,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="home-container">
           <div class="media-placeholder science-portrait" >
             <ScrollReveal :delay="500">
-              <div class=" default-media hm-vdo-size" style="height: auto;min-height: 180px;max-height: auto;">
+              <div class=" default-media hm-vdo-size" style="height: auto;max-height: auto;">
                   <video
                     class="hero-video hm-vdo-fullscale"
                     autoplay
