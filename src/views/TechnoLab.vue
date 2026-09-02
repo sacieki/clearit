@@ -60,13 +60,14 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="default-container  ">
           <div class="default-content-width default-content-border-radius tl-OurMission-content ">
             <div class="tl-OurMission-Topics mx-auto">
+              <!--
               <p class="tl-OurMission-p1 colorGray">
                 Our mission is simple: 
               </p>
               <p class="tl-OurMission-p2 colorGray mx-auto">
                 Deliver tattoo removal in significantly fewer sessions, with reduced cost, and less pain.
               </p>
-
+              -->
               <p class="tl-OurMission-p3 colorGray mx-auto">
                 At CLEARiT, we believe meaningful skin transformation begins beneath the surface where precision technology and thoughtful technique work together to create visible change over time.
               </p>

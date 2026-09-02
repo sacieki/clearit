@@ -1,7 +1,7 @@
 ```vue
 <template>
 
-  <div class="faq-page">
+  <div class="faq-page" style="margin-top: clamp(-80px, -13vw, -200px);">
 
     <!-- ================================= -->
     <!-- PAGE HEADER -->
@@ -174,11 +174,7 @@ export default {
                 "Are CLEARiT providers licensed and experienced?",
 
               answer: [
-                "Yes. CLEARiT treatments are performed by licensed medical professionals who are trained specifically in laser tattoo removal.",
-
-                "Our providers follow structured treatment protocols, calibrated laser parameters, and skin safety guidelines every session. Beyond operating the device, they are trained to assess ink behavior and skin condition, then adjust the plan to keep results consistent.",
-
-                "Experience matters in laser tattoo removal. Provider judgment, timing between sessions, and skin evaluation all play a role in achieving predictable, responsible progress."
+                "CLEARiT treatments are delivered by licensed practitioners authorized to perform laser tattoo removal under applicable law."
               ]
             },
 

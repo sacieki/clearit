@@ -86,7 +86,6 @@
   letter-spacing: 0.1em;
   text-align: center;
   width: min(690px, 100%);
-  padding-top: clamp(60px, 8vw, 120px);
 }
 
 .tl-OurMission-p4 {

@@ -1,5 +1,15 @@
+<script setup>
+import ShortContact from '../components/ShortContact.vue'
+import Navigator_desktop from '../components/Navigator_desktop.vue'
+</script>
+
 <template>
   <div class="py-12 md:py-24 lg:py-32">
+    <ShortContact />
+
+    <div style="">
+      <Navigator_desktop  />
+    </div>
     <section class="min-h-screen flex justify-center px-6 py-14">
       <div class="w-[92%] max-w-[1550px]">
 
@@ -13,7 +23,7 @@
             decoding="async"
             class="w-35 lg:w-45"
             style="color: transparent"
-            src="/media/CLEARiT_Logo_CMYK_standard-black%203.dc27f841.png"
+            src="/media/logo.f02482b3.png"
           />
         </div>
 
