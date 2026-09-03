@@ -117,9 +117,9 @@ export default {
 
 
 .faq-question-text {
-  color: #5c5a5a;
+  color: #1f1f1f;
 
-  font-size: 18px;
+  font-size: clamp(16px, 2vw, 21px);
   font-weight: 400;
 
   line-height: 1.4;
@@ -165,9 +165,9 @@ export default {
 .faq-answer p {
   margin: 0 0 16px;
 
-  color: #989898;
+  color: #5c5a5a;
 
-  font-size: 16px;
+  font-size: clamp(15px, 1.8vw, 19px);
   font-weight: 400;
 
   line-height: 1.7;

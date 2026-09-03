@@ -24,7 +24,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
           playsinline
         >
           <source
-            src="/media/8972fd41-39dc-49f3-bc80-8c81d430fe7e.mp4"
+            src="/media/hm-vdo02.mp4"
             type="video/mp4"
           />
         </video>
@@ -154,15 +154,15 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
           <div class="science-quote">
             <ScrollReveal :delay="600">
-              <b>Faster throughput —</b> more ink removed per session <br/>
+              <b>Faster —</b> more ink removed per session <br/>
             </ScrollReveal>
 
             <ScrollReveal :delay="650">
-              <b>Safer multi-pass protocol —</b> less thermal stress <br/>
+              <b>Safer —</b> less thermal stress <br/>
             </ScrollReveal>
 
             <ScrollReveal :delay="700">
-              <b>Predictable planning —</b> improved patient satisfaction
+              <b>Predictable —</b> improved patient satisfaction
             </ScrollReveal>
           </div>
 
@@ -178,28 +178,15 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">Removal, guided by science, not guesswork.</p>
             </ScrollReveal>
 
-            <ScrollReveal :delay="900">
-              <router-link to="/welcome-book" class="outline-button ">
-                  LEARN MORE
-              </router-link>
-            </ScrollReveal>
-
           </div>
         </div>
 
         <div class="home-container control-message">
-          <ScrollReveal :delay="950">
-            <p class="control-heading">
-              MOST PROBLEMS DON'T COME FROM TOO LITTLE POWER.<br />
-              THEY COME FROM TOO LITTLE CONTROL.
-            </p>
-          </ScrollReveal>
-
           <div class="blue-line"></div>
 
           <ScrollReveal :delay="1050">
-            <router-link to="/contact-us" class="solid-button">
-                BOOK CONSULTATION
+            <router-link to="/welcome-book" class="solid-button">
+                LEARN MORE
             </router-link>
           </ScrollReveal>
 
@@ -227,7 +214,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1200">
               <p>
-                Laser tattoo removal using the CLEARiT method is not guesswork. <br/>It is a structured process built around how ink behaves in the skin and how skin heals.
+                Laser tattoo removal using the CLEARiT method is not guesswork. <br/><br/>It is a structured process built around how ink behaves in the skin and how skin heals.
               </p>
             </ScrollReveal>
 
@@ -239,12 +226,12 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1300">
               <p>
-                Each treatment begins with a professional assessment of your tattoo including ink type, density, depth, and placement, so your session settings are determined with intention, not approximation.
+                Each treatment begins with a professional assessment of your tattoo including ink type, density, depth, and placement, so your laser settings are determined with intention, not approximation.
               </p>
             </ScrollReveal>
 
             <ScrollReveal :delay="1350">
-              <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);">
+              <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);margin-bottom: clamp(20px, 4.0vw, 60px);">
                   BOOK CONSULTATION
               </router-link>
             </ScrollReveal>
@@ -283,7 +270,14 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
             </ScrollReveal>
             <ScrollReveal :delay="1800">
-              <a href="#contact" class="outline-button">Get Started</a>
+              <router-link
+                to="/contact-us"
+                aria-label="Contact us"
+                class="outline-button"
+                style="letter-spacing: .04em;text-transform: uppercase;"
+              >
+                Get Started
+              </router-link>
             </ScrollReveal>
           </div>
 

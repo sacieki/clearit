@@ -311,6 +311,10 @@ a.BookConsultationBtn {
   width: 50%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 @media (max-width: 820px) {
   .tl-header__nav {
     display: none;

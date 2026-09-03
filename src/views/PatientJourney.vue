@@ -73,11 +73,11 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p3 colorGray">
-                  Your journey begins with a complimentary consultation. We assess your tattoo’s size, color range, density, and placement, then map a treatment plan that works strategically not uniformly. 
+                  Your journey begins with a consultation. We assess your tattoo’s size, color range, density, and placement, then maps a treatment plan that works specifically for you and your goals.
                 </p>
 
                 <p class="pj-hero-description-p4 colorGray">
-                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as quick, that are brief and manageable.
+                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as brief and manageable.
                 </p>
 
                 <p class="pj-hero-description-p5 colorGray">
@@ -184,7 +184,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                     </h3>
 
                     <p class="team-card__description">
-                      Begin your treatment with our expert medical team using precision laser technology and advanced skin comfort protocols. Each session is performed with results, safety, and skin condition in mind never rushed, never generic. 
+                      Begin your treatment with our expert medical team using precision laser technology and advanced skin protocols. Each session is performed with results, safety, and skin condition in mind never rushed, never generic. 
                     </p>
 
                   </div>
@@ -198,7 +198,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             to="/contact-us"
             class="solid-button mx-auto BookConsultationBtn"
           >
-            Schedule Your FREE Consultation
+            Schedule Your Consultation
           </router-link>
 
         </div>
@@ -231,7 +231,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-TheCLEARiTDifference-p3 colorBlack mx-auto">
-                  CLEARiT is building AI-enabled tools designed to reduce variability and support more informed tattoo removal.
+                  CLEARiT is building technology-enabled tools, designed to support more informed tattoo removal.
                 </p>
 
                 <img

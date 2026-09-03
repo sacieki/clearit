@@ -228,7 +228,7 @@ export default {
                 "How do I prepare for my consultation?",
 
               answer: [
-                "Arrive with clean, moisturized skin and no active sun exposure on the tattooed area. Bring a list of any medications or skin conditions you'd like to discuss."
+                "Arrive with clean skin and no active sun exposure on the tattooed area. Bring a list of any medications or skin conditions you'd like to discuss."
               ]
             }
 
@@ -252,7 +252,7 @@ export default {
                 "How do I book an appointment?",
 
               answer: [
-                "You can book online through our website or call your nearest CLEARiT location directly. Same-week appointments are often available."
+                "You can book online through our website or call us at (+1) 877-55-CLEAR (25327). Same-week appointments are often available."
               ]
             },
 
@@ -275,17 +275,6 @@ export default {
                 "A valid photo ID and any relevant medical history or documentation regarding the tattooed area. Wear loose, comfortable clothing that provides easy access to the treatment site."
               ]
             },
-
-
-            {
-              question:
-                "How far in advance should I book?",
-
-              answer: [
-                "We recommend booking at least one week in advance, though we do accommodate last-minute appointments based on availability."
-              ]
-            },
-
 
             {
               question:
@@ -316,7 +305,7 @@ export default {
                 "How much do CLEARiT treatments cost?",
 
               answer: [
-                "Pricing is based on tattoo size, complexity, and number of sessions required. We provide a detailed quote during your consultation."
+                "Pricing is based on tattoo size and complexity. We provide a detailed quote during your consultation."
               ]
             },
 
@@ -326,7 +315,7 @@ export default {
                 "Does CLEARiT accept insurance for treatments?",
 
               answer: [
-                "Tattoo removal is considered an elective cosmetic procedure and is generally not covered by insurance. We can provide documentation if needed for FSA/HSA reimbursement."
+                "Tattoo removal is considered an elective cosmetic procedure and is generally not covered by insurance."
               ]
             },
 
@@ -360,7 +349,7 @@ export default {
                 "How does laser tattoo removal work?",
 
               answer: [
-                "Laser energy is delivered in short pulses that fragment ink particles beneath the skin. Your immune system then clears the fragmented ink over the weeks following each session."
+                "Laser energy is delivered in short pulses that fragment ink particles beneath the skin. Your immune system then clears the fragmented ink over the time following each session."
               ]
             },
 
@@ -377,10 +366,10 @@ export default {
 
             {
               question:
-                "Does laser tattoo removal work on all ink colors?",
+                "Does The CLEARiT Method of Tattoo Removal work on all ink colors?",
 
               answer: [
-                "Most colors respond well to laser treatment. Dark blues and blacks typically clear most efficiently. Some pigments like light greens and yellows may require specialized wavelengths."
+                "Yes, the CLEARiT Method works on all Ink colors."
               ]
             },
 
@@ -390,17 +379,7 @@ export default {
                 "How many treatments will I need?",
 
               answer: [
-                "Most clients require 6–10 sessions, spaced 6–8 weeks apart. The exact number depends on ink depth, color, skin type, and immune response."
-              ]
-            },
-
-
-            {
-              question:
-                "How long does it take to see results?",
-
-              answer: [
-                "Fading becomes visible after 2–3 sessions. Significant clearance is typically achieved between sessions 5–8, depending on the tattoo."
+                "Using the CLEARiT Method of Tattoo Removal, the number of treatments will be determined during your consultation."
               ]
             }
 

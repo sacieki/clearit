@@ -152,7 +152,7 @@
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(16px, 2vw, 19px);
+  font-size: clamp(24px, 3vw, 37px);
   line-height: 1.1;
   letter-spacing: 0.2em;
   text-align: center;
@@ -165,7 +165,7 @@
   font-style: normal;
   font-size: clamp(16px, 2vw, 19px);
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.15em;
   text-align: center;
   padding-top: clamp(30px, 4.5vw, 60px);
   width: min(680px, 100%);

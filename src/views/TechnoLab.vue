@@ -31,7 +31,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
                 style="height: calc(100vh - 100px);"
               >
-                <source src="/media/7bd30761-6eae-487b-93a6-252f91ec00ea.mp4" type="video/mp4" />
+                <source src="/media/tn-vdo01.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -150,7 +150,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
 
               <p class="tl-TwoStepProtocol-p5 colorGray">
-                <span class="colorBlue">Supports</span> even pigment dispersion.
+                <span class="colorBlue">Supports</span> even ink dispersion.
               </p>
 
               <img
@@ -222,7 +222,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
                 <div class="default-split-content__content" style="width:70%;">
                   <p class="tl-RemovalPhilosophy-p10 colorGray">
-                    The app leverages AI and digital imaging to take the guesswork out of laser therapy. 
+                    The App leverages technology and digital imagery to take the guess work out of laser tattoo removal.
                   </p>
                 </div>
               </div>

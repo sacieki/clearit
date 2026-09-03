@@ -102,9 +102,9 @@
                 <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">Why We Developed CLEARiT</p>
                 <p class="mx-auto bo-WhyWeDevelop-p2 colorGray">Tattoo removal should never be guesswork. 
     It is a calculated process.</p>
-                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT method made clarity and intelligence a top priority. Our science driven technology focused approch brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
+                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT method made clarity and intelligence a top priority. Our science driven technology, and focused approach brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
                 <p class="mx-auto bo-WhyWeDevelop-p4 colorGray"><br/>Out with the old, in with the new. </p>
-                <p class="mx-auto bo-WhyWeDevelop-p5 colorGray"><br/>The CLEARiT method of tattoo removal </p> 
+                <p class="mx-auto bo-WhyWeDevelop-p5 colorGray uppercase"><br/>The CLEARiT method of tattoo removal </p> 
                 <p class="mx-auto bo-WhyWeDevelop-p6 colorBlack">smarter science- smarter technology- smarter removal. </p>
               </div>
             </div>
@@ -477,7 +477,7 @@ export default {
       heroWords: [
         "FASTER",
         "SAFER",
-        "MORE PREDICTABLE"
+        "PREDICTABLE"
       ]
     };
   },
