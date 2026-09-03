@@ -274,7 +274,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 to="/contact-us"
                 aria-label="Contact us"
                 class="outline-button"
-                style="letter-spacing: .04em;text-transform: uppercase;"
+                style="letter-spacing: .04em;text-transform: uppercase;font-size: clamp(22px, 3.5vw, 36px);"
               >
                 Get Started
               </router-link>
