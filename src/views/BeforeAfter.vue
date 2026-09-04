@@ -126,10 +126,11 @@ export default {
       currentImage: 0,
 
       galleryItems: [
-        {
+        
+        /*{
             image: "/media/gallery-p1.png",
             video: "/media/viedo-beforeafter-p1.mp4"
-        },
+        },*/
         {
             image: "/media/gallery-p2.png",
             video: "/media/viedo-beforeafter-p2.mp4"

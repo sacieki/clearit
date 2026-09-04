@@ -35,11 +35,11 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             <div class="blue-line" style="width:99%;"></div>
 
             <p class="pj-hero-p3 colorGray mx-auto">
-              A smarter, client first guide to how laser tattoo removal works, how to prepare, and what to expect at every step.
+              A smarter, patient first guide to how laser tattoo removal works, how to prepare, and what to expect at every step.
             </p>
 
             <p class="pj-hero-p4 colorGray mx-auto">
-              Engineered with the preparation mindset, the CLEARiT journey focuses on the client experience attention to skin condition during and between sessions allows treatment to be performed more efficiently and safely.
+              Engineered with the preparation mindset, the CLEARiT journey focuses on the patient experience.
             </p>
 
             
@@ -73,7 +73,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p3 colorGray">
-                  Your journey begins with a consultation. We assess your tattoo’s size, color range, density, and placement, then maps a treatment plan that works specifically for you and your goals.
+                  Your journey begins with a consultation. We assess your tattoo’s size, color range, intensity, and placement, then maps a treatment plan that works specifically for you and your goals.
                 </p>
 
                 <p class="pj-hero-description-p4 colorGray">
@@ -81,7 +81,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p5 colorGray">
-                  After treatment, it is normal to see mild redness, or slight swelling similar to a light sun reaction. These effects typically settle within a few days. Most people return to normal daily activity immediately after treatment. 
+                  After treatment, it is normal to see mild redness, or slight swelling. These effects typically settle within a few days. Most people return to normal daily activity immediately after treatment. 
                 </p>
 
                 <p class="pj-hero-description-p6 colorGray">
@@ -105,7 +105,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
 
               <p class="pj-GetStarted-p2 colorGray mx-auto">
-                Starting your tattoo removal journey with CLEARiT is simple, structured, and client first. Here’s how we guide you from your first contact to first treatment with clarity and intention at every step.
+                Starting your tattoo removal journey with CLEARiT is simple, structured, and patient first. Here’s how we guide you from your first contact to first treatment with clarity and intention at every step.
               </p>
           </div>
 
@@ -216,7 +216,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-TheCLEARiTDifference-p2 colorGray mx-auto">
-                  We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
+                  We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher patient satisfaction.
                 </p>
 
                 <img

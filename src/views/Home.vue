@@ -82,7 +82,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               <ScrollReveal>
                 <p class="hero-lead mx-auto colorBlue">
                   CLEARiT exists to redefine the tattoo removal experience. 
-                  <br/><br/>We bring science, technology, treatment methodology and practitioner expertise together to create a more informed, connected and consistent approach to tattoo removal.
+                  <br/><br/>We bring science, technology and clinical intelligence to create a more informed, connected and consistent approach to tattoo removal.
                 </p>
               </ScrollReveal>
 
@@ -169,7 +169,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
           <div class="science-copy mx-auto">
             
             <ScrollReveal :delay="800">
-              <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);">
+              <p class="" style="padding-top: clamp(30px, 4.5vw, 60px);text-align: center;">
                 CLEARiT is engineered around how the body actually clears ink, maximizing each treatment session and improving consistency between visits through disciplined preparation, planning and execution.
               </p>
             </ScrollReveal>
@@ -214,7 +214,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1200">
               <p>
-                Laser tattoo removal using the CLEARiT method is not guesswork. <br/><br/>It is a structured process built around how ink behaves in the skin and how skin heals.
+                Laser tattoo removal using the CLEARiT METHOD is not guesswork. <br/><br/>It is a structured process built around how ink behaves in the skin and how skin heals.
               </p>
             </ScrollReveal>
 
@@ -226,7 +226,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1300">
               <p>
-                Each treatment begins with a professional assessment of your tattoo including ink type, density, depth, and placement, so your laser settings are determined with intention, not approximation.
+                Each treatment begins with a professional assessment of your tattoo including ink type, intensity and placement, so your laser settings are determined with intention, not approximation.
               </p>
             </ScrollReveal>
 
@@ -254,7 +254,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               <ul>
                 <li>Avoid tanning, sun exposure, and self tanning products for at least two weeks prior to treatment</li>
                 <li>Use daily SPF on the area that may be exposed to sunlight</li>
-                <li>Pause exfoliants, retinoids, peels, and other potentially irritating products in the treatment zone, keeping the skin intact</li>
+                <li>Pause exfoliants, retinoids, peels, and other potentially irritating products in the treatment area</li>
                 <li>Arrive with clean, product free skin (no makeup, lotion, or sunscreen on the area)</li>
               </ul>
             </ScrollReveal>

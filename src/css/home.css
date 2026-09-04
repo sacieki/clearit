@@ -77,10 +77,13 @@
 }
 
 .science-quote {
-  width: fit-content;
-  margin-left: auto;
-  text-align: left;
+  /*width: fit-content;
   margin-right: 60px;
+  margin-left: auto;
+  */
+  
+  text-align: center;
+  
 
   font-family: 'Figtree', sans-serif;
   font-weight: 400;
@@ -89,6 +92,7 @@
   line-height: 2;
   letter-spacing: 0.2em;
   color: #5C5A5A;
+
   /*margin-top: clamp(20px, 3vw, 40px);*/
 }
 

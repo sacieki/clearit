@@ -75,7 +75,7 @@
             </div>
 
             <div class="bo-hero-textdetail colorGray">
-              <p class="mx-auto bo-hero-textdetail-p1">We developed the CLEARiT method around science, technology and intelligence.</p>
+              <p class="mx-auto bo-hero-textdetail-p1">We developed the CLEARiT METHOD around science, technology and intelligence.</p>
 
               
             </div>
@@ -99,10 +99,10 @@
                 src="/media/Clearit_Home_img01.png"
               />
               <div class="bo-WhyWeDevelop-Topics mx-auto">
-                <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">Why We Developed CLEARiT</p>
+                <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">WHY WE DEVELOPED THE CLEARiT METHOD</p>
                 <p class="mx-auto bo-WhyWeDevelop-p2 colorGray">Tattoo removal should never be guesswork. 
     It is a calculated process.</p>
-                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT method made clarity and intelligence a top priority. Our science driven technology, and focused approach brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
+                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT METHOD made clarity and intelligence a top priority. Our science driven technology, and focused approach brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
                 <p class="mx-auto bo-WhyWeDevelop-p4 colorGray"><br/>Out with the old, in with the new. </p>
                 <p class="mx-auto bo-WhyWeDevelop-p5 colorGray uppercase"><br/>The CLEARiT method of tattoo removal </p> 
                 <p class="mx-auto bo-WhyWeDevelop-p6 colorBlack">smarter science- smarter technology- smarter removal. </p>
@@ -163,7 +163,7 @@
                     Protection and support of the skin
                   </li>
                   <li>
-                    Safer, more predictable removal journeys
+                    More predictable removal journeys
                   </li>
                 </ul>
                 <img
@@ -452,7 +452,7 @@
               </p>
 
               <p class="bo-MeettheTeam-p3 colorGray mx-auto">
-                CLEARiT combines world-class advisory expertise in clinical medicine and artificial intelligence. We are dedicated to replacing subjectivity with science, providing the governance to lead CLEARiT as the new global standard in tattoo removal technology.
+                CLEARiT combines world-class advisory expertise in clinical medicine and technology intelligence. We are dedicated to replacing subjectivity with science, providing the governance to lead CLEARiT as the new global standard in tattoo removal technology.
               </p>
             </div>
           </div>

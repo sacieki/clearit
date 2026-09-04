@@ -203,14 +203,6 @@ export default {
 
           items: [
 
-            {
-              question:
-                "Are consultations free?",
-
-              answer: [
-                "Yes, initial consultations at CLEARiT are complimentary. We want to ensure you have all the information you need before committing to a treatment plan."
-              ]
-            },
 
 
             {
@@ -218,7 +210,7 @@ export default {
                 "What happens during a consultation?",
 
               answer: [
-                "During your consultation, a licensed provider will assess your tattoo, discuss your removal goals, explain the process, and outline a personalized treatment plan."
+                "During your consultation, a licensed practitioner will assess your tattoo, discuss your removal goals, explain the process, and outline a personalized treatment plan."
               ]
             },
 
@@ -228,7 +220,7 @@ export default {
                 "How do I prepare for my consultation?",
 
               answer: [
-                "Arrive with clean skin and no active sun exposure on the tattooed area. Bring a list of any medications or skin conditions you'd like to discuss."
+                "Arrive with clean skin. Bring a list of any medications and be prepare to discuss medical conditions."
               ]
             }
 
@@ -278,10 +270,10 @@ export default {
 
             {
               question:
-                "Will I see the same provider each visit?",
+                "Will I see the same practitioner each visit?",
 
               answer: [
-                "We make every effort to assign you a consistent provider. All CLEARiT providers follow the same structured protocols, so continuity of care is maintained regardless."
+                "We make every effort to assign you a consistent practitioner. All CLEARiT practitioners follow the same structured protocols, so continuity of care is maintained regardless."
               ]
             }
 
@@ -325,7 +317,7 @@ export default {
                 "Do you offer financing or payment plans?",
 
               answer: [
-                "Yes. CLEARiT offers flexible payment plans through trusted financing partners. Ask about options during your consultation."
+                "Yes. CLEARiT providers offer flexible payment plans through trusted financing partners. Ask about options during your consultation."
               ]
             }
 
@@ -359,7 +351,7 @@ export default {
                 "Which lasers do you use?",
 
               answer: [
-                "CLEARiT uses FDA-cleared Q-switched and picosecond lasers, selected based on your ink colors and skin type to optimize clearance safely."
+                "CLEARiT uses FDA-cleared Q-switch and picosecond lasers, selected based on your ink colors and skin type to optimize your tattoo removal experience."
               ]
             },
 

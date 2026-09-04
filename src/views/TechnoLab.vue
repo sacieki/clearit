@@ -77,11 +77,11 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
 
               <p class="tl-OurMission-p5 colorGray mx-auto">
-                Born from extensive clinical research, CLEARiT method of tattoo removal is engineered with one intention:
+                Born from extensive clinical research, CLEARiT METHOD OF TATTOO REMOVAL is engineered with one intention:
               </p>
 
               <p class="tl-OurMission-p6 colorGray mx-auto">
-                Make the tattoo-removal journey safer, faster, and more predictable.
+                Make the tattoo-removal journey safer, faster, and predictable.
               </p>
               <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Book Consultation</a>
             </div>
@@ -222,7 +222,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
                 <div class="default-split-content__content" style="width:70%;">
                   <p class="tl-RemovalPhilosophy-p10 colorGray">
-                    The App leverages technology and digital imagery to take the guess work out of laser tattoo removal.
+                    The App leverages technology and digital imagery to bring greater clarity and consistency to laser tattoo removal.
                   </p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               <div class="default-split-content default-content-border-radius" style="padding:0px clamp(10px, 1.5vw, 20px)">
                 <div class="default-split-content__image small-full">
                   <p class="tl-RemovalPhilosophy-p11 colorGray">
-                    By analyzing ink colors, the app matches ink to specific laser wavelengths. The app then analyzes the depth of the ink to deliver a data-driven treatment plan. The app will track progress in real-time, helping to achieve better results through scientific accuracy. 
+                    By analyzing ink colors, the app matches ink to specific laser wavelengths. The app then analyzes intensity of the ink to provide data-driven insight to support the treatment plane. The app will track progress in real-time, helping to achieve better results through scientific accuracy. 
                   </p>
                 </div>
 
