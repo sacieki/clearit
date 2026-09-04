@@ -178,7 +178,7 @@
                   {{ location.type }}
                 </span>
 
-                <span class="location-phone">
+                <span class="location-phone" style="display:none;">
                   {{ location.phone }}
                 </span>
 
