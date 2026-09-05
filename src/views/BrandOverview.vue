@@ -102,7 +102,7 @@
                 <p class="mx-auto bo-WhyWeDevelop-p1 colorBlue">WHY WE DEVELOPED THE CLEARiT METHOD</p>
                 <p class="mx-auto bo-WhyWeDevelop-p2 colorGray">Tattoo removal should never be guesswork. 
     It is a calculated process.</p>
-                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT METHOD made clarity and intelligence a top priority. Our science driven technology, and focused approach brings a smarter way to tattoo removal. Designed around clinical intelligence and a more informed treatment journey. </p>
+                <p class="mx-auto bo-WhyWeDevelop-p3 colorGray">That's why the CLEARiT METHOD made clarity and intelligence a top priority. Our science driven technology, and focused approach brings a smarter way to defined tattoo removal.</p>
                 <p class="mx-auto bo-WhyWeDevelop-p4 colorGray"><br/>Out with the old, in with the new. </p>
                 <p class="mx-auto bo-WhyWeDevelop-p5 colorGray uppercase"><br/>The CLEARiT method of tattoo removal </p> 
                 <p class="mx-auto bo-WhyWeDevelop-p6 colorBlack">smarter science- smarter technology- smarter removal. </p>
@@ -133,7 +133,7 @@
                 <p class="colorBlue bo-ClearitDifferent-p1-Second">Difference</p>
 
                 <p class="bo-ClearitDifferent-p2 colorGray">
-                  We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
+                  We take a smarter, more methodical approach to laser tattoo removal. Through the combination of our specialized skin preparation and reverse tattoo techniques deliver consistent, precise treatment in every session, resulting in higher client satisfaction.
                 </p>
 
                 <p  class="bo-ClearitDifferent-p3 colorGray">
@@ -144,7 +144,7 @@
                   to="/contact-us"
                   class="solid-button mx-auto BookConsultationBtn"
                 >
-                  Book Consultation
+                  Begin Your Journey
                 </router-link>
                 
                 <p  class="bo-ClearitDifferent-p4 colorGray mx-auto">
@@ -254,7 +254,7 @@
               </div>
               -->
               <p class="bo-OurVision-p3 mx-auto colorGray">
-                CLEARiT was engineered as part of a comprehensive professional protocol, creating consistent surface conditions and clinically evaluated technique for every tattoo removal session. Founded by industry experts, the brand is dedicated to elevating standards and providing reliable, repeatable preparation to optimize our clients’ tattoo removal experience.
+                THE CLEARiT METHOD of Tattoo Removal was engineered as part of a comprehensive professional protocol, creating consistent surface conditions and clinically evaluated technique for every tattoo removal session. Founded by industry experts, the brand is dedicated to elevating standards and providing reliable, repeatable preparation to optimize a patients’ tattoo removal experience.
               </p>
             </div>
           </div>
@@ -426,7 +426,7 @@
                     Controller
                   </p>
                 </div>
-
+<!--
                 <div class="bo-MeettheTeam-card">
                   <img
                     alt="Logo"
@@ -444,7 +444,7 @@
                   <p class="bo-MeettheTeam-position">
                     Director, CLEARiT Brand
                   </p>
-                </div>
+                </div>-->
               </div>
 
               <p class="bo-MeettheTeam-p2 colorBlue mx-auto">
@@ -476,7 +476,7 @@ export default {
 
       heroWords: [
         "FASTER",
-        "SAFER",
+        "COMFORTABLE",
         "PREDICTABLE"
       ]
     };

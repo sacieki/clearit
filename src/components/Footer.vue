@@ -48,7 +48,7 @@
                 <div class="underline-gray-fullwidth">
                   <p class="contact-topic colorGray">PHONE NUMBER</p>
                   <a href="tel:+187755325327" class="contact-data colorBlue">
-                    (+1) 877-55-CLEAR (25327)
+                    (+1) 877-552-5327 (CLEAR)
                   </a>
                 </div>
 

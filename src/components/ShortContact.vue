@@ -65,7 +65,7 @@
         </a>
 
         <a href="tel:+187755325327">
-          (+1) 877-55-CLEAR (25327)
+          (+1) 877-552-5327 (CLEAR)
         </a>
 
       </div>
@@ -227,7 +227,7 @@
 
 
 <script>
-//import { navItems } from "@/data/navigation";
+import { navItems } from "@/data/navigation";
 
 export default {
   name: "ShortContact",
@@ -239,7 +239,7 @@ export default {
       currentMenuIndex: 0,
       menuTransition: "menu-next",
 
-      navItems: [ { label: "HOME", to: "/" }, { label: "BRAND OVERVIEW", to: "/brand-overview" }, { label: "PRODUCT", to: "/the-clearit-method" }, { label: "PATIENT JOURNEY", to: "/patient-journey" }, { label: "BEFORE & AFTER", to: "/before-after" }, { label: "LOCATIONS", to: "/find-us" }, { label: "FAQS", to: "/faqs" }, { label: "CONTACT", to: "/contact-us" } ]
+      navItems: navItems
     };
   },
 
@@ -323,7 +323,7 @@ export default {
   top: 0;
   left: 50%;
 
-  width: 600px;
+  width: 100%;
   height: 40px;
 
   background: #1F1F1F;

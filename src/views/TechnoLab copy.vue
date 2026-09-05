@@ -70,9 +70,15 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             </p>
 
             <p class="tl-OurMission-p6 colorGray mx-auto">
-              Make the tattoo-removal journey safer, faster, and more predictable.
+              Make the tattoo-removal journey comfortable, faster, and more predictable.
             </p>
-            <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Book Consultation</a>
+            <router-link
+              to="/contact-us"
+              aria-label="CLEARiT Contact Us"
+              class="solid-button mx-auto BookConsultationBtn"
+            >
+              Begin Your Journey
+            </router-link>
           </div>
         </div>
       </div>

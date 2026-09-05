@@ -77,13 +77,19 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </p>
 
               <p class="tl-OurMission-p5 colorGray mx-auto">
-                Born from extensive clinical research, CLEARiT METHOD OF TATTOO REMOVAL is engineered with one intention:
+                Born from extensive clinical research, THE CLEARiT METHOD OF TATTOO REMOVAL is engineered with one intention:
               </p>
 
               <p class="tl-OurMission-p6 colorGray mx-auto">
-                Make the tattoo-removal journey safer, faster, and predictable.
+                Make the tattoo-removal journey comfortable, faster, andpredictable.
               </p>
-              <a href="#contact" class="solid-button mx-auto BookConsultationBtn" style=" ">Book Consultation</a>
+              <router-link
+                to="/contact-us"
+                aria-label="CLEARiT Contact Us"
+                class="solid-button mx-auto BookConsultationBtn"
+              >
+                Begin Your Journey
+              </router-link>
             </div>
           </div>
         </div>

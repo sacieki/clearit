@@ -232,7 +232,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
 
             <ScrollReveal :delay="1350">
               <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);margin-bottom: clamp(20px, 4.0vw, 60px);">
-                  BOOK CONSULTATION
+                  Begin Your Journey
               </router-link>
             </ScrollReveal>
           </div>

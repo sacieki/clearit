@@ -78,8 +78,8 @@
 ======================================== */
 
 .ba-gallery-item:hover {
-  transform: rotate(-10deg) scale(1.03);
-
+  /*transform: rotate(-10deg) scale(1.03);*/
+  transform: scale(1.08);
   z-index: 2;
 
   

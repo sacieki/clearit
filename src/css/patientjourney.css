@@ -129,11 +129,11 @@
   font-family: "Figtree", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: clamp(40px, 6.5vw, 100px);
+  font-size: clamp(32px, 5vw, 64px);
   line-height: 1.1;
   letter-spacing: 5%;
   text-align: center;
-  width: min(700px, 100%);
+  width: min(480px, 100%);
 }
 
 .pj-GetStarted-p2 {

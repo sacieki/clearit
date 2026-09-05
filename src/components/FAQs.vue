@@ -220,7 +220,7 @@ export default {
                 "How do I prepare for my consultation?",
 
               answer: [
-                "Arrive with clean skin. Bring a list of any medications and be prepare to discuss medical conditions."
+                "Arrive with clean skin. Bring a list of any medications and be prepared to discuss any medical conditions."
               ]
             }
 
@@ -241,10 +241,10 @@ export default {
 
             {
               question:
-                "How do I book an appointment?",
+                "How do I begin my CLEARiT Removal Journey?",
 
               answer: [
-                "You can book online through our website or call us at (+1) 877-55-CLEAR (25327). Same-week appointments are often available."
+                "You can contact us through our website or call us at (+1) 877-55-25327 (CLEAR)."
               ]
             },
 
@@ -273,7 +273,7 @@ export default {
                 "Will I see the same practitioner each visit?",
 
               answer: [
-                "We make every effort to assign you a consistent practitioner. All CLEARiT practitioners follow the same structured protocols, so continuity of care is maintained regardless."
+                "We make every effort to assign you a consistent providers. All CLEARiT providers follow the same structured protocols, so continuity of care is maintained regardless."
               ]
             }
 
@@ -297,7 +297,7 @@ export default {
                 "How much do CLEARiT treatments cost?",
 
               answer: [
-                "Pricing is based on tattoo size and complexity. We provide a detailed quote during your consultation."
+                "Pricing is based on tattoo size and complexity. Your provider will give you a detailed quote during your consultation."
               ]
             },
 

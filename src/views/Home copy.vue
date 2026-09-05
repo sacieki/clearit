@@ -151,7 +151,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
         <div class="blue-line"></div>
 
         <router-link to="/contact-us" class="solid-button">
-            BOOK CONSULTATION
+            Begin Your Journey
         </router-link>
 
         <img
@@ -184,7 +184,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
           </p>
 
           <router-link to="/contact-us" class="solid-button" style="margin-top: clamp(60px, 8vw, 120px);">
-              BOOK CONSULTATION
+              Begin Your Journey
           </router-link>
 
         </div>

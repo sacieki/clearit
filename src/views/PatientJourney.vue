@@ -39,7 +39,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
             </p>
 
             <p class="pj-hero-p4 colorGray mx-auto">
-              Engineered with the preparation mindset, the CLEARiT journey focuses on the patient experience.
+              The CLEARiT METHOD of Tattoo Removal focuses on the patient experience.
             </p>
 
             
@@ -69,15 +69,15 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-hero-description-p2 colorGray">
-                  At a CLEARiT Provider, your tattoo removal journey begins with a personalized evaluation, precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
+                  At a CLEARiT Provider, your tattoo removal journey begins with a personalized evaluation; precision-focused and results driven. No rushed protocols. Just structured treatment built around your skin and your ink.
                 </p>
 
                 <p class="pj-hero-description-p3 colorGray">
-                  Your journey begins with a consultation. We assess your tattoo’s size, color range, intensity, and placement, then maps a treatment plan that works specifically for you and your goals.
+                  Your journey begins with a consultation. Your provider will assess your tattoo’s size, color range, intensity, and placement, then map a treatment plan that works specifically for you and your goals.
                 </p>
 
                 <p class="pj-hero-description-p4 colorGray">
-                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Patients often describe the sensation as brief and manageable.
+                  Each session is calibrated for both performance and comfort. Most appointments take under an hour, depending on tattoo size and complexity. Each laser pulse lasts a fraction of a second. Most patients describe the sensation as brief and manageable.
                 </p>
 
                 <p class="pj-hero-description-p5 colorGray">
@@ -216,7 +216,7 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
                 </p>
 
                 <p class="pj-TheCLEARiTDifference-p2 colorGray mx-auto">
-                  We take a smarter, more methodical approach to laser tattoo removal. The combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher patient satisfaction.
+                  We take a smarter, more methodical approach to laser tattoo removal. Through the combination of our specialized skin preparation and reverse tattoo techniques, we deliver consistent, precise treatment in every session, resulting in higher patient satisfaction.
                 </p>
 
                 <img
