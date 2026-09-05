@@ -62,8 +62,13 @@
       <!-- INVESTOR -->
       <div
         class="hidden sm:block text-2xl lg:text-2.5xl font-normal text-black tracking-wide"
-      >
-        Investor
+      > 
+        <router-link
+          to="/investor"
+          aria-label="CLEARiT Investor"
+        >
+          Investor
+        </router-link>
       </div>
 
     </nav>

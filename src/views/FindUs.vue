@@ -11,8 +11,11 @@
       <Navigator_desktop  />
     </div>
 
-    
-    <FindUs />
+    <section class="">
+        <div class="  ">
+          <FindUs />
+        </div>
+    </section>
 
   </main>
 </template>

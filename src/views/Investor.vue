@@ -11,7 +11,8 @@
       <Navigator_desktop  />
     </div>
 
-
+    <section class="">
+      <div class="  ">
         <div class="in-investor-content ">
           <div class="in-investor-img">
             <img
@@ -31,8 +32,8 @@
             <p class="in-investor-p5"><br/>Inquiries: All investor communications are treated with strict confidentiality.</p>
           </div>
         </div>
-
-   
+      </div>
+    </section>
 
   </main>
 </template>

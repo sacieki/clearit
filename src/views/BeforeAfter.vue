@@ -13,8 +13,8 @@
       <Navigator_desktop  />
     </div>
 
-    <section class="default-section Hero">
-      <div class="default-container  ">
+    <section class="">
+      <div class=" ">
         <div class="default-content-width default-content-border-radius ba-Hero-content ">
             <div class=" default-media">
             <video
