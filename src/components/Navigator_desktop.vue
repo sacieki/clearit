@@ -61,6 +61,7 @@
 
 
 <script>
+import { navItems } from "@/data/navigation";
 export default {
   name: "Navigator_desktop",
 
@@ -71,36 +72,7 @@ export default {
       itemWidths: [],
       showControls: false,
 
-      navItems: [
-        {
-          label: "About",
-          path: "/brand-overview"
-        },
-        {
-          label: "The CLEARiT Method",
-          path: "/the-clearit-method"
-        },
-        {
-          label: "Results",
-          path: "/before-after"
-        },
-        {
-          label: "Patient Journey",
-          path: "/patient-journey"
-        },
-        {
-          label: "Find Clearit Providers",
-          path: "/find-us"
-        },
-        {
-          label: "FAQs",
-          path: "/faqs"
-        },
-        {
-          label: "Contact Us",
-          path: "/contact-us"
-        }
-      ]
+      navItems: navItems
     };
   },
 
