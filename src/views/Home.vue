@@ -53,7 +53,12 @@ import Navigator_desktop from '../components/Navigator_desktop.vue'
               </div>
               <div class="splitRgiht" style="">
                 <div class="InvestorText">
-                  Investor
+                  <router-link
+                    to="/investor"
+                    aria-label="Investor"
+                  >
+                    Investor
+                  </router-link>
                 </div>
 
                 <div class="contact-bar">

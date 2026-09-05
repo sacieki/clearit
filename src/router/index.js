@@ -9,6 +9,7 @@ import PatientJourney from '../views/PatientJourney.vue'
 import BeforeAfter from '../views/BeforeAfter.vue'
 import Welcomebook from '../views/Welcomebook.vue'
 import FindUs from '../views/FindUs.vue'
+import Investor from '../views/Investor.vue'
 
 const routes = [
   {
@@ -40,6 +41,11 @@ const routes = [
     path: '/welcome-book',
     name: 'Welcomebook',
     component: Welcomebook
+  },
+  {
+    path: '/investor',
+    name: 'Investor',
+    component: Investor
   },
   {
     path: '/faqs',

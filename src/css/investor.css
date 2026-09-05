@@ -1,0 +1,121 @@
+/* =========================
+   Large Screen
+   ========================= */
+.in-investor-content {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url('../assets/bg-in.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+
+  /*background-color: #fafafa;*/
+
+  padding-top: clamp(150px, 26vw, 400px);
+}
+
+.in-investor-img {
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.in-investor-img img {
+  width: fit-content;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.in-investor-Topics {
+  width: 50%;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.in-investor-p1 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(28px, 4.5vw, 46px);
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.in-investor-p2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 100%;
+    letter-spacing: 0;
+    padding-right: 40px;
+    width: min(600px, 100%);
+}
+.in-investor-p3 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.in-investor-p4 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.in-investor-p5 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+/* =========================
+   Smaller Screen
+   ========================= */
+@media (max-width: 991px) {
+
+  .in-investor-content {
+    /*
+    display: block;
+    position: relative;
+    */
+    width: 100%;
+  }
+
+  .in-investor-img {
+    width: 100%;
+    display:none;
+  }
+
+  .in-investor-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .in-investor-Topics {
+    width: 100%;
+    flex: 0 0 80%;
+    /*
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    */
+  }
+
+}
